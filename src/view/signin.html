@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>登录</title>
   <link type="text/css" rel="stylesheet" href="../css/page/signin.css">
+  <script src="../javascript/jquery-1.11.1.min.js"></script>
   <link />
 </head>
 <body>
@@ -41,7 +42,7 @@
                       </div>
                       <div class="mc">
                           <div class="form">
-                              <form id="formlogin" method="post" onsubmit="return false;">
+                              <form  method="post" onsubmit="return false;">
                                  
                                                                   <div class="item item-fore1">
                                       <label for="loginname" class="login-label name-label"></label>
@@ -87,9 +88,34 @@
                                              clstag="pageclick|keycount|login_pc_201804112|12">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
                                       </div>
                                   </div>
+                                  
+                                  <div class="item item-fore5  login-type"><a style="color: #2875cc;" href="javascript:void(0)">手机号快速登录(支持门店预留手机)</a></div>
                               </form>
                           </div>
+                          <div class="form form2 hide">
+                                <div class="item">
+                                     <input type="text" class="itxt" placeholder="请输入手机号（支持门店预留手机）">
+                                </div>
+                                <div class="item verifyCode">
+                                    <input type="text" class="itxt"  placeholder="短信验证码">
+                                    <div class="check-phone">
+                                        <span>获取短信验证码</span>
+                                    </div>
+                               </div>
+                               <div class="item item-fore4">
+                                <p class="detailContent">未注册的手机号将自动注册，且代表您同意<a href="javascript:;" class="fontBlink">《服务协议》</a> </p>
+                               </div>
+                               <div class="item item-fore5">
+                                <div class="login-btn">
+                                    <a href="javascript:;" class="btn-img btn-entry" id="loginsubmit" tabindex="6"
+                                       clstag="pageclick|keycount|login_pc_201804112|12">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                                </div>
+                            </div>
+                            
+                            <div class="item item-fore5 login-type"><a style="color: #2875cc;" href="javascript:void(0)">账号密码登录</a></div>
+                          </div>
                       </div>
+                      
                   </div>
   
                   <div class="qrcode-login">
@@ -178,6 +204,21 @@
       Copyright&copy;2004-2019&nbsp;&nbsp;京东JD.com&nbsp;版权所有
     </div>
   </div>
+  <script>
+    $(function(){
+        $(".login-type").on("click",function(){
+            $(".form").toggle()
+        })
+        $(".login-tab-r").on("click",function(){
+            $(".qrcode-login").hide();
+            $(".login-box").show();
+        })
+        $(".login-tab-l").on("click",function(){
+            $(".qrcode-login").show();
+            $(".login-box").hide();
+        })
+    })
+  </script>
 </body>
 
 </html>

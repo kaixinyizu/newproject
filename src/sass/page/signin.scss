@@ -109,6 +109,17 @@ em {
                 height: 27px;
             }   
             // 账户登录表单 
+            .itxt {
+                line-height: 18px;
+                height: 18px;
+                border: 0;
+                padding: 10px 0 10px 50px;
+                width: 254px;
+                float: none;
+                overflow: hidden;
+                font-size: 14px;
+                *margin: -1px 0 0;
+            }
             .form{
                 .item {
                     position: relative;
@@ -127,17 +138,10 @@ em {
                     .name-label {
                         background-position: 0 0;
                     }
-                    .itxt {
-                        line-height: 18px;
-                        height: 18px;
-                        border: 0;
-                        padding: 10px 0 10px 50px;
-                        width: 254px;
-                        float: none;
-                        overflow: hidden;
-                        font-size: 14px;
-                        *margin: -1px 0 0;
+                    .pwd-label {
+                         background-position: -48px 0;
                     }
+
                 }
                 .item-fore1,.item-fore2 {
                     border: 1px solid #bdbdbd;
@@ -201,6 +205,44 @@ em {
                     float: none;
                 }
 
+            }
+            .form2{
+               .itxt{
+                  border: 1px solid #bdbdbd;
+                  padding-left: 10px;
+                  width: 294px;
+               }
+               .verifyCode{
+                   .itxt{
+                     width: 173px;
+                   }
+               }
+               .check-phone{
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 7px;
+                width: 108px;
+                height: 38px;
+                background: #F8F8F8;
+                border: 1px solid #ddd;
+                font: 400 12px/36px Simsun;
+                text-align: center;
+                color: #333;
+                cursor: pointer;
+                span{   
+                     text-decoration: none;
+                    color: #333;
+                    background: #f8f8f8;
+                    border-color: #ccc;}
+               }
+               .detailContent{
+                font: 400 12px/16px "瀹嬩綋";
+                color: #999;
+                padding-bottom: 2px;
+                .fontBlink{   
+                     color: #2875cc;
+                    }
+               }
             }
             // 登录按钮
             .login-btn {
