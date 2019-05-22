@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, ../../sass/reset/_reset.scss */
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
   margin: 0;
@@ -251,8 +252,9 @@ body {
   text-align: center;
   color: #999;
   padding-bottom: 30px;
+  background: #fff;
 }
-/* line 6, ../../sass/layout/_footer.scss */
+/* line 7, ../../sass/layout/_footer.scss */
 .footer .links {
   border-top: solid 1px #e6e6e6;
   width: 1200px;
@@ -260,10 +262,137 @@ body {
   padding-bottom: 15px;
   margin: 0 auto;
 }
-/* line 13, ../../sass/layout/_footer.scss */
+/* line 14, ../../sass/layout/_footer.scss */
 .footer a {
   color: #999;
   margin: 0 10px;
+}
+
+/* line 22, ../../sass/layout/_footer.scss */
+.detail.footer .wrap {
+  margin: 0 auto;
+  width: 1200px;
+}
+/* line 26, ../../sass/layout/_footer.scss */
+.detail.footer .ft_footer_service {
+  height: 67px;
+}
+/* line 29, ../../sass/layout/_footer.scss */
+.detail.footer .ft_footer_service {
+  padding: 30px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+/* line 34, ../../sass/layout/_footer.scss */
+.detail.footer .ft_footer_service a {
+  float: left;
+  display: block;
+  _display: inline;
+  width: 220px;
+  overflow: hidden;
+  margin: 0 51px;
+  margin-right: 105px;
+  margin-left: 0px;
+  cursor: default;
+}
+/* line 45, ../../sass/layout/_footer.scss */
+.detail.footer .ft_footer_service a:last-child {
+  margin-right: 0;
+}
+/* line 48, ../../sass/layout/_footer.scss */
+.detail.footer .ft_footer_service a img {
+  float: left;
+  display: block;
+  _display: inline;
+  width: 66px;
+  height: 66px;
+  margin-right: 15px;
+}
+/* line 57, ../../sass/layout/_footer.scss */
+.detail.footer .ft_footer_service a b {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  float: left;
+}
+/* line 65, ../../sass/layout/_footer.scss */
+.detail.footer .ft_footer_service a span {
+  font-size: 14px;
+  color: #999;
+  line-height: 26px;
+  float: left;
+}
+/* line 71, ../../sass/layout/_footer.scss */
+.detail.footer .ft_service_link {
+  padding: 20px 0 20px;
+  overflow: hidden;
+}
+/* line 75, ../../sass/layout/_footer.scss */
+.detail.footer .ft_help_list {
+  float: left;
+  padding-left: 15px;
+}
+/* line 79, ../../sass/layout/_footer.scss */
+.detail.footer .ft_code_wrap {
+  width: 280px;
+  overflow: hidden;
+  float: left;
+  margin-right: -50px;
+}
+/* line 85, ../../sass/layout/_footer.scss */
+.detail.footer .ft_service_link dl {
+  float: left;
+  display: block;
+  _display: inline;
+  width: 195px;
+  text-align: left;
+}
+/* line 92, ../../sass/layout/_footer.scss */
+.detail.footer .ft_service_link dl dt {
+  height: 32px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #666;
+  line-height: 32px;
+  overflow: hidden;
+  font-family: "Microsoft YaHei";
+  color: #666;
+  font-weight: bold;
+}
+/* line 103, ../../sass/layout/_footer.scss */
+.detail.footer .ft_service_link dl dd {
+  height: 24px;
+  padding: 0 8px;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 12px;
+}
+/* line 110, ../../sass/layout/_footer.scss */
+.detail.footer .ft_service_link dl dd a {
+  margin: 0;
+}
+/* line 114, ../../sass/layout/_footer.scss */
+.detail.footer .ft_code_wrap .ft_mobile_code {
+  float: left;
+  margin-right: 50px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+/* line 122, ../../sass/layout/_footer.scss */
+.detail.footer .ft_code_wrap .ft_mobile_code:last-child {
+  margin: 0;
+}
+/* line 125, ../../sass/layout/_footer.scss */
+.detail.footer .ft_code_wrap .ft_mobile_code a {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  background: red;
+  color: #fff;
 }
 
 /* line 5, ../../sass/page/signin.scss */
@@ -395,29 +524,8 @@ em {
   overflow: visible;
   height: 27px;
 }
-/* line 113, ../../sass/page/signin.scss */
-.login-wrap .login-form .login-box .form .item {
-  position: relative;
-  margin-bottom: 20px;
-  z-index: 1;
-}
-/* line 117, ../../sass/page/signin.scss */
-.login-wrap .login-form .login-box .form .item .login-label {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  width: 38px;
-  height: 38px;
-  border-right: 1px solid #bdbdbd;
-  background: url(../../images/signin/pwd-icons-new.png) no-repeat;
-}
-/* line 127, ../../sass/page/signin.scss */
-.login-wrap .login-form .login-box .form .item .name-label {
-  background-position: 0 0;
-}
-/* line 130, ../../sass/page/signin.scss */
-.login-wrap .login-form .login-box .form .item .itxt {
+/* line 112, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .itxt {
   line-height: 18px;
   height: 18px;
   border: 0;
@@ -428,13 +536,38 @@ em {
   font-size: 14px;
   *margin: -1px 0 0;
 }
-/* line 142, ../../sass/page/signin.scss */
+/* line 124, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form .item {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+/* line 128, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form .item .login-label {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border-right: 1px solid #bdbdbd;
+  background: url(../../images/signin/pwd-icons-new.png) no-repeat;
+}
+/* line 138, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form .item .name-label {
+  background-position: 0 0;
+}
+/* line 141, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form .item .pwd-label {
+  background-position: -48px 0;
+}
+/* line 146, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .item-fore1, .login-wrap .login-form .login-box .form .item-fore2 {
   border: 1px solid #bdbdbd;
   height: 38px;
   width: 304px;
 }
-/* line 146, ../../sass/page/signin.scss */
+/* line 150, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .item-fore1 .capslock, .login-wrap .login-form .login-box .form .item-fore1 .capslock, .login-wrap .login-form .login-box .form .item-fore2 .capslock, .login-wrap .login-form .login-box .form .item-fore2 .capslock {
   position: absolute;
   z-index: 4;
@@ -447,7 +580,7 @@ em {
   overflow: hidden;
   background: url(../../images/signin/capslock.png) no-repeat;
 }
-/* line 159, ../../sass/page/signin.scss */
+/* line 163, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .item-fore1 .clear-btn, .login-wrap .login-form .login-box .form .item-fore1 .clear-btn, .login-wrap .login-form .login-box .form .item-fore2 .clear-btn, .login-wrap .login-form .login-box .form .item-fore2 .clear-btn {
   position: absolute;
   z-index: 20;
@@ -459,32 +592,32 @@ em {
   cursor: pointer;
   display: inline;
 }
-/* line 171, ../../sass/page/signin.scss */
+/* line 175, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .item-fore1 {
   z-index: 6;
 }
-/* line 174, ../../sass/page/signin.scss */
+/* line 178, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .item-fore4 {
   *float: left;
   *margin-top: 15px;
 }
-/* line 178, ../../sass/page/signin.scss */
+/* line 182, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .item-fore5 {
   margin-bottom: 10px;
 }
-/* line 182, ../../sass/page/signin.scss */
+/* line 186, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .safe {
   position: relative;
   color: #666;
   *float: left;
   *width: 305px;
 }
-/* line 187, ../../sass/page/signin.scss */
+/* line 191, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .safe span {
   margin-right: 15px;
   *float: left;
 }
-/* line 191, ../../sass/page/signin.scss */
+/* line 195, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form .safe .forget-pw-safe {
   position: absolute;
   *float: right;
@@ -493,11 +626,52 @@ em {
   top: 0;
   margin: 0;
 }
-/* line 200, ../../sass/page/signin.scss */
+/* line 204, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .form label {
   float: none;
 }
-/* line 206, ../../sass/page/signin.scss */
+/* line 210, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form2 .itxt {
+  border: 1px solid #bdbdbd;
+  padding-left: 10px;
+  width: 294px;
+}
+/* line 216, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form2 .verifyCode .itxt {
+  width: 173px;
+}
+/* line 220, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form2 .check-phone {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 7px;
+  width: 108px;
+  height: 38px;
+  background: #F8F8F8;
+  border: 1px solid #ddd;
+  font: 400 12px/36px Simsun;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+}
+/* line 232, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form2 .check-phone span {
+  text-decoration: none;
+  color: #333;
+  background: #f8f8f8;
+  border-color: #ccc;
+}
+/* line 238, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form2 .detailContent {
+  font: 400 12px/16px "瀹嬩綋";
+  color: #999;
+  padding-bottom: 2px;
+}
+/* line 242, ../../sass/page/signin.scss */
+.login-wrap .login-form .login-box .form2 .detailContent .fontBlink {
+  color: #2875cc;
+}
+/* line 248, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .login-btn {
   border: 1px solid #cb2a2d;
   margin: 0 auto;
@@ -505,7 +679,7 @@ em {
   width: 99%;
   position: relative;
 }
-/* line 212, ../../sass/page/signin.scss */
+/* line 254, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .login-btn .btn-img {
   border: 1px solid #e85356;
   display: block;
@@ -517,17 +691,17 @@ em {
   font-size: 20px;
   font-family: 'Microsoft YaHei';
 }
-/* line 223, ../../sass/page/signin.scss */
+/* line 265, ../../sass/page/signin.scss */
 .login-wrap .login-form .login-box .login-btn a:hover {
   text-decoration: none;
 }
-/* line 227, ../../sass/page/signin.scss */
+/* line 269, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login {
   width: 306px;
   padding: 20px 18px 20px 20px;
   text-align: center;
 }
-/* line 234, ../../sass/page/signin.scss */
+/* line 276, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-error-2016 {
   display: none;
   font-size: 14px;
@@ -536,7 +710,7 @@ em {
   position: relative;
   z-index: 1;
 }
-/* line 241, ../../sass/page/signin.scss */
+/* line 283, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-error-2016 .qrcode-error-mask {
   display: block;
   position: absolute;
@@ -552,7 +726,7 @@ em {
   text-align: center;
   line-height: 100px;
 }
-/* line 256, ../../sass/page/signin.scss */
+/* line 298, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-error-2016 .err-cont {
   position: absolute;
   left: 0;
@@ -561,7 +735,7 @@ em {
   z-index: 19;
   font-weight: 700;
 }
-/* line 264, ../../sass/page/signin.scss */
+/* line 306, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-error-2016 .refresh-btn {
   display: block;
   background: #e4393c;
@@ -576,13 +750,13 @@ em {
   color: #fbfbfb;
   text-decoration: none;
 }
-/* line 280, ../../sass/page/signin.scss */
+/* line 322, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-main {
   position: relative;
   height: 168px;
   margin-top: 55px;
 }
-/* line 286, ../../sass/page/signin.scss */
+/* line 328, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-img {
   border: 1px solid #f4f4f4;
   padding: 8px;
@@ -590,12 +764,12 @@ em {
   position: absolute;
   left: 0;
 }
-/* line 292, ../../sass/page/signin.scss */
+/* line 334, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-img img {
   width: 147px;
   height: 147px;
 }
-/* line 297, ../../sass/page/signin.scss */
+/* line 339, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-help {
   position: absolute;
   right: -18px;
@@ -605,44 +779,44 @@ em {
   background: url(../../images/signin/phone-orange.png) no-repeat;
   z-index: 99;
 }
-/* line 307, ../../sass/page/signin.scss */
+/* line 349, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-panel {
   width: 257px;
   margin: 18px auto 14px;
   text-align: center;
 }
-/* line 311, ../../sass/page/signin.scss */
+/* line 353, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-panel ul {
   display: inline-block;
   display: block;
 }
-/* line 315, ../../sass/page/signin.scss */
+/* line 357, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-panel li {
   display: inline-block;
   *display: inline;
   padding: 0 0 0 5px;
   margin: 0 5px 0 0;
 }
-/* line 321, ../../sass/page/signin.scss */
+/* line 363, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-panel .fore1 {
   border: 0;
 }
-/* line 324, ../../sass/page/signin.scss */
+/* line 366, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-panel a {
   color: #333;
   text-decoration: none;
   margin-left: -3px;
   outline: #6d6d6d none 0px;
 }
-/* line 330, ../../sass/page/signin.scss */
+/* line 372, ../../sass/page/signin.scss */
 .login-wrap .login-form .qrcode-login .qrcode-panel .red {
   color: #e4393c;
 }
-/* line 333, ../../sass/page/signin.scss */
+/* line 375, ../../sass/page/signin.scss */
 .login-wrap .login-form .mc {
   overflow: visible;
 }
-/* line 337, ../../sass/page/signin.scss */
+/* line 379, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent {
   padding-left: 20px;
   padding-right: 20px;
@@ -651,12 +825,12 @@ em {
   height: auto;
   background-color: #fcfcfc;
 }
-/* line 344, ../../sass/page/signin.scss */
+/* line 386, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul {
   display: inline-block;
   display: block;
 }
-/* line 347, ../../sass/page/signin.scss */
+/* line 389, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul::after {
   content: ".";
   display: block;
@@ -664,33 +838,33 @@ em {
   clear: both;
   visibility: hidden;
 }
-/* line 354, ../../sass/page/signin.scss */
+/* line 396, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul li {
   float: left;
 }
-/* line 356, ../../sass/page/signin.scss */
+/* line 398, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul li .line {
   color: #ccc;
   padding: 0 10px;
 }
-/* line 361, ../../sass/page/signin.scss */
+/* line 403, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul li.extra-r {
   float: right;
 }
-/* line 364, ../../sass/page/signin.scss */
+/* line 406, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul em {
   padding-left: 32px;
   *display: inline-block;
   _display: inline;
 }
-/* line 369, ../../sass/page/signin.scss */
+/* line 411, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul a.pdl {
   display: inline-block;
   position: relative;
   padding-left: 24px;
   outline: #6d6d6d none 0px;
 }
-/* line 374, ../../sass/page/signin.scss */
+/* line 416, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul a.pdl b {
   width: 19px;
   height: 18px;
@@ -702,20 +876,20 @@ em {
   left: 0;
   top: 16px;
 }
-/* line 385, ../../sass/page/signin.scss */
+/* line 427, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul a.pdl b.QQ-icon {
   background-position: 0 0;
 }
-/* line 388, ../../sass/page/signin.scss */
+/* line 430, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent ul a.pdl b.weixin-icon {
   background-position: -20px 0;
 }
-/* line 393, ../../sass/page/signin.scss */
+/* line 435, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent .regist-link {
   color: #b61d1d;
   font-size: 14px;
 }
-/* line 396, ../../sass/page/signin.scss */
+/* line 438, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent .regist-link b {
   display: inline-block;
   *display: inline;
@@ -727,12 +901,12 @@ em {
   vertical-align: middle;
   margin-right: 5px;
 }
-/* line 407, ../../sass/page/signin.scss */
+/* line 449, ../../sass/page/signin.scss */
 .login-wrap .login-form .coagent .regist-link a {
   color: #b61d1d;
   outline: #6d6d6d none 0px;
 }
-/* line 414, ../../sass/page/signin.scss */
+/* line 456, ../../sass/page/signin.scss */
 .login-wrap .login-form .qr-coagent {
   background-color: #fff;
   font-family: "microsoft yahei";
@@ -742,13 +916,13 @@ em {
   line-height: 25px;
   margin-left: 40px;
 }
-/* line 422, ../../sass/page/signin.scss */
+/* line 464, ../../sass/page/signin.scss */
 .login-wrap .login-form .qr-coagent li {
   text-align: left;
   position: relative;
   margin-right: 18px;
 }
-/* line 426, ../../sass/page/signin.scss */
+/* line 468, ../../sass/page/signin.scss */
 .login-wrap .login-form .qr-coagent li b {
   width: 25px;
   height: 25px;
@@ -758,14 +932,14 @@ em {
   position: absolute;
   left: 0;
 }
-/* line 437, ../../sass/page/signin.scss */
+/* line 479, ../../sass/page/signin.scss */
 .login-wrap .login-form .msg-wrap {
   min-height: 23px;
   margin-top: 5px;
   margin-bottom: 5px;
   height: auto !important;
 }
-/* line 442, ../../sass/page/signin.scss */
+/* line 484, ../../sass/page/signin.scss */
 .login-wrap .login-form .msg-wrap .msg-error {
   position: relative;
   background: #ffebeb;
@@ -775,7 +949,7 @@ em {
   line-height: 15px;
   height: auto;
 }
-/* line 450, ../../sass/page/signin.scss */
+/* line 492, ../../sass/page/signin.scss */
 .login-wrap .login-form .msg-wrap .msg-error b {
   position: absolute;
   top: 50%;
@@ -787,7 +961,7 @@ em {
   overflow: hidden;
   background: url(../../images/signin/pwd-icons-new.png) -104px -49px no-repeat;
 }
-/* line 464, ../../sass/page/signin.scss */
+/* line 506, ../../sass/page/signin.scss */
 .login-wrap .login-banner {
   position: absolute;
   left: 0;
@@ -796,7 +970,7 @@ em {
   height: 475px;
   background: #4b1313;
 }
-/* line 472, ../../sass/page/signin.scss */
+/* line 514, ../../sass/page/signin.scss */
 .login-wrap .i-inner {
   position: relative;
   z-index: 3;

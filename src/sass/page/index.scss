@@ -34,7 +34,7 @@ body {
                 text-decoration: none;
 
                 &:hover {
-                    color: $redcolr;
+                    color: $red-5;
                 }
             }
 
@@ -231,7 +231,15 @@ body {
 
     .box-bottom {
         width: 100%;
-        height: 355px;
+        position: relative;
+
+        &.first {
+            height: 355px;
+        }
+
+        &.second {
+            height: 390px;
+        }
 
         .tab-header {
             height: 34px;
@@ -249,28 +257,33 @@ body {
                 text-decoration: none;
 
                 &:hover {
-                    color: $redcolr;
+                    color: $red-5;
                 }
             }
         }
 
         .tab-body {
-            >div{
-                border-bottom:ipx solid #f5f5f5;
+            position: relative;
+            height: 355px;
+
+            >div {
+                border-bottom: 1px solid $gray-3;
             }
-            .slider-list{
-                height:107px;
-                margin:0 20px;
+
+            .slider-list {
+                height: 107px;
+                margin: 0 20px;
             }
-            .slider-list
-            .slider-list-img {
+
+            .slider-list .slider-list-img {
                 float: left;
                 width: 80px;
                 height: 80px;
                 margin-top: 15px;
             }
-            .slider-list-num{
-                color:  $redcolr;
+
+            .slider-list-num {
+                color: $redcolr;
                 float: left;
                 width: 30px;
                 height: 40px;
@@ -280,7 +293,8 @@ body {
                 text-align: center;
                 font-family: 'impact', sans-serif;
             }
-            .slider-list-name{
+
+            .slider-list-name {
                 display: block;
                 margin-left: 125px;
                 padding-top: 40px;
@@ -289,11 +303,541 @@ body {
                 font-size: 12px;
                 overflow: hidden;
                 cursor: pointer;
-                &:hover{
-                    color:$redcolr;
+
+                &:hover {
+                    color: $red-5;
                 }
+            }
+
+        }
+
+        .slider_point {
+            width: 32px;
+            height: 16px;
+            position: absolute;
+            left: 188px;
+            bottom: 10px;
+
+            .point {
+                width: 16px;
+                height: 16px;
+                float: left;
+                background: url(../../images/index/point.png) no-repeat;
+            }
+
+            .current.point {
+                width: 16px;
+                height: 16px;
+                background: url(../../images/index/cpoint.png) no-repeat;
+            }
+
+        }
+
+        .slider-list.img1 {
+            width: 350px;
+            height: 128px;
+            background: $red-1;
+            margin: 0 auto 20px;
+        }
+
+        .slider-list.img2 {
+            width: 350px;
+            margin: 0 auto;
+
+            .imgbox {
+                height: 105px;
+            }
+
+            .imgbox span {
+                float: left;
+                width: 105px;
+                height: 105px;
+                background: $red-1;
+            }
+
+            .imgbox span.center {
+                margin: 0 17.5px;
+            }
+
+            h3 {
+                height: 58px;
+                line-height: 58px;
+                font-size: 18px;
+                text-align: center;
+                color: #222;
+            }
+
+            .subtit {
+                font-size: 14px;
+                height: 36px;
+                line-height: 18px;
+                margin: 0 auto 0;
+                text-align: center;
+                overflow: hidden;
+                color: #666;
+            }
+        }
+
+        .slider-list.img3 {
+            width: 350px;
+            height: 101px;
+            background: $red-1;
+            margin: 0 auto 20px;
+
+            &>div {
+                float: left;
+            }
+
+            >span {
+                float: left;
+                margin: 6px 0 0 10px;
+                width: 70px;
+                height: 70px;
+                padding: 10px;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                -webkit-transition: opacity ease 0.2s;
+                -o-transition: opacity ease 0.2s;
+                -moz-transition: opacity ease 0.2s;
+                transition: opacity ease 0.2s;
+                background: #fff;
+                transition: opacity ease 0.2s;
+            }
+
+            .mod_price {
+                font-size: 14px;
+                color: #e33333;
+                font-family: 'impact', sans-serif;
+                display: block;
+                height: 38px;
+                line-height: 38px;
+
+                a {
+                    margin-right: 3px;
+                    font-family: arial, sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+
+                span {
+                    font-size: 34px;
+                }
+            }
+
+            .coupon_limit {
+                color: #b1b3b0;
+                font-size: 14px;
+                line-height: 24px;
+                height: 24px;
+                overflow: hidden;
+                white-space: nowrap;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                cursor: pointer;
+            }
+
+            .coupon_desc {
+                cursor: pointer;
+                color: #767b77;
+                font-size: 14px;
+                line-height: 24px;
+                height: 24px;
+                overflow: hidden;
+                white-space: nowrap;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .coupon_info {
+                padding-top: 10px;
+                margin: 0 63px 0 12px;
+            }
+
+            .coupon_more_inner {
+                width: 1px;
+                line-height: 15px;
+                vertical-align: middle;
+                margin-top: 7px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $red-5;
+                }
+            }
+
+            .coupon_more {
+                float: right;
+                height: 100%;
+                line-height: 118px;
+                margin-right: 34px;
+                font-size: 12px;
             }
         }
     }
 
+}
+
+.content.list3 {
+    height: 425px;
+    background: #fff;
+
+    .box {
+        float: left;
+        width: 1029px;
+        height: 100%;
+    }
+
+    .box.right {
+        position: relative;
+        float: right;
+        width: 170px;
+        border-left: 1px solid $gray-3;
+        height: 100%;
+        position: relative;
+
+        &>img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 85px;
+
+        }
+
+        p {
+            margin-left: 20.5px;
+            font-size: 14px;
+            color: #999;
+            margin-top: 7px;
+            width: 130px;
+            height: 21px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .qua_top_font {
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .qua_top_slideCon {
+            height: 317px;
+            width: 90px;
+            margin: 0 auto;
+        }
+
+        .qua_top_imgCon {
+            width: 90px;
+            height: 90px;
+            position: relative;
+            background-color: #fff;
+            -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+            -moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+            box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+            margin-bottom: 11px;
+            cursor: pointer;
+
+            img {
+                width: 90px;
+            }
+        }
+
+        .qua_top_imgCon .qua_imgCon_font {
+            position: absolute;
+            background: url(../../images/index/top1.png) no-repeat;
+            font-size: 12px;
+            color: #fff;
+            width: 40px;
+            height: 16px;
+            text-align: center;
+            font-family: Tahoma;
+            font-weight: bold;
+        }
+
+        .qua_top_slideCon_ul {
+            margin-top: 13px;
+        }
+
+        .qua_left,
+        .qua_right {
+            background-color: #ebebeb !important;
+            color: #fff;
+            border-radius: 5px;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            background: #ebebeb;
+            color: #fff;
+            bottom: 20px;
+            text-align: center;
+            line-height: 16px;
+            background: #d5d5d5;
+            cursor: pointer;
+        }
+
+        .qua_left {
+            left: 60px;
+        }
+
+        .qua_right {
+            left: 94px;
+        }
+
+
+    }
+    .qua_tit {
+        height: 67px;
+        display: block;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .qua_tit_spanFirst {
+        height: 35px;
+        margin-left: 20px;
+        line-height: 35px;
+        font-size: 26px;
+        color: #92a700;
+        display: inline-block;
+        cursor: pointer;
+        max-width: 190px;
+        overflow: hidden;
+    }
+
+    .qua_tit_spanLast {
+        margin-left: 8px;
+        font-size: 16px;
+        color: #b6c166;
+        color: rgba(133, 152, 0, 0.7);
+        margin-top: 27px;
+        height: 21px;
+        cursor: pointer;
+        display: inline-block;
+        max-width: 208px;
+        overflow: hidden;
+        position: relative;
+        top: -3px;
+    }
+    .box.left {
+        
+
+        .qua_nav{
+            height: 30px;
+            position: absolute;
+            left: 300px;
+            top: 25px;
+            font-size:13px;
+            li{
+                padding:0 12px;
+                float:left;
+                color:#999;
+            }
+           
+        }
+        .que_more{
+            position: absolute;
+            right: 10px;
+            top: 25px;
+            color:#999;
+        }
+
+
+        .qua_show_con {
+            position: relative;
+            padding-left:20px;
+            >img {
+                width: 189px;
+                height: 334px;
+                    float:left;
+            }
+        }
+
+        .qua_left_font_con {
+
+            font-size: 14px;
+            color: #fff;
+            position: absolute;
+            width: 176px;
+            height: 90px;
+            margin-left: 14px;
+            top: 16px;
+        }
+
+        .qua_left_f_con_font {
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.61) !important;
+            width: 74px;
+            height: 23px;
+            text-align: center;
+            line-height: 23px;
+            float: left;
+            margin-right: 9px;
+            margin-bottom: 9px;
+            cursor: pointer;
+            color: #fff;
+            overflow: hidden;
+        }
+        .qua_show_con_right {
+            width: 800px;
+            height: 334px;
+            float: left;
+        }
+        .import_snacks div {
+            margin-left: 30px;
+            font-size: 14px;
+        }
+        .import_snacks {
+            width: 400px;
+            height: 167px;
+            position: relative;
+            float: left;
+            background-color: #faf7f6;
+            text-decoration: none;
+        }
+        .import_tit {
+            margin-top: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            width: 150px;
+            margin-left: 30px;
+            font-size: 14px;
+            color: #3c8020 ;
+        }
+        .voucher_tit {
+            margin-top: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            width: 150px;
+            color: #69b14b ;
+            margin-left: 30px;
+            font-size: 14px;
+        }
+        .buy_btn {
+          
+            width: 78px;
+            height: 27px;
+            text-align: center;
+            line-height: 27px;
+            margin-top: 15px;
+            cursor: pointer;
+            overflow: hidden;
+            border: 1px solid rgba(114,191,37,0.50);
+            color: #72BF25;
+        }
+        .bursting {
+            float: left;
+            position: relative;
+            width: 199px;
+            height: 167px;
+            cursor: pointer;
+            border-right: 1px solid #f6f6f6;
+        }
+        .bursting p {
+            margin-left: 15px;
+            font-size: 14px;
+            color: #666;
+            margin-top: -1px;
+            overflow: hidden;
+            height: 14px;
+            width: 102px;
+            line-height: 1;
+            margin-bottom: 7px;
+            color: #666 !important;
+            margin-top: 15px !important;
+        }
+        .eat_money {
+            font-weight: Bold;
+            font-size: 14px;
+            color: #2a2a2a;
+            margin-left: 13px !important;
+            font-family: Tahoma,"Microsoft YaHei";
+        }
+        .bursting img {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            bottom: 10px;
+            right: 10px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        .import_snacks img {
+            position: absolute;
+            right: 30px;
+            bottom: 27px;
+            cursor: pointer;
+            width: 110px;
+            height: 110px;
+        }
+
+    }
+    .title2{
+        color:#7d75c8!important;
+        height:60px;
+        line-height:60px;
+    }
+    .loves{
+        width:1160px;
+        padding:0 20px;
+        height:100%;
+        li{
+            float:left;
+            width:244px;
+            margin-right:60px;
+            img{
+                width:244px;
+            }
+            
+        }
+        li:last-child{
+            margin-right:0px;
+        }
+        .imgdetail{
+            text-align: center;
+            padding:0 40px;
+            margin-top:5px;
+            p{
+                color:#000;
+                font-weight:bold;
+            }
+            .price{
+                font-weight: normal;
+                color:$red-6;
+                border-bottoM:$form-border;
+                padding-bottom:5px;
+                margin-bottom:5px;
+                span{
+                    color:$gray-7;
+                    text-decoration:line-through;
+                }
+            }
+            .detail{
+                color:$gray-7;
+            }
+        }
+        .xianshi{
+            font-size:12px;
+            background:$red-6;
+            padding:1px 3px;
+            display: block;
+            width:50px;
+            color:#fff;
+            text-align: center;
+            margin:0 auto;
+        }
+        
+    }
 }
