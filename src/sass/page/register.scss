@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../layout/header";
+@import "../layout/footer";
+@import "../layout/form";
+
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+
+// 进度条
+.progress-bar {
+    position: relative;
+    margin: 80px auto 0;
+    width: 400px;
+    display: flex;
+    height:52px;
+    overflow: hidden;
+    .pro-step {
+        position: absolute;
+        text-align: center;
+    }
+    .pro-line,.pro-step .step-index{
+        background: url(../../images/register/reg-icon.png) no-repeat;
+    }
+    .pro-line {
+        position: absolute;
+        top: 7px;
+        width: 74px;
+        height: 10px;
+        background-position: 0 -40px;
+    }
+    .pro-step {
+        .step-index {
+            margin: 0 auto;
+            display: block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            background-position: -45px -200px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #ccc;
+        }
+        .step-desc {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #999;
+        }
+    }
+    
+    .cur-step{
+        .step-index {
+            background-position: 1px -200px;
+            color: #fff;
+        }
+        .step-desc {
+            color: #3b4;
+        }
+    }
+    .done-step {
+        .step-index {
+            background-position: 0 0px;
+            color: transparent;
+        }
+        .step-desc{
+            color: #3b4;
+        }
+    }
+    
+}
+.pro-step2{
+    left:105px;
+}
+.pro-step3{
+    left:215px;
+}
+.pro-step4{
+    right:10px;
+}
+.pro-line1{
+    left: 50px;
+}
+.pro-line2{
+    left: 160px;
+}
+.pro-line3{
+    left: 270px;
+}
+
+
+/* main */
+.main {
+    margin: 50px auto 186px;
+    width: 400px;
+}
+
+.reg-other {
+    margin-top: 28px;
+    a{
+        color: #333;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #c81623;
+    }
+    .reg-ohter-icon {
+        display: inline-block;
+        margin: 0 8px 2px 0;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        background-position: 0 -160px;
+    }
+    .reg-other-inter{
+        float:right;
+        .reg-ohter-icon {
+            background-position: -40px -160px;
+        }
+    }
+    .reg-other-person{
+        float:left;
+    }
+    
+}
+
+.input-tip,.agree-tip{
+    color:#c5c5c5;
+}
+.input-tip {
+    color: #c5c5c5;
+    height: 27px;
+    font-size: 12px;
+    padding-top: 5px;
+    clear: both;
+    span i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: text-top;
+        margin-right: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

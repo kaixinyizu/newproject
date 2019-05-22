@@ -1,0 +1,117 @@
+body{
+    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+    background: #fff;
+}
+
+//icon
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+//注册+登陆头部
+.header{
+    height:100px;
+    background:#fff;
+    box-shadow: 0 0 10px #b4b4b4; 
+    line-height:100px;
+    overflow: hidden;
+    .logoheader{
+        width:1200px;
+        margin:0 auto;
+        height:100px;
+        .logoleft{
+            float:left;
+            img{
+                margin-top:25px;
+            }
+            .logo{
+                float:left;
+            }
+            .logo-title{
+                font-size:24px;
+                margin-left:36px;
+                float:left;
+            }
+        }
+    }
+    .w {
+        width: 990px;
+        margin: 0 auto;
+    }
+    .have-account{
+        font-size: 16px;
+        color: #999;
+        float:right;
+        a{
+            color: #e22
+        }
+    }
+    // 登录界面 调查问卷链接
+    .q-link {
+        position: relative;
+        color: #999;
+        float: right;
+        top: 30px;
+        b {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            width: 18px;
+            height: 14px;
+            margin: 0 5px;
+            background: url(../../images/header/q-icon.png) no-repeat;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+    }
+   
+}
+//首页头部
+.detail.header{
+    box-shadow: none;
+    .header_right{
+        width:800px;
+        float:right;
+    }
+}
+
+//首页导航
+.header-content{
+    background:#fff;
+}
+.header_nav{
+    width:1200px;
+    margin:0 auto;
+    height:38px;
+    line-height:38px;
+    >div{
+        float:left;
+    }
+    .header_nav_left_title{
+        width:190px;
+        background:$redcolr;
+        color:#fff;
+        height:38px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+.nav-list{
+    li{
+        float:left;
+        padding:0 15px;
+        font-size: 16px;
+        overflow: hidden;
+        height: 100%;
+        a{
+            color: #333;
+        }
+    }
+}

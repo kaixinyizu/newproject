@@ -1,0 +1,613 @@
+/* line 1, ../../sass/reset/_reset.scss */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* line 2, ../../sass/reset/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+/* line 3, ../../sass/reset/_reset.scss */
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+/* line 4, ../../sass/reset/_reset.scss */
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+
+/* line 6, ../../sass/reset/_reset.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 7, ../../sass/reset/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 8, ../../sass/reset/_reset.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 9, ../../sass/reset/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 10, ../../sass/reset/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 11, ../../sass/reset/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* line 12, ../../sass/reset/_reset.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 13, ../../sass/reset/_reset.scss */
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+/* line 14, ../../sass/reset/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 16, ../../sass/reset/_reset.scss */
+input[type="hidden" i], input[type="image" i], input[type="file" i] {
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+
+/* line 24, ../../sass/reset/_reset.scss */
+input[type="hidden" i] {
+  display: none;
+}
+
+/* line 27, ../../sass/reset/_reset.scss */
+.form input[type=password] {
+  font-family: Tahoma,Helvetica,Arial;
+}
+
+/* line 31, ../../sass/reset/_reset.scss */
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+/* line 44, ../../sass/reset/_reset.scss */
+.btn-img, .button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 1, ../../sass/layout/_header.scss */
+body {
+  font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #666;
+  background: #fff;
+}
+
+/* line 9, ../../sass/layout/_header.scss */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* line 17, ../../sass/layout/_header.scss */
+.header {
+  height: 100px;
+  background: #fff;
+  box-shadow: 0 0 10px #b4b4b4;
+  line-height: 100px;
+  overflow: hidden;
+}
+/* line 23, ../../sass/layout/_header.scss */
+.header .logoheader {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+/* line 27, ../../sass/layout/_header.scss */
+.header .logoheader .logoleft {
+  float: left;
+}
+/* line 29, ../../sass/layout/_header.scss */
+.header .logoheader .logoleft img {
+  margin-top: 25px;
+}
+/* line 32, ../../sass/layout/_header.scss */
+.header .logoheader .logoleft .logo {
+  float: left;
+}
+/* line 35, ../../sass/layout/_header.scss */
+.header .logoheader .logoleft .logo-title {
+  font-size: 24px;
+  margin-left: 36px;
+  float: left;
+}
+/* line 42, ../../sass/layout/_header.scss */
+.header .w {
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 46, ../../sass/layout/_header.scss */
+.header .have-account {
+  font-size: 16px;
+  color: #999;
+  float: right;
+}
+/* line 50, ../../sass/layout/_header.scss */
+.header .have-account a {
+  color: #e22;
+}
+/* line 55, ../../sass/layout/_header.scss */
+.header .q-link {
+  position: relative;
+  color: #999;
+  float: right;
+  top: 30px;
+}
+/* line 60, ../../sass/layout/_header.scss */
+.header .q-link b {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 18px;
+  height: 14px;
+  margin: 0 5px;
+  background: url(../../images/header/q-icon.png) no-repeat;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 75, ../../sass/layout/_header.scss */
+.detail.header {
+  box-shadow: none;
+}
+/* line 77, ../../sass/layout/_header.scss */
+.detail.header .header_right {
+  width: 800px;
+  float: right;
+}
+
+/* line 84, ../../sass/layout/_header.scss */
+.header-content {
+  background: #fff;
+}
+
+/* line 87, ../../sass/layout/_header.scss */
+.header_nav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 38px;
+  line-height: 38px;
+}
+/* line 92, ../../sass/layout/_header.scss */
+.header_nav > div {
+  float: left;
+}
+/* line 95, ../../sass/layout/_header.scss */
+.header_nav .header_nav_left_title {
+  width: 190px;
+  background: #ff4040;
+  color: #fff;
+  height: 38px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 107, ../../sass/layout/_header.scss */
+.nav-list li {
+  float: left;
+  padding: 0 15px;
+  font-size: 16px;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 113, ../../sass/layout/_header.scss */
+.nav-list li a {
+  color: #333;
+}
+
+/* line 1, ../../sass/layout/_footer.scss */
+.footer {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  padding-bottom: 30px;
+}
+/* line 6, ../../sass/layout/_footer.scss */
+.footer .links {
+  border-top: solid 1px #e6e6e6;
+  width: 1200px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+/* line 13, ../../sass/layout/_footer.scss */
+.footer a {
+  color: #999;
+  margin: 0 10px;
+}
+
+/* line 1, ../../sass/layout/_form.scss */
+.form-item {
+  position: relative;
+  border: solid 1px #d9d9d9;
+  width: 398px;
+  height: 52px;
+  z-index: 0;
+}
+/* line 7, ../../sass/layout/_form.scss */
+.form-item:hover {
+  border-color: #999 !important;
+}
+/* line 9, ../../sass/layout/_form.scss */
+.form-item:hover .select-country, .form-item:hover .item-input-wrap {
+  border-color: #999 !important;
+}
+/* line 13, ../../sass/layout/_form.scss */
+.form-item label {
+  float: left;
+  width: 87px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+/* line 20, ../../sass/layout/_form.scss */
+.form-item .item-input-wrap {
+  float: left;
+  width: 288px;
+  height: 50px;
+  border: solid 1px #ddd;
+}
+/* line 26, ../../sass/layout/_form.scss */
+.form-item .field {
+  border: 0 none;
+  font-size: 14px;
+  width: 200px;
+  height: 19px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+/* line 36, ../../sass/layout/_form.scss */
+.item-phone-wrap {
+  height: 86px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 41, ../../sass/layout/_form.scss */
+.item-phonecode-wrap {
+  display: none;
+  height: 86px;
+}
+
+/* line 46, ../../sass/layout/_form.scss */
+.form-item-phone {
+  border: none;
+}
+/* line 48, ../../sass/layout/_form.scss */
+.form-item-phone .select-country {
+  border: solid 1px #d9d9d9;
+  border-right: none;
+  padding: 0 0 0 20px;
+  color: #666;
+}
+
+/* line 56, ../../sass/layout/_form.scss */
+.form-agreen .agree-tip i, .form-agreen .sim-checkbox, .form-item .i-cancel, .reg-other .reg-ohter-icon {
+  background: url(../../images/form/reg-icon.png) no-repeat;
+}
+
+/* line 60, ../../sass/layout/_form.scss */
+txt {
+  position: absolute;
+  z-index: 2;
+  line-height: 46px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #cccccc;
+  display: inline;
+}
+
+/* line 71, ../../sass/layout/_form.scss */
+.form-item-getcode {
+  line-height: 52px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+}
+/* line 78, ../../sass/layout/_form.scss */
+.form-item-getcode:hover {
+  border-color: #666;
+  cursor: pointer;
+}
+
+/* line 83, ../../sass/layout/_form.scss */
+.form-agreen {
+  position: relative;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 12px;
+  word-wrap: break-word;
+  white-space: nowrap;
+  margin-top: 30px;
+}
+/* line 91, ../../sass/layout/_form.scss */
+.form-agreen .sim-checkbox {
+  background-position: -107px -156px;
+  float: left;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  border: solid 1px #d9d9d9;
+}
+/* line 99, ../../sass/layout/_form.scss */
+.form-agreen .sim-checkbox.not-checked {
+  background: 0 0;
+}
+/* line 102, ../../sass/layout/_form.scss */
+.form-agreen input {
+  position: absolute;
+  left: 0;
+  display: none;
+  outline: none;
+  outline: none;
+}
+
+/* line 111, ../../sass/layout/_form.scss */
+.form-item .field::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+/* line 119, ../../sass/layout/_form.scss */
+.i-status, .i-company, .i-def, .i-error, .i-error1, .i-global, .i-info, .i-pwd-medium, .i-pwd-strong, .i-pwd-weak, .i-suc, .voiceVerifyDialog .ico {
+  background: url(../../images/form/icon.png) no-repeat;
+}
+
+/* line 122, ../../sass/layout/_form.scss */
+.i-error {
+  background-position: 0 -100px;
+}
+
+/* line 125, ../../sass/layout/_form.scss */
+.i-cancel {
+  background-position: -80px -160px !important;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 22px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 134, ../../sass/layout/_form.scss */
+.i-status {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 20px;
+  right: 20px;
+  background-position: 0 -117px;
+}
+
+/* line 144, ../../sass/layout/_form.scss */
+.btn-register {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  color: #fff;
+  background: #e2231a;
+  border: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei","Hiragino Sans GB";
+  cursor: pointer;
+}
+
+/* line 8, ../../sass/page/register.scss */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 14, ../../sass/page/register.scss */
+.progress-bar {
+  position: relative;
+  margin: 80px auto 0;
+  width: 400px;
+  display: flex;
+  height: 52px;
+  overflow: hidden;
+}
+/* line 21, ../../sass/page/register.scss */
+.progress-bar .pro-step {
+  position: absolute;
+  text-align: center;
+}
+/* line 25, ../../sass/page/register.scss */
+.progress-bar .pro-line, .progress-bar .pro-step .step-index {
+  background: url(../../images/register/reg-icon.png) no-repeat;
+}
+/* line 28, ../../sass/page/register.scss */
+.progress-bar .pro-line {
+  position: absolute;
+  top: 7px;
+  width: 74px;
+  height: 10px;
+  background-position: 0 -40px;
+}
+/* line 36, ../../sass/page/register.scss */
+.progress-bar .pro-step .step-index {
+  margin: 0 auto;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-position: -45px -200px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+}
+/* line 47, ../../sass/page/register.scss */
+.progress-bar .pro-step .step-desc {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+/* line 55, ../../sass/page/register.scss */
+.progress-bar .cur-step .step-index {
+  background-position: 1px -200px;
+  color: #fff;
+}
+/* line 59, ../../sass/page/register.scss */
+.progress-bar .cur-step .step-desc {
+  color: #3b4;
+}
+/* line 64, ../../sass/page/register.scss */
+.progress-bar .done-step .step-index {
+  background-position: 0 0px;
+  color: transparent;
+}
+/* line 68, ../../sass/page/register.scss */
+.progress-bar .done-step .step-desc {
+  color: #3b4;
+}
+
+/* line 74, ../../sass/page/register.scss */
+.pro-step2 {
+  left: 105px;
+}
+
+/* line 77, ../../sass/page/register.scss */
+.pro-step3 {
+  left: 215px;
+}
+
+/* line 80, ../../sass/page/register.scss */
+.pro-step4 {
+  right: 10px;
+}
+
+/* line 83, ../../sass/page/register.scss */
+.pro-line1 {
+  left: 50px;
+}
+
+/* line 86, ../../sass/page/register.scss */
+.pro-line2 {
+  left: 160px;
+}
+
+/* line 89, ../../sass/page/register.scss */
+.pro-line3 {
+  left: 270px;
+}
+
+/* main */
+/* line 95, ../../sass/page/register.scss */
+.main {
+  margin: 50px auto 186px;
+  width: 400px;
+}
+
+/* line 100, ../../sass/page/register.scss */
+.reg-other {
+  margin-top: 28px;
+}
+/* line 102, ../../sass/page/register.scss */
+.reg-other a {
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 107, ../../sass/page/register.scss */
+.reg-other a:hover {
+  color: #c81623;
+}
+/* line 110, ../../sass/page/register.scss */
+.reg-other .reg-ohter-icon {
+  display: inline-block;
+  margin: 0 8px 2px 0;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  background-position: 0 -160px;
+}
+/* line 118, ../../sass/page/register.scss */
+.reg-other .reg-other-inter {
+  float: right;
+}
+/* line 120, ../../sass/page/register.scss */
+.reg-other .reg-other-inter .reg-ohter-icon {
+  background-position: -40px -160px;
+}
+/* line 124, ../../sass/page/register.scss */
+.reg-other .reg-other-person {
+  float: left;
+}
+
+/* line 130, ../../sass/page/register.scss */
+.input-tip, .agree-tip {
+  color: #c5c5c5;
+}
+
+/* line 133, ../../sass/page/register.scss */
+.input-tip {
+  color: #c5c5c5;
+  height: 27px;
+  font-size: 12px;
+  padding-top: 5px;
+  clear: both;
+}
+/* line 139, ../../sass/page/register.scss */
+.input-tip span i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  margin-right: 8px;
+}

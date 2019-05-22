@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册</title>
+  <link type="text/css" rel="stylesheet" href="../css/page/register.css">
+  <link />
+</head>
+
+<body>
+  <div class="header">
+    <div class="logoheader">
+      <div class="logoleft">
+        <a href="#" class="logo "><img src="../images/header/logo.jpg" /> </a>
+        <div class="logo-title">企业注册</div>
+      </div>
+      <div class="have-account">
+        <div>已有账号？ <a href="#">请登录&gt;</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="progress-bar clearfix">
+      <div class="pro-step done-step ">
+        <span class="step-index">1</span>
+        <p class="step-desc">验证手机号</p>
+      </div>
+      <div class="pro-line pro-line1"></div>
+      <div class="pro-step pro-step2  cur-step ">
+        <span class="step-index">2</span>
+        <p class="step-desc">填写账号信息</p>
+      </div>
+      <div class="pro-line pro-line2"></div>
+      <div class="pro-step pro-step3">
+        <span class="step-index">3</span>
+        <p class="step-desc">填写公司信息</p>
+      </div>
+      <div class="pro-line pro-line3"></div>
+      <div class="pro-step pro-step4">
+        <span class="step-index">4</span>
+        <p class="step-desc">注册成功</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="reg-form">
+        <form method="POST" novalidate="novalidate">
+          <div class="step1-wrap">
+            <div class="item-phone-wrap">
+              <div class="form-item form-item-phone form-item-valid ">
+                <label class="select-country">中国 +86</label>
+                <div class="item-input-wrap">
+                  <input type="text"  maxlength="11" name="phone" class="field" placeholder=" 请填写常用手机号" autocomplete="off" >
+                  <i class="i-status"></i>
+                  <i class="i-cancel" style="display: none"></i>
+                </div>
+                <div class="input-tip">
+                    <span><i class="i-error"></i>请填写手机号</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-getcode-wrap">
+              <div class="form-item form-item-getcode">
+                点击按钮进行验证
+                <div class="JDValidate-wrap"></div>
+              </div>
+              <div class="input-tip">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="form-agreen">
+                <div>
+                  <input type="checkbox" name="agreen">
+                  <div class="sim-checkbox not-checked"></div>我已阅读并同意<a href="#" target="_blank">《京东企业用户注册协议》</a>
+                </div>
+                <div class="agree-tip">
+                  <i></i>请先阅读并同意相关协议~
+                </div>
+              </div>
+
+            <div class="btn-register">下一步</div>
+          </div>
+          <div class="step2-wrap" style="display: none;">
+            <div class="form-item form-item-account" >
+              <label>用　户　名</label>
+              <input type="text" name="regName" class="field" autocomplete="off" maxlength="20"
+                placeholder="您的账户名和登录名">
+              <i class="i-cancel"></i>
+            </div>
+            <div class="input-tip">
+              <span></span>
+            </div>
+            <div class="form-item">
+              <label>设 置 密 码</label>
+              <input autocomplete="off" type="password" name="pwd"  class="field" maxlength="20"
+                placeholder="建议使用两种或两种以上字符组合" >
+              <i class="i-cancel"></i>
+            </div>
+            <div class="input-tip">
+              <span></span>
+            </div>
+            <div class="form-item">
+              <label>确 认 密 码</label>
+              <input type="password" name="pwdRepeat" class="field" placeholder="请再次输入密码">
+              <i class="i-cancel"></i>
+            </div>
+            <div class="input-tip">
+              <span></span>
+            </div>
+
+            <div><button class="btn-register" ]
+                clstag="pageclick|keycount|reg_buser_201803131|11">下一步</button></div>
+            <div class="input-tip">
+              <span></span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="reg-other clearfix">
+        <a href="#" target="_blank" class="reg-other-item reg-other-person">
+          <i class="reg-ohter-icon"></i>个人用户注册
+        </a>
+        <a href="#" target="_blank" class="reg-other-item reg-other-inter">
+          <i class="reg-ohter-icon"></i>海外用户注册
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="links">
+      <a rel="nofollow" target="_blank" href="#"> 关于我们</a>|
+      <a rel="nofollow" target="_blank" href="#">联系我们</a>|
+      <a rel="nofollow" target="_blank" href="#">人才招聘</a>|
+      <a rel="nofollow" target="_blank" href="#">商家入驻</a>|
+      <a rel="no  follow" target="_blank" href="#">广告服务</a>|
+      <a rel="nofollow" target="_blank" href="#">手机京东</a>|
+      <a target="_blank" href="#">友情链接</a>|
+      <a target="_blank" href="#">销售联盟</a>|
+      <a href="#" target="_blank">京东社区</a>|
+      <a href="#" target="_blank">京东公益</a>|
+      <a target="_blank" href="#">English Site</a>
+    </div>
+    <div class="copyright">
+      Copyright&copy;2004-2019&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+    </div>
+  </div>
+</body>
+
+</html>
