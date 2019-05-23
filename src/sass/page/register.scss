@@ -5,9 +5,9 @@
 @import "../layout/footer";
 @import "../layout/form";
 
-.container{
-    width:1200px;
-    margin:0 auto;
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 // 进度条
@@ -16,15 +16,19 @@
     margin: 80px auto 0;
     width: 400px;
     display: flex;
-    height:52px;
+    height: 52px;
     overflow: hidden;
+
     .pro-step {
         position: absolute;
         text-align: center;
     }
-    .pro-line,.pro-step .step-index{
+
+    .pro-line,
+    .pro-step .step-index {
         background: url(../../images/register/reg-icon.png) no-repeat;
     }
+
     .pro-line {
         position: absolute;
         top: 7px;
@@ -32,6 +36,7 @@
         height: 10px;
         background-position: 0 -40px;
     }
+
     .pro-step {
         .step-index {
             margin: 0 auto;
@@ -44,49 +49,59 @@
             font-weight: 700;
             color: #ccc;
         }
+
         .step-desc {
             margin-top: 10px;
             font-size: 12px;
             color: #999;
         }
     }
-    
-    .cur-step{
+
+    .cur-step {
         .step-index {
             background-position: 1px -200px;
             color: #fff;
         }
+
         .step-desc {
             color: #3b4;
         }
     }
+
     .done-step {
         .step-index {
             background-position: 0 0px;
             color: transparent;
         }
-        .step-desc{
+
+        .step-desc {
             color: #3b4;
         }
     }
-    
+
 }
-.pro-step2{
-    left:105px;
+
+.pro-step2 {
+    left: 105px;
 }
-.pro-step3{
-    left:215px;
+
+.pro-step3 {
+    left: 215px;
 }
-.pro-step4{
-    right:10px;
+
+.pro-step4 {
+    right: 10px;
 }
-.pro-line1{
+
+.pro-line1 {
     left: 50px;
 }
-.pro-line2{
+
+.pro-line2 {
     left: 160px;
 }
-.pro-line3{
+
+.pro-line3 {
     left: 270px;
 }
 
@@ -99,14 +114,17 @@
 
 .reg-other {
     margin-top: 28px;
-    a{
+
+    a {
         color: #333;
         cursor: pointer;
         text-decoration: none;
     }
+
     a:hover {
-        color: #c81623;
+        color: $red-5;
     }
+
     .reg-ohter-icon {
         display: inline-block;
         margin: 0 8px 2px 0;
@@ -115,27 +133,33 @@
         height: 26px;
         background-position: 0 -160px;
     }
-    .reg-other-inter{
-        float:right;
+
+    .reg-other-inter {
+        float: right;
+
         .reg-ohter-icon {
             background-position: -40px -160px;
         }
     }
-    .reg-other-person{
-        float:left;
+
+    .reg-other-person {
+        float: left;
     }
-    
+
 }
 
-.input-tip,.agree-tip{
-    color:#c5c5c5;
+.input-tip,
+.agree-tip {
+    color: #c5c5c5;
 }
+
 .input-tip {
     color: #c5c5c5;
     height: 27px;
     font-size: 12px;
     padding-top: 5px;
     clear: both;
+
     span i {
         display: inline-block;
         width: 16px;
@@ -144,18 +168,3 @@
         margin-right: 8px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -591,16 +591,17 @@ txt {
   height: 52px;
   overflow: hidden;
 }
-/* line 21, ../../sass/page/register.scss */
+/* line 22, ../../sass/page/register.scss */
 .progress-bar .pro-step {
   position: absolute;
   text-align: center;
 }
-/* line 25, ../../sass/page/register.scss */
-.progress-bar .pro-line, .progress-bar .pro-step .step-index {
+/* line 27, ../../sass/page/register.scss */
+.progress-bar .pro-line,
+.progress-bar .pro-step .step-index {
   background: url(../../images/register/reg-icon.png) no-repeat;
 }
-/* line 28, ../../sass/page/register.scss */
+/* line 32, ../../sass/page/register.scss */
 .progress-bar .pro-line {
   position: absolute;
   top: 7px;
@@ -608,7 +609,7 @@ txt {
   height: 10px;
   background-position: 0 -40px;
 }
-/* line 36, ../../sass/page/register.scss */
+/* line 41, ../../sass/page/register.scss */
 .progress-bar .pro-step .step-index {
   margin: 0 auto;
   display: block;
@@ -620,83 +621,83 @@ txt {
   font-weight: 700;
   color: #ccc;
 }
-/* line 47, ../../sass/page/register.scss */
+/* line 53, ../../sass/page/register.scss */
 .progress-bar .pro-step .step-desc {
   margin-top: 10px;
   font-size: 12px;
   color: #999;
 }
-/* line 55, ../../sass/page/register.scss */
+/* line 61, ../../sass/page/register.scss */
 .progress-bar .cur-step .step-index {
   background-position: 1px -200px;
   color: #fff;
 }
-/* line 59, ../../sass/page/register.scss */
+/* line 66, ../../sass/page/register.scss */
 .progress-bar .cur-step .step-desc {
   color: #3b4;
 }
-/* line 64, ../../sass/page/register.scss */
+/* line 72, ../../sass/page/register.scss */
 .progress-bar .done-step .step-index {
   background-position: 0 0px;
   color: transparent;
 }
-/* line 68, ../../sass/page/register.scss */
+/* line 77, ../../sass/page/register.scss */
 .progress-bar .done-step .step-desc {
   color: #3b4;
 }
 
-/* line 74, ../../sass/page/register.scss */
+/* line 84, ../../sass/page/register.scss */
 .pro-step2 {
   left: 105px;
 }
 
-/* line 77, ../../sass/page/register.scss */
+/* line 88, ../../sass/page/register.scss */
 .pro-step3 {
   left: 215px;
 }
 
-/* line 80, ../../sass/page/register.scss */
+/* line 92, ../../sass/page/register.scss */
 .pro-step4 {
   right: 10px;
 }
 
-/* line 83, ../../sass/page/register.scss */
+/* line 96, ../../sass/page/register.scss */
 .pro-line1 {
   left: 50px;
 }
 
-/* line 86, ../../sass/page/register.scss */
+/* line 100, ../../sass/page/register.scss */
 .pro-line2 {
   left: 160px;
 }
 
-/* line 89, ../../sass/page/register.scss */
+/* line 104, ../../sass/page/register.scss */
 .pro-line3 {
   left: 270px;
 }
 
 /* main */
-/* line 95, ../../sass/page/register.scss */
+/* line 110, ../../sass/page/register.scss */
 .main {
   margin: 50px auto 186px;
   width: 400px;
 }
 
-/* line 100, ../../sass/page/register.scss */
+/* line 115, ../../sass/page/register.scss */
 .reg-other {
   margin-top: 28px;
 }
-/* line 102, ../../sass/page/register.scss */
+/* line 118, ../../sass/page/register.scss */
 .reg-other a {
   color: #333;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 107, ../../sass/page/register.scss */
+/* line 124, ../../sass/page/register.scss */
 .reg-other a:hover {
-  color: #c81623;
+  color: #ff4d4f;
 }
-/* line 110, ../../sass/page/register.scss */
+/* line 128, ../../sass/page/register.scss */
 .reg-other .reg-ohter-icon {
   display: inline-block;
   margin: 0 8px 2px 0;
@@ -705,25 +706,26 @@ txt {
   height: 26px;
   background-position: 0 -160px;
 }
-/* line 118, ../../sass/page/register.scss */
+/* line 137, ../../sass/page/register.scss */
 .reg-other .reg-other-inter {
   float: right;
 }
-/* line 120, ../../sass/page/register.scss */
+/* line 140, ../../sass/page/register.scss */
 .reg-other .reg-other-inter .reg-ohter-icon {
   background-position: -40px -160px;
 }
-/* line 124, ../../sass/page/register.scss */
+/* line 145, ../../sass/page/register.scss */
 .reg-other .reg-other-person {
   float: left;
 }
 
-/* line 130, ../../sass/page/register.scss */
-.input-tip, .agree-tip {
+/* line 151, ../../sass/page/register.scss */
+.input-tip,
+.agree-tip {
   color: #c5c5c5;
 }
 
-/* line 133, ../../sass/page/register.scss */
+/* line 156, ../../sass/page/register.scss */
 .input-tip {
   color: #c5c5c5;
   height: 27px;
@@ -731,7 +733,7 @@ txt {
   padding-top: 5px;
   clear: both;
 }
-/* line 139, ../../sass/page/register.scss */
+/* line 163, ../../sass/page/register.scss */
 .input-tip span i {
   display: inline-block;
   width: 16px;
