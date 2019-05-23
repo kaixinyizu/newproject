@@ -119,27 +119,22 @@
         color: #333;
         cursor: pointer;
         text-decoration: none;
+        font-size:14px;
     }
 
     a:hover {
         color: $red-5;
     }
 
-    .reg-ohter-icon {
-        display: inline-block;
-        margin: 0 8px 2px 0;
-        vertical-align: middle;
-        width: 26px;
-        height: 26px;
-        background-position: 0 -160px;
+    .iconfont {
+        font-size:26px;
+        color:#adadad;
+        float:left;
+        margin-right:8px;
     }
 
     .reg-other-inter {
         float: right;
-
-        .reg-ohter-icon {
-            background-position: -40px -160px;
-        }
     }
 
     .reg-other-person {

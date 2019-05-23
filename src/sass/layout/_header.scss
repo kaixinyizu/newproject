@@ -5,14 +5,6 @@ body{
     background: #fff;
 }
 
-//icon
-.icon {
-    width: 1em; height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
- }
-
 //注册+登陆头部
 .header{
     height:100px;
@@ -77,6 +69,137 @@ body{
     .header_right{
         width:800px;
         float:right;
+    }
+}
+//首页toplist
+.top-list{
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+    clear: both;
+    >div{
+        width:1200px;
+        margin: 0 auto;
+        height: 30px;
+        line-height: 30px;
+        color: #999;
+    }
+    .fl {
+        float: left;
+    }
+    & li {
+        float: left;
+    }
+    & a {
+        color: #999;
+        text-decoration: none;
+    }
+    & a:hover{
+        color:$red-5;
+    }
+    .cw-icon {
+        height: 28px;
+        line-height: 28px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        float: left;
+        border: 1px solid #e3e4e5;
+    }
+    & .dt {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .dd {
+        left: 0;
+        width: 300px;
+        padding: 10px;
+        line-height: 24px;
+    }
+    
+    .dorpdown-layer, .dropdown-layer {
+        position: absolute;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+        -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+        box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    }
+    .dropdown-layer {
+        top: 30px;
+    }
+    .item {
+        float: left;
+        width: 60px;
+        padding: 2px 0;
+    }
+    .item a {
+        float: left;
+        padding: 0 8px;
+        text-decoration: none;
+    }
+    .item a.selected {
+        background-color: $red-6;
+        color: #fff;
+    }
+    .ui-areamini-content-wrap{
+        overflow: hidden;
+    }
+
+
+    .fr {
+        float: right;
+    }
+    .shortcut_btn {
+        position: relative;
+        z-index: 21;
+    }
+    .fore1{
+        margin-right: 8px;
+        z-index: 20;
+    }
+    .style-red {
+        color: $red-6;
+    }
+    li.spacer {
+        overflow: hidden;
+        margin: 11px 5px 0;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc;
+    }
+    .areamini_inter {
+        margin: 10px 0 10px 10px;
+        overflow: hidden;
+    }
+    .areamini_inter_item {
+        width: 145px;
+        height: 26px;
+        line-height: 26px;
+    }
+    .areamini_inter_split {
+        width: 262px;
+        height: 0;
+        border-bottom: dotted 1px #eee;
+    }
+    .areamini_inter_desc {
+        margin: 9px 0;
+        color: #8f8f8f;
+    }
+    .areamini_inter {
+        margin: 10px 0 10px 10px;
+    }
+    .areamini_inter_list {
+        overflow: hidden;
+    }
+    .areamini_inter_ico {
+        float: left;
+        position: relative;
+        top: 7px;
+        margin-right: 8px;
+        width: 15px;
+        height: 10px;
+        border: solid 1px transparent;
+        background: $red-6;
     }
 }
 
