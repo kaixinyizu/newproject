@@ -1,54 +1,66 @@
-body{
-    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+body {
+    font: 12px/150% tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #666;
     background: #fff;
 }
 
 //注册+登陆头部
-.header{
-    height:100px;
-    background:#fff;
-    box-shadow: 0 0 10px #b4b4b4; 
-    line-height:100px;
+.header {
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 0 10px #b4b4b4;
+    line-height: 100px;
     overflow: hidden;
-    .logoheader{
-        width:1200px;
-        margin:0 auto;
-        height:100px;
-        .logoleft{
-            float:left;
-            img{
-                margin-top:25px;
+
+    .logoheader {
+        width: 1200px;
+        margin: 0 auto;
+        height: 100px;
+
+        .logoleft {
+            overflow: hidden;
+            height: 100px;
+            float: left;
+
+            img {
+                margin-top: 25px;
             }
-            .logo{
-                float:left;
+
+            .logo {
+                float: left;
             }
-            .logo-title{
-                font-size:24px;
-                margin-left:36px;
-                float:left;
+
+            .logo-title {
+                font-size: 24px;
+                margin-left: 36px;
+                float: left;
             }
         }
     }
+
     .w {
         width: 990px;
         margin: 0 auto;
     }
-    .have-account{
+
+    .have-account {
         font-size: 16px;
         color: #999;
-        float:right;
-        a{
+        float: right;
+
+        a {
             color: #e22
         }
     }
+
     // 登录界面 调查问卷链接
     .q-link {
         position: relative;
         color: #999;
         float: right;
         top: 30px;
+
         b {
             display: inline-block;
             *display: inline;
@@ -61,41 +73,150 @@ body{
             vertical-align: middle;
         }
     }
-   
+
 }
+
 //首页头部
-.detail.header{
+.detail.header {
     box-shadow: none;
-    .header_right{
-        width:800px;
-        float:right;
+
+    .header_right {
+        width: 700px;
+        float: right;
+        height: 70px;
+        margin-top: 25px;
     }
+
+    .serchbox {
+        float: left;
+        width: 512px;
+        position: relative;
+        i{
+            position: absolute;
+    left: 17px;
+    top: -30px;
+    color:#d1d1d1;
+        }
+    }
+
+    .serch {
+        height: 38px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid $red-6;
+
+        input {
+            border: none;
+            height: 38px;
+            line-height: 38px;
+            float: left;
+            width: 382px;
+            padding-left:40px;
+            background: transparent;
+            font-size:14px;
+        }
+
+        button {
+            float: right;
+            width: 90px;
+            background: $red-6;
+            border: none;
+            box-shadow: none;
+            color: #fff;
+            height: 38px;
+            border-radius: 0 20px 20px 0;
+            text-align: center;
+            font-size:14px;
+        }
+    }
+
+    .ahreflist {
+        height: 19px;
+        padding-top: 8px;
+        padding-left: 32px;
+        overflow: hidden;
+
+        a {
+            text-decoration: none;
+            float: left;
+            margin-right: 10px;
+            line-height: 19px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        a:hover {
+            color: $red-5;
+        }
+    }
+
+    .shoppingbox {
+        float: right;
+        width: 122px;
+        height: 38px;
+        border-radius: 20px;
+        border: 1px solid $red-6;
+        font-size:14px;
+        position: relative;
+        a{
+            color:$red-6;
+            text-decoration: none;
+            position: absolute;
+            left: 16px;
+            top: -30px;
+        }
+        .iconfont{
+            color:#b79f79;
+            float:left;
+            margin-right:5px;
+        }
+        .num{
+            background:$red-6;
+            border-radius: 10px;
+            color:#fff;
+            padding:0 5px;
+        }
+    }
+
+
 }
+
 //首页toplist
-.top-list{
+.top-list {
     border-bottom: 1px solid #ddd;
     background-color: #e3e4e5;
     clear: both;
-    >div{
-        width:1200px;
+
+    >div {
+        width: 1200px;
         margin: 0 auto;
         height: 30px;
         line-height: 30px;
         color: #999;
     }
+
     .fl {
         float: left;
     }
-    & li {
+
+    .iconfont {
         float: left;
     }
+
+    & li {
+        float: left;
+        cursor: pointer;
+    }
+
     & a {
         color: #999;
         text-decoration: none;
     }
-    & a:hover{
-        color:$red-5;
+
+    & a:hover {
+        color: $red-5;
     }
+
     .cw-icon {
         height: 28px;
         line-height: 28px;
@@ -104,44 +225,57 @@ body{
         z-index: 1;
         float: left;
         border: 1px solid #e3e4e5;
+
+        a {
+            float: left;
+        }
     }
+
     & .dt {
         padding-left: 7px;
         padding-right: 7px;
     }
+
     .dd {
-        left: 0;
         width: 300px;
         padding: 10px;
         line-height: 24px;
     }
-    
-    .dorpdown-layer, .dropdown-layer {
+
+    .dorpdown-layer,
+    .dropdown-layer {
         position: absolute;
         border: 1px solid #ccc;
         background-color: #fff;
-        -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
-        -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
-        box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+        -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+        box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
     }
+
     .dropdown-layer {
         top: 30px;
+        display: none;
+        z-index: 9999;
     }
+
     .item {
         float: left;
         width: 60px;
         padding: 2px 0;
     }
+
     .item a {
         float: left;
         padding: 0 8px;
         text-decoration: none;
     }
+
     .item a.selected {
         background-color: $red-6;
         color: #fff;
     }
-    .ui-areamini-content-wrap{
+
+    .ui-areamini-content-wrap {
         overflow: hidden;
     }
 
@@ -149,17 +283,20 @@ body{
     .fr {
         float: right;
     }
+
     .shortcut_btn {
-        position: relative;
         z-index: 21;
     }
-    .fore1{
+
+    .fore1 {
         margin-right: 8px;
         z-index: 20;
     }
+
     .style-red {
         color: $red-6;
     }
+
     li.spacer {
         overflow: hidden;
         margin: 11px 5px 0;
@@ -167,30 +304,37 @@ body{
         height: 10px;
         background-color: #ccc;
     }
+
     .areamini_inter {
         margin: 10px 0 10px 10px;
         overflow: hidden;
     }
+
     .areamini_inter_item {
         width: 145px;
         height: 26px;
         line-height: 26px;
     }
+
     .areamini_inter_split {
         width: 262px;
         height: 0;
         border-bottom: dotted 1px #eee;
     }
+
     .areamini_inter_desc {
         margin: 9px 0;
         color: #8f8f8f;
     }
+
     .areamini_inter {
         margin: 10px 0 10px 10px;
     }
+
     .areamini_inter_list {
         overflow: hidden;
     }
+
     .areamini_inter_ico {
         float: left;
         position: relative;
@@ -201,40 +345,182 @@ body{
         border: solid 1px transparent;
         background: $red-6;
     }
+
+    .shortcut_btn:hover {
+        & .cw-icon {
+
+            padding-bottom: 2px;
+            border-color: #ccc;
+            border-bottom: none;
+            background-color: #fff;
+        }
+
+        & .dropdown-layer {
+            display: block;
+        }
+    }
+
+    .fore8 {
+
+        .item-business,
+        .item-client {
+            padding-left: 15px;
+            font-weight: 700;
+            color: #666;
+            overflow: hidden;
+        }
+
+        .dd {
+            right: 326px;
+            width: 170px;
+            padding: 10px 0;
+        }
+
+        .item-business {
+            margin-top: 5px;
+            padding-top: 5px;
+            border-top: 1px dotted #eee;
+        }
+
+        .item {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            width: 70px;
+            padding-left: 15px;
+        }
+
+        .item a {
+            float: left;
+            padding: 0;
+            text-decoration: none;
+        }
+    }
+
+    .fore9 {
+        .dd {
+            right: 160px;
+            width: 1178px;
+        }
+
+        dt {
+            margin-bottom: 5px;
+            font-weight: 700;
+            color: #666;
+        }
+
+        dl {
+            float: left;
+            width: 255px;
+            padding-left: 15px;
+            border-left: 1px solid #eee;
+        }
+
+        .item {
+            overflow: hidden;
+            float: left;
+            width: 85px;
+            white-space: nowrap;
+        }
+
+        dl.fore1 {
+            border-left: none;
+            width: 340px;
+        }
+    }
+
+    .fore10 {
+        &:hover {
+            .mobile_static {
+                display: block;
+            }
+
+            .dt {
+                border: 1px solid #ccc;
+                background-color: #fff;
+                border-bottom: none;
+            }
+
+        }
+
+        .mobile_txt {
+            border: 1px solid transparent;
+            border-bottom: none;
+        }
+
+        .mobile_static {
+            display: none;
+            right: 160px;
+            position: absolute;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        img {
+            width: 130px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+            line-height: 20px;
+        }
+
+        .redtxt {
+            color: $red-6;
+        }
+    }
+
+
+
+
 }
 
 //首页导航
-.header-content{
-    background:#fff;
+.header-content {
+    background: #fff;
 }
-.header_nav{
-    width:1200px;
-    margin:0 auto;
-    height:38px;
-    line-height:38px;
-    >div{
-        float:left;
+
+.header_nav {
+    width: 1200px;
+    margin: 0 auto;
+    height: 38px;
+    line-height: 38px;
+
+    >div {
+        float: left;
     }
-    .header_nav_left_title{
-        width:190px;
-        background:$redcolr;
-        color:#fff;
-        height:38px;
-        text-align: center;
+
+    .header_nav_left_title {
+        width: 170px;
+        background: $redcolr;
+        color: #fff;
+        height: 38px;
+        text-align: left;
         color: #fff;
         font-size: 16px;
         cursor: pointer;
+        padding-left:20px;
     }
 }
-.nav-list{
-    li{
-        float:left;
-        padding:0 15px;
+
+.nav-list {
+    li {
+        float: left;
+        padding: 0 15px;
         font-size: 16px;
         overflow: hidden;
         height: 100%;
-        a{
+
+        a {
             color: #333;
+            text-decoration: none;
+        }
+        a:hover{
+            color:$red-5;
         }
     }
 }
