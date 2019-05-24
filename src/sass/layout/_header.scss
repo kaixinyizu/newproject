@@ -10,8 +10,6 @@ body {
     height: 100px;
     background: #fff;
     box-shadow: 0 0 10px #b4b4b4;
-    line-height: 100px;
-    overflow: hidden;
 
     .logoheader {
         width: 1200px;
@@ -91,11 +89,12 @@ body {
         float: left;
         width: 512px;
         position: relative;
-        i{
+
+        .icon-xiazai17 {
             position: absolute;
-    left: 17px;
-    top: -30px;
-    color:#d1d1d1;
+            left: 17px;
+            top: 12px;
+            color: #d1d1d1;
         }
     }
 
@@ -111,9 +110,9 @@ body {
             line-height: 38px;
             float: left;
             width: 382px;
-            padding-left:40px;
+            padding-left: 40px;
             background: transparent;
-            font-size:14px;
+            font-size: 14px;
         }
 
         button {
@@ -126,7 +125,7 @@ body {
             height: 38px;
             border-radius: 0 20px 20px 0;
             text-align: center;
-            font-size:14px;
+            font-size: 14px;
         }
     }
 
@@ -138,11 +137,11 @@ body {
 
         a {
             text-decoration: none;
-            float: left;
             margin-right: 10px;
             line-height: 19px;
             font-size: 12px;
             color: #aaa;
+            margin-left:5px;
         }
 
         a:hover {
@@ -151,35 +150,220 @@ body {
     }
 
     .shoppingbox {
+        position: relative;
         float: right;
         width: 122px;
         height: 38px;
         border-radius: 20px;
         border: 1px solid $red-6;
-        font-size:14px;
+        font-size: 14px;
         position: relative;
-        a{
-            color:$red-6;
+        &:hover .shopingdetail{
+            display: block;
+        }
+
+        a {
+            color: $red-6;
             text-decoration: none;
             position: absolute;
             left: 16px;
-            top: -30px;
+            top: 10px;
         }
-        .iconfont{
-            color:#b79f79;
-            float:left;
-            margin-right:5px;
+
+        .iconfont {
+            color: #b79f79;
+            float: left;
+            margin-right: 5px;
         }
-        .num{
-            background:$red-6;
+
+        .num {
+            background: $red-6;
             border-radius: 10px;
-            color:#fff;
-            padding:0 5px;
+            color: #fff;
+            padding: 0 5px;
         }
     }
 
+    .shopingdetail {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 330px;
+        height: 340px;
+        z-index: 2;
+        background: #fff;
 
+    }
+
+    .trianglebox {
+        position: relative;
+        height: 15px;
+    }
+
+    .triangle {
+        position: absolute;
+        right: 200px;
+    }
+
+    .triangle:before,
+    .triangle .before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 150px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        font-size: 0;
+        line-height: 0;
+        border: 8px;
+        border-style: dashed dashed solid dashed;
+        border-color: transparent transparent $red-6 transparent;
+    }
+
+    .triangle:after,
+    .triangle .after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        font-size: 0;
+        line-height: 0;
+        border: 7px;
+        border-style: dashed dashed solid dashed;
+        border-color: transparent transparent #fff transparent;
+        position: absolute;
+        left: 151px;
+        top: 2px;
+    }
+
+    .shoppinglist {
+        border: 1px solid $red-6;
+        height: 326px;
+    }
+
+    .shoppinglist ul {
+        height: 230px;
+        padding: 15px;
+
+    }
+
+    .shoppinglist li {
+        position: relative;
+        cursor: pointer;
+        .shoppingprice{
+            font-size:12px;
+            color:$red-6;
+            line-height:35px;
+            margin-left:10px;
+            float:left;
+        }
+
+        .listdetail {
+            float: left;
+            width: 140px;
+            margin-left: 10px;
+            p{
+                white-space: nowrap;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height:35px;
+            }
+            div span{
+                font-size:12px;
+                color:#9b9b9b;
+                margin-right:3px;
+            }
+        }
+
+        img {
+            width: 60px;
+            float: left;
+        }
+
+        .icon-cuowu1 {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+    }
+
+    .shoppingbottom {
+        height: 36px;
+        background: #fff1f0;
+        padding:15px;
+        .leftprice{
+            float:left;
+        }
+        p{
+            font-size:13px;
+            color:#9b9b9b;
+        }
+        .totalprice{
+            color:$red-6;
+        }
+        .btn-register{
+            float:right;
+        }
+        .btn{
+            background:$red-6;
+            font-size:12px;
+            color:#fff;
+            border-radius: 2px;
+            height:36px;
+            line-height:36px;
+            padding:0 20px;
+            border:none;
+            cursor: pointer;
+        }
+    }
 }
+
+//滚动后首页头部
+.detail.header.fixed {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.05);
+
+    .logoheader,
+    .logoleft {
+        height: 60px;
+    }
+
+    .logoleft img {
+        margin-top: 0;
+    }
+
+    .header_right {
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .serchbox {
+        width: 675px;
+    }
+
+    .serch input {
+        width: 530px;
+    }
+
+    .ahreflist,
+    .shoppingbox {
+        display: none;
+    }
+}
+
 
 //首页toplist
 .top-list {
@@ -193,6 +377,7 @@ body {
         height: 30px;
         line-height: 30px;
         color: #999;
+        position: relative;
     }
 
     .fl {
@@ -371,7 +556,7 @@ body {
         }
 
         .dd {
-            right: 326px;
+            right: 166px;
             width: 170px;
             padding: 10px 0;
         }
@@ -399,7 +584,7 @@ body {
 
     .fore9 {
         .dd {
-            right: 160px;
+            right: 0;
             width: 1178px;
         }
 
@@ -450,11 +635,12 @@ body {
 
         .mobile_static {
             display: none;
-            right: 160px;
+            right: 0px;
             position: absolute;
             border: 1px solid #ccc;
             background-color: #fff;
             padding: 15px;
+            z-index: 999;
         }
 
         img {
@@ -503,7 +689,7 @@ body {
         color: #fff;
         font-size: 16px;
         cursor: pointer;
-        padding-left:20px;
+        padding-left: 20px;
     }
 }
 
@@ -519,8 +705,9 @@ body {
             color: #333;
             text-decoration: none;
         }
-        a:hover{
-            color:$red-5;
+
+        a:hover {
+            color: $red-5;
         }
     }
 }

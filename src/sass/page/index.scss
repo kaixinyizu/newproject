@@ -58,7 +58,7 @@ body {
         position: absolute;
         left: 191px;
         top: 0;
-        width: 998px;
+        width: 1005px;
         min-height: 478px;
         border: 1px solid #f7f7f7;
         background-color: #fff;
@@ -255,6 +255,7 @@ body {
             height: 162px;
             padding-top: 10px;
             border-bottom: $form-border;
+            z-index: 1;
 
             .title {
                 height: 25px;
