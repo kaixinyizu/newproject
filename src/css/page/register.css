@@ -131,6 +131,11 @@ input, textarea, select, button {
   text-decoration: underline;
 }
 
+/* line 66, ../../sass/reset/_reset.scss */
+body {
+  background: #f5f5f5;
+}
+
 /* line 1, ../../sass/layout/_header.scss */
 body {
   font: 12px/150% tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;

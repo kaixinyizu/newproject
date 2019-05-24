@@ -477,22 +477,17 @@ body {
   color: #666;
 }
 
-/* line 11, ../../sass/page/adress.scss */
-body {
-  background-color: #f1f1f1;
-}
-
-/* line 14, ../../sass/page/adress.scss */
+/* line 10, ../../sass/page/concern.scss */
 .container {
   padding-top: 20px;
 }
 
-/* line 17, ../../sass/page/adress.scss */
+/* line 13, ../../sass/page/concern.scss */
 .left-nav {
   float: left;
 }
 
-/* line 20, ../../sass/page/adress.scss */
+/* line 16, ../../sass/page/concern.scss */
 .right-content {
   float: right;
   width: 980px;
@@ -502,44 +497,32 @@ body {
   box-sizing: border-box;
   font-size: 12px;
 }
-/* line 28, ../../sass/page/adress.scss */
+/* line 24, ../../sass/page/concern.scss */
 .right-content .receiving-address-info {
   margin-bottom: 20px;
 }
-/* line 30, ../../sass/page/adress.scss */
+/* line 26, ../../sass/page/concern.scss */
 .right-content .receiving-address .td-a {
   width: 10%;
 }
-/* line 31, ../../sass/page/adress.scss */
+/* line 27, ../../sass/page/concern.scss */
 .right-content .receiving-address .td-b {
   width: 38%;
   text-align: left;
 }
-/* line 32, ../../sass/page/adress.scss */
+/* line 28, ../../sass/page/concern.scss */
 .right-content .receiving-address .td-c {
   width: 20%;
 }
-/* line 33, ../../sass/page/adress.scss */
+/* line 29, ../../sass/page/concern.scss */
 .right-content .receiving-address .td-d {
   width: 16%;
 }
-/* line 34, ../../sass/page/adress.scss */
+/* line 30, ../../sass/page/concern.scss */
 .right-content .receiving-address .td-e {
   width: 16%;
 }
-/* line 35, ../../sass/page/adress.scss */
+/* line 31, ../../sass/page/concern.scss */
 .right-content .receiving-address .bare-grid-title li {
   text-align: center;
-}
-
-/* line 40, ../../sass/page/adress.scss */
-.default-address {
-  display: inline-block;
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  background-color: #f9d7d7;
-  border: 1px solid #ef3f3f;
-  color: #ef3f3f;
 }

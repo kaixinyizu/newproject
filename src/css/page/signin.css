@@ -132,6 +132,11 @@ input, textarea, select, button {
   text-decoration: underline;
 }
 
+/* line 66, ../../sass/reset/_reset.scss */
+body {
+  background: #f5f5f5;
+}
+
 /* line 1, ../../sass/reset/_common.scss */
 .fll {
   float: left;
