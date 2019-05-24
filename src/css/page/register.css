@@ -149,59 +149,58 @@ body {
   height: 100px;
   background: #fff;
   box-shadow: 0 0 10px #b4b4b4;
-  overflow: hidden;
 }
-/* line 14, ../../sass/layout/_header.scss */
+/* line 13, ../../sass/layout/_header.scss */
 .header .logoheader {
   width: 1200px;
   margin: 0 auto;
   height: 100px;
 }
-/* line 19, ../../sass/layout/_header.scss */
+/* line 18, ../../sass/layout/_header.scss */
 .header .logoheader .logoleft {
   overflow: hidden;
   height: 100px;
   float: left;
 }
-/* line 24, ../../sass/layout/_header.scss */
+/* line 23, ../../sass/layout/_header.scss */
 .header .logoheader .logoleft img {
   margin-top: 25px;
 }
-/* line 28, ../../sass/layout/_header.scss */
+/* line 27, ../../sass/layout/_header.scss */
 .header .logoheader .logoleft .logo {
   float: left;
 }
-/* line 32, ../../sass/layout/_header.scss */
+/* line 31, ../../sass/layout/_header.scss */
 .header .logoheader .logoleft .logo-title {
   font-size: 24px;
   margin-left: 36px;
   float: left;
   line-height: 100px;
 }
-/* line 41, ../../sass/layout/_header.scss */
+/* line 40, ../../sass/layout/_header.scss */
 .header .w {
   width: 990px;
   margin: 0 auto;
 }
-/* line 46, ../../sass/layout/_header.scss */
+/* line 45, ../../sass/layout/_header.scss */
 .header .have-account {
   font-size: 16px;
   color: #999;
   float: right;
   line-height: 100px;
 }
-/* line 52, ../../sass/layout/_header.scss */
+/* line 51, ../../sass/layout/_header.scss */
 .header .have-account a {
   color: #e22;
 }
-/* line 58, ../../sass/layout/_header.scss */
+/* line 57, ../../sass/layout/_header.scss */
 .header .q-link {
   position: relative;
   color: #999;
   float: right;
   top: 30px;
 }
-/* line 64, ../../sass/layout/_header.scss */
+/* line 63, ../../sass/layout/_header.scss */
 .header .q-link b {
   display: inline-block;
   *display: inline;
