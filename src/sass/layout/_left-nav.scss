@@ -1,0 +1,31 @@
+.navigation{
+    width: 200px;
+    background-color: #fff;
+    padding: 40px 0 40px 50px;
+    box-sizing: border-box;
+    .navigation-item{
+        font-weight: bold;
+        margin-bottom: 30px;
+        li{
+            font-size: 14px;
+            color: #888;
+            line-height: 36px;
+            &.selected{
+                color: red;
+            }
+            span{
+                cursor: pointer;
+            }
+        }
+        .navigation-item-title{
+            font-size: 16px;
+          
+            color: #000;
+            line-height: 40px;
+        }
+    }
+}
+//红色消息圆点提示
+.reddot{
+    display:inline-block;width: 6px;height:6px;background-color: #c30a0a;border-radius: 50%;vertical-align: text-top;
+}

@@ -1,0 +1,65 @@
+.fll {
+    float: left;
+}
+.flr {
+    float: right;
+}
+.bold{
+    font-weight: bold;
+}
+/*版心*/
+.page-auto {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+}
+/*其他版心定义 以w开头*/
+.w99{
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+/*多余字符串省略号代替*/
+.box-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*文字链接样式*/
+.link-a{
+    color: #07a9c7;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.link-a:hover{
+     text-decoration: underline
+}
+
+/*文字字号*/
+.f18{
+    font-size: 18px;
+}
+.f22{
+    font-size: 22px;
+}
+.f26{
+    font-size: 26px;
+}
+/*文字常用颜色 以fc起头*/
+.fc01{
+    color: red;
+}

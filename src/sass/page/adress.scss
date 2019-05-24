@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../layout/header2";
+@import "../layout/left-nav";  
+@import "../layout/common";  
+@import "../layout/grid";  
+@import "../layout/form";
+
+
+body{
+    background-color: #f1f1f1;
+}
+.container{
+    padding-top: 20px;
+}
+.left-nav{
+    float: left;
+}
+.right-content{
+    float: right;
+    width: 980px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 50px 100px 50px 50px;
+    box-sizing: border-box;
+    font-size: 12px;
+    .receiving-address-info{margin-bottom: 20px;}
+    .receiving-address{ 
+        .td-a{width: 10%};
+        .td-b{width: 38%;text-align: left};
+        .td-c{width: 20%};
+        .td-d{width: 16%};
+        .td-e{width: 16%} 
+        .bare-grid-title li{text-align: center}
+    }
+
+}
+//默认地址
+.default-address{
+    display: inline-block;
+    width: 100px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f9d7d7;
+    border:1px solid #ef3f3f;
+    color:#ef3f3f;
+}

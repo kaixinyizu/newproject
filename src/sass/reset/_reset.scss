@@ -49,3 +49,17 @@ input, textarea, select, button {
     text-align: center;
     cursor: pointer;
 }
+.fll{
+    float: left
+}
+.flr{
+    float: right;
+}
+.link-a{
+    color: #07a9c7;
+    cursor: pointer;
+    margin: 0 3px;
+    &:hover{
+        text-decoration: underline
+    }
+}

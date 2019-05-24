@@ -3,7 +3,6 @@
 @import "../reset/reset";
 @import "../layout/header";
 @import "../layout/footer";
-@import "../layout/form";
 
 .container {
     width: 1200px;
@@ -162,4 +161,159 @@
         vertical-align: text-top;
         margin-right: 8px;
     }
+}
+
+.form-item {
+    position: relative;
+    border: $form-border;
+    width: 398px;
+    height: 52px;
+    z-index: 0;
+    &:hover {
+        border-color:#999!important;
+        .select-country,.item-input-wrap{
+            border-color:#999!important;
+        }
+    }
+    label {
+        float: left;
+        width: 87px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+    }
+    .item-input-wrap {
+        float: left;
+        width: 288px;
+        height: 50px;
+        border: solid 1px #ddd;
+    }
+    .field {
+        border: 0 none;
+        font-size: 14px;
+        width: 200px;
+        height: 19px;
+        padding-bottom: 11px;
+        padding-left: 20px;
+        padding-top: 16px;
+    }
+}
+.item-phone-wrap {
+    height: 86px;
+    position: relative;
+    z-index: 2;
+}
+.item-phonecode-wrap {
+    display: none;
+    height: 86px;
+}
+
+.form-item-phone {
+    border: none;
+    .select-country {
+        border: $form-border;
+        border-right: none;
+        padding: 0 0 0 20px;
+        color: #666;
+    }
+}
+
+.form-agreen .agree-tip i, .form-agreen .sim-checkbox, .reg-other .reg-ohter-icon {
+    background: url(../../images/form/reg-icon.png) no-repeat;
+}
+
+txt{
+    position: absolute;
+    z-index: 2;
+    line-height: 46px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: Arial;
+    color: rgb(204, 204, 204);
+    display: inline;
+}
+
+.form-item-getcode {
+    line-height: 52px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    z-index: 2;
+    &:hover {
+        border-color: #666;
+        cursor: pointer;
+    }
+}
+.form-agreen {
+    position: relative;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 12px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    margin-top:30px;
+    .sim-checkbox {
+        background-position: -107px -156px;
+        float: left;
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        border: $form-border;
+    }
+    .sim-checkbox.not-checked {
+        background: 0 0;
+    }
+    input{
+        position: absolute;
+        left: 0;
+        display: none;
+        outline:none;
+        outline:none;
+    }
+    
+}
+.form-item .field::-webkit-input-placeholder{
+    color: #ccc;
+    font-size: 13px;
+ }
+
+
+ 
+//  from-icon
+ .i-company, .i-def, .i-error1, .i-global, .i-info, .i-pwd-medium, .i-pwd-strong, .i-pwd-weak, .i-suc, .voiceVerifyDialog .ico {
+    background: url(../../images/form/icon.png) no-repeat;
+}
+.i-error {
+    color: #c5c5c5;
+}
+.i-cancel {
+    color: #c8c8c8;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.i-status {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: green;
+    font-size: 20px;
+}
+
+
+//btn
+.btn-register {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #fff;
+    background: #e2231a;
+    border: 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    cursor: pointer;
 }
