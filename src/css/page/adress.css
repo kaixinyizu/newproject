@@ -1,65 +1,540 @@
-/*
-Error: File to import not found or unreadable: ../layout/common.
-       Load paths:
-         Compass::SpriteImporter
-         D:/newproject5-24/newproject/src/sass
-         C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
-        on line 6 of D:/newproject5-24/newproject/./src/sass/page/adress.scss
+@charset "UTF-8";
+/* line 1, ../../sass/reset/_reset.scss */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
 
-1: @charset "utf-8";
-2: @import "../variables/variables";
-3: @import "../reset/reset";
-4: @import "../layout/header2";
-5: @import "../layout/left-nav";  
-6: @import "../layout/common";  
-7: @import "../layout/grid";  
-8: @import "../layout/form";
-9: 
-10: 
-11: body{
+/* line 2, ../../sass/reset/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
 
-Backtrace:
-D:/newproject5-24/newproject/./src/sass/page/adress.scss:6
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:286:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../layout/common.\A        Load paths:\A          Compass::SpriteImporter\A          D:/newproject5-24/newproject/src/sass\A          C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 6 of D:/newproject5-24/newproject/./src/sass/page/adress.scss\A \A 1: @charset \"utf-8\";\A 2: @import \"../variables/variables\";\A 3: @import \"../reset/reset\";\A 4: @import \"../layout/header2\";\A 5: @import \"../layout/left-nav\";  \A 6: @import \"../layout/common\";  \A 7: @import \"../layout/grid\";  \A 8: @import \"../layout/form\";\A 9: \A 10: \A 11: body{"; }
+/* line 3, ../../sass/reset/_reset.scss */
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+/* line 4, ../../sass/reset/_reset.scss */
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+
+/* line 6, ../../sass/reset/_reset.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 7, ../../sass/reset/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 8, ../../sass/reset/_reset.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 9, ../../sass/reset/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 10, ../../sass/reset/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 11, ../../sass/reset/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* line 12, ../../sass/reset/_reset.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 13, ../../sass/reset/_reset.scss */
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+/* line 14, ../../sass/reset/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 16, ../../sass/reset/_reset.scss */
+input[type="hidden" i], input[type="image" i], input[type="file" i] {
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+
+/* line 24, ../../sass/reset/_reset.scss */
+input[type="hidden" i] {
+  display: none;
+}
+
+/* line 27, ../../sass/reset/_reset.scss */
+.form input[type=password] {
+  font-family: Tahoma,Helvetica,Arial;
+}
+
+/* line 31, ../../sass/reset/_reset.scss */
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+/* line 44, ../../sass/reset/_reset.scss */
+.btn-img, .button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 52, ../../sass/reset/_reset.scss */
+.fll {
+  float: left;
+}
+
+/* line 55, ../../sass/reset/_reset.scss */
+.flr {
+  float: right;
+}
+
+/* line 58, ../../sass/reset/_reset.scss */
+.link-a {
+  color: #07a9c7;
+  cursor: pointer;
+  margin: 0 3px;
+}
+/* line 62, ../../sass/reset/_reset.scss */
+.link-a:hover {
+  text-decoration: underline;
+}
+
+/* line 2, ../../sass/layout/_header2.scss */
+.bubble-news {
+  font-size: 12px;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  padding: 0 4px;
+  border-radius: 50% 40% 40% 0;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500 !important;
+  transform: translate(-3px, -15px);
+}
+
+/* line 15, ../../sass/layout/_header2.scss */
+.page-auto {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+
+/* line 21, ../../sass/layout/_header2.scss */
+.header-top {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+  font-size: 12px;
+}
+/* line 27, ../../sass/layout/_header2.scss */
+.header-top .header-top-adress {
+  float: left;
+  padding-left: 40px;
+}
+/* line 30, ../../sass/layout/_header2.scss */
+.header-top .header-top-adress li {
+  float: left;
+  margin-right: 20px;
+}
+/* line 32, ../../sass/layout/_header2.scss */
+.header-top .header-top-nav {
+  float: right;
+}
+/* line 34, ../../sass/layout/_header2.scss */
+.header-top .header-top-nav li {
+  margin-left: 30px;
+  float: left;
+}
+/* line 38, ../../sass/layout/_header2.scss */
+.header-top .header-top-nav .duan {
+  height: 16px;
+  line-height: 16px;
+  display: inline-block;
+  padding: 0 8px;
+  background-color: #aaa6a6;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* line 48, ../../sass/layout/_header2.scss */
+.header {
+  width: 100%;
+  height: 90px;
+  background-color: red;
+}
+/* line 52, ../../sass/layout/_header2.scss */
+.header .logoleft {
+  float: left;
+}
+/* line 54, ../../sass/layout/_header2.scss */
+.header .logoleft .logo {
+  float: left;
+}
+/* line 58, ../../sass/layout/_header2.scss */
+.header .header-nav {
+  position: absolute;
+  height: 90px;
+  line-height: 90px;
+  font-size: 16px;
+  left: 240px;
+  top: 0;
+  color: #fff;
+}
+/* line 66, ../../sass/layout/_header2.scss */
+.header .header-nav > li {
+  float: left;
+  height: 100%;
+  padding: 0 30px;
+  cursor: pointer;
+  margin: 0 5px;
+  position: relative;
+}
+/* line 73, ../../sass/layout/_header2.scss */
+.header .header-nav > li i {
+  margin-left: 10px;
+}
+/* line 77, ../../sass/layout/_header2.scss */
+.header .header-nav > li:hover {
+  font-weight: bold;
+  background-color: #fd7171;
+  font-weight: bold;
+}
+/* line 81, ../../sass/layout/_header2.scss */
+.header .header-nav > li:hover .header-nav-detailed {
+  display: block;
+}
+/* line 83, ../../sass/layout/_header2.scss */
+.header .header-nav > .selected {
+  background-color: #fd7171;
+  font-weight: bold;
+}
+/* line 87, ../../sass/layout/_header2.scss */
+.header .header-nav .header-nav-detailed {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 9;
+  background-color: #fd7171;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+/* line 98, ../../sass/layout/_header2.scss */
+.header .header-nav .header-nav-detailed li {
+  height: 36px;
+  line-height: 36px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+/* line 103, ../../sass/layout/_header2.scss */
+.header .header-nav .header-nav-detailed li:hover {
+  background-color: red;
+}
+/* line 109, ../../sass/layout/_header2.scss */
+.header .header-search {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  width: 300px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50px;
+  background-color: #fff;
+  overflow: hidden;
+  padding-left: 30px;
+}
+/* line 120, ../../sass/layout/_header2.scss */
+.header .header-search .header-search-icon {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* line 127, ../../sass/layout/_header2.scss */
+.header .header-search input {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px 0 20px;
+  float: left;
+}
+/* line 136, ../../sass/layout/_header2.scss */
+.header .header-search .header-search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  text-align: center;
+  background-color: #999999;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 1, ../../sass/layout/_left-nav.scss */
+.navigation {
+  width: 200px;
+  background-color: #fff;
+  padding: 40px 0 40px 50px;
+  box-sizing: border-box;
+}
+/* line 6, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* line 9, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item li {
+  font-size: 14px;
+  color: #888;
+  line-height: 36px;
+}
+/* line 13, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item li.selected {
+  color: red;
+}
+/* line 16, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item li span {
+  cursor: pointer;
+}
+/* line 20, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item .navigation-item-title {
+  font-size: 16px;
+  color: #000;
+  line-height: 40px;
+}
+
+/* line 29, ../../sass/layout/_left-nav.scss */
+.reddot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #c30a0a;
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+
+/* line 1, ../../sass/reset/_common.scss */
+.fll {
+  float: left;
+}
+
+/* line 4, ../../sass/reset/_common.scss */
+.flr {
+  float: right;
+}
+
+/* line 7, ../../sass/reset/_common.scss */
+.bold {
+  font-weight: bold;
+}
+
+/*版心*/
+/* line 11, ../../sass/reset/_common.scss */
+.page-auto {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+
+/*其他版心定义 以w开头*/
+/* line 18, ../../sass/reset/_common.scss */
+.w99 {
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+
+/*清除浮动*/
+/* line 25, ../../sass/reset/_common.scss */
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 33, ../../sass/reset/_common.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/*多余字符串省略号代替*/
+/* line 37, ../../sass/reset/_common.scss */
+.box-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*文字链接样式*/
+/* line 43, ../../sass/reset/_common.scss */
+.link-a {
+  color: #07a9c7;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+/* line 48, ../../sass/reset/_common.scss */
+.link-a:hover {
+  text-decoration: underline;
+}
+
+/*文字字号*/
+/* line 53, ../../sass/reset/_common.scss */
+.f18 {
+  font-size: 18px;
+}
+
+/* line 56, ../../sass/reset/_common.scss */
+.f22 {
+  font-size: 22px;
+}
+
+/* line 59, ../../sass/reset/_common.scss */
+.f26 {
+  font-size: 26px;
+}
+
+/*文字常用颜色 以fc起头*/
+/* line 63, ../../sass/reset/_common.scss */
+.fc01 {
+  color: red;
+}
+
+/* line 1, ../../sass/layout/_grid.scss */
+.bare-grid {
+  border: 1px solid #ccc;
+}
+/* line 3, ../../sass/layout/_grid.scss */
+.bare-grid .bare-grid-title {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  background-color: #dddddd;
+  font-size: 14px;
+  color: #999999;
+}
+/* line 11, ../../sass/layout/_grid.scss */
+.bare-grid > ul {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+/* line 14, ../../sass/layout/_grid.scss */
+.bare-grid > ul > li {
+  float: left;
+  width: 10%;
+  text-align: center;
+  color: #666;
+}
+
+/* line 11, ../../sass/page/adress.scss */
+body {
+  background-color: #f1f1f1;
+}
+
+/* line 14, ../../sass/page/adress.scss */
+.container {
+  padding-top: 20px;
+}
+
+/* line 17, ../../sass/page/adress.scss */
+.left-nav {
+  float: left;
+}
+
+/* line 20, ../../sass/page/adress.scss */
+.right-content {
+  float: right;
+  width: 980px;
+  min-height: 400px;
+  background-color: #fff;
+  padding: 50px 100px 50px 50px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+/* line 28, ../../sass/page/adress.scss */
+.right-content .receiving-address-info {
+  margin-bottom: 20px;
+}
+/* line 30, ../../sass/page/adress.scss */
+.right-content .receiving-address .td-a {
+  width: 10%;
+}
+/* line 31, ../../sass/page/adress.scss */
+.right-content .receiving-address .td-b {
+  width: 38%;
+  text-align: left;
+}
+/* line 32, ../../sass/page/adress.scss */
+.right-content .receiving-address .td-c {
+  width: 20%;
+}
+/* line 33, ../../sass/page/adress.scss */
+.right-content .receiving-address .td-d {
+  width: 16%;
+}
+/* line 34, ../../sass/page/adress.scss */
+.right-content .receiving-address .td-e {
+  width: 16%;
+}
+/* line 35, ../../sass/page/adress.scss */
+.right-content .receiving-address .bare-grid-title li {
+  text-align: center;
+}
+
+/* line 40, ../../sass/page/adress.scss */
+.default-address {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f9d7d7;
+  border: 1px solid #ef3f3f;
+  color: #ef3f3f;
+}
