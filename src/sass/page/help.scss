@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../layout/header2";
+@import "../layout/left-nav";
+@import "../reset/common";
+@import "../layout/grid";
+@import "../layout/form";
+@import "../layout/tab-list2";
+
+
+.container {
+    padding-top: 20px;
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-content {
+    float: right;
+    width: 980px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 10px 20px 50px;
+    box-sizing: border-box;
+    font-size: 12px;
+    position: relative;
+}

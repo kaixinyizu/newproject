@@ -581,100 +581,201 @@ body {
   border-color: #f5222d;
 }
 
-/* line 12, ../../sass/page/account.scss */
+/* line 12, ../../sass/page/security.scss */
 .container {
   padding-top: 20px;
 }
 
-/* line 16, ../../sass/page/account.scss */
+/* line 16, ../../sass/page/security.scss */
 .left-nav {
   float: left;
 }
 
-/* line 20, ../../sass/page/account.scss */
+/* line 20, ../../sass/page/security.scss */
 .right-content {
   float: right;
   width: 980px;
   min-height: 400px;
   background-color: #fff;
-  padding: 10px 20px 50px;
+  padding: 50px 100px 50px 50px;
   box-sizing: border-box;
   font-size: 12px;
   position: relative;
 }
+/* line 30, ../../sass/page/security.scss */
+.right-content > .safe-list {
+  line-height: 40px;
+  border-bottom: solid 1px #d9d9d9;
+}
 
-/* line 31, ../../sass/page/account.scss */
-.user-content {
+/* line 37, ../../sass/page/security.scss */
+.safe-list span {
+  float: left;
+}
+/* line 41, ../../sass/page/security.scss */
+.safe-list span:nth-child(1) {
+  width: 150px;
+}
+/* line 45, ../../sass/page/security.scss */
+.safe-list a:nth-child(3) {
+  float: right;
+}
+
+/* line 50, ../../sass/page/security.scss */
+.safe-menu {
+  margin-bottom: 20px;
+}
+
+/* line 54, ../../sass/page/security.scss */
+.safe-menu .safe-list {
+  height: 80px;
+  line-height: 80px;
   border-bottom: 1px dashed #ccc;
 }
+/* line 59, ../../sass/page/security.scss */
+.safe-menu .safe-list span:nth-child(2) {
+  color: #999999;
+}
+/* line 63, ../../sass/page/security.scss */
+.safe-menu .safe-list .iconfont {
+  margin-right: 5px;
+}
+/* line 67, ../../sass/page/security.scss */
+.safe-menu .safe-list .icon-Group-1 {
+  color: #52ce52;
+}
+/* line 71, ../../sass/page/security.scss */
+.safe-menu .safe-list .icon-gantanhao-yuankuang {
+  color: #f5222d;
+}
 
-/* line 35, ../../sass/page/account.scss */
-.user-list {
-  height: 70px;
+/* line 76, ../../sass/page/security.scss */
+.safe-tips {
+  padding: 15px;
+  background: #f5f5f5;
+  margin: 20px 0;
 }
-/* line 38, ../../sass/page/account.scss */
-.user-list > label {
-  width: 100px;
+/* line 81, ../../sass/page/security.scss */
+.safe-tips .title {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 14px;
+}
+/* line 87, ../../sass/page/security.scss */
+.safe-tips li {
+  line-height: 22px;
+  color: #999999;
+}
+/* line 91, ../../sass/page/security.scss */
+.safe-tips li .dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  background: #999999;
+  margin: 5px;
+}
+
+/* line 102, ../../sass/page/security.scss */
+.set-pas .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 107, ../../sass/page/security.scss */
+.set-detail {
+  width: 450px;
+  margin: 20px auto;
+}
+/* line 110, ../../sass/page/security.scss */
+.set-detail .set-num {
+  height: 60px;
+}
+/* line 113, ../../sass/page/security.scss */
+.set-detail .set-list {
+  float: left;
+  width: 150px;
+  position: relative;
+  height: 30px;
   text-align: center;
-  line-height: 70px;
-  float: left;
+  padding-top: 30px;
+  line-height: 30px;
 }
-/* line 45, ../../sass/page/account.scss */
-.user-list img {
-  width: 68px;
-  height: 68px;
-  border-radius: 60px;
-  float: left;
+/* line 121, ../../sass/page/security.scss */
+.set-detail .set-list span {
+  background: #e8e8e8;
+  display: inline-block;
 }
-/* line 52, ../../sass/page/account.scss */
-.user-list .user-detail {
-  line-height: 70px;
-  padding-left: 20px;
-  float: left;
+/* line 126, ../../sass/page/security.scss */
+.set-detail .num {
+  width: 30px;
+  height: 30px;
+  color: #3e3e3e;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  z-index: 9;
 }
-/* line 58, ../../sass/page/account.scss */
-.user-list input[type="text"] {
-  height: 32px;
+/* line 138, ../../sass/page/security.scss */
+.set-detail .line {
+  height: 7px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+/* line 145, ../../sass/page/security.scss */
+.set-detail .set-list:nth-child(1) .line {
+  width: 50%;
+  left: 75px;
+}
+/* line 149, ../../sass/page/security.scss */
+.set-detail .set-list:nth-child(3) .line {
+  width: 50%;
+}
+/* line 153, ../../sass/page/security.scss */
+.set-detail .set-list.current span {
+  background: #f5222d;
+  color: #fff;
+}
+/* line 157, ../../sass/page/security.scss */
+.set-detail .set-list.current .line {
+  border-radius: 0 5px 5px 0;
+}
+/* line 161, ../../sass/page/security.scss */
+.set-detail form {
+  width: 250px;
+  margin: 30px auto;
+}
+/* line 164, ../../sass/page/security.scss */
+.set-detail form input[type="text"] {
+  width: 240px;
+  height: 34px;
   border: solid 1px #d9d9d9;
   padding-left: 10px;
+  margin-bottom: 10px;
 }
-/* line 63, ../../sass/page/account.scss */
-.user-list input[type="radio"] {
-  margin: 0 5px 0 10px;
+/* line 171, ../../sass/page/security.scss */
+.set-detail form button {
+  background: #cccccc;
 }
-
-/* line 69, ../../sass/page/account.scss */
-.btnbox {
+/* line 176, ../../sass/page/security.scss */
+.set-detail form .verification input {
+  float: left;
+  width: 150px;
+}
+/* line 180, ../../sass/page/security.scss */
+.set-detail form .verification button {
+  float: left;
+  width: 88px;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
-/* line 71, ../../sass/page/account.scss */
-.btnbox .btn-normal {
-  padding: 0 50px;
-}
-
-/* line 76, ../../sass/page/account.scss */
-.head-portrait {
-  padding: 20px;
-}
-/* line 79, ../../sass/page/account.scss */
-.head-portrait > p {
-  height: 40px;
-  line-height: 40px;
-}
-
-/* line 85, ../../sass/page/account.scss */
-.check-list {
-  border-bottom: 1px dashed #ccc;
-}
-
-/* line 90, ../../sass/page/account.scss */
-.check-list li {
-  float: left;
-  margin: 15px 20px;
-}
-/* line 94, ../../sass/page/account.scss */
-.check-list li > div {
-  height: 40px;
-  line-height: 40px;
+/* line 188, ../../sass/page/security.scss */
+.set-detail form .set-btn {
   text-align: center;
 }

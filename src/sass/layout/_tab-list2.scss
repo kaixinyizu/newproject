@@ -1,0 +1,26 @@
+.tab-list {
+    font-size: 15px;
+    margin-bottom:20px;
+
+    li {
+        float: left;
+        border-bottom: 2px solid #eaeaea;
+        padding: 0 30px;
+        line-height: 45px;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        &.tab-list-detail:hover{
+            color:$red-5;
+        }
+
+        &.line {
+            color: #eaeaea;
+            padding: 0;
+            font-weight:normal;
+        }
+        &.current{
+            border-color:$red-6;
+        }
+    }
+}

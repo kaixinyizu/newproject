@@ -55,10 +55,13 @@
         float: left;
     }
 
-    input {
+    input[type="text"] {
         height: 32px;
         border: $form-border;
         padding-left: 10px;
+    }
+    input[type="radio"] {
+      margin:0 5px 0 10px;
     }
 }
 
