@@ -235,291 +235,41 @@ body {
   margin: 0 10px;
 }
 
-/* line 7, ../../sass/page/register.scss */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-/* line 13, ../../sass/page/register.scss */
-.progress-bar {
+/* line 2, ../../sass/layout/_form.scss */
+.normal-check {
   position: relative;
-  margin: 80px auto 0;
-  width: 400px;
-  display: flex;
-  height: 52px;
-  overflow: hidden;
-}
-/* line 21, ../../sass/page/register.scss */
-.progress-bar .pro-step {
-  position: absolute;
-  text-align: center;
-}
-/* line 26, ../../sass/page/register.scss */
-.progress-bar .pro-line,
-.progress-bar .pro-step .step-index {
-  background: url(../../images/register/reg-icon.png) no-repeat;
-}
-/* line 31, ../../sass/page/register.scss */
-.progress-bar .pro-line {
-  position: absolute;
-  top: 7px;
-  width: 74px;
-  height: 10px;
-  background-position: 0 -40px;
-}
-/* line 40, ../../sass/page/register.scss */
-.progress-bar .pro-step .step-index {
-  margin: 0 auto;
-  display: block;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  background-position: -45px -200px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #ccc;
-}
-/* line 52, ../../sass/page/register.scss */
-.progress-bar .pro-step .step-desc {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #999;
-}
-/* line 60, ../../sass/page/register.scss */
-.progress-bar .cur-step .step-index {
-  background-position: 1px -200px;
-  color: #fff;
-}
-/* line 65, ../../sass/page/register.scss */
-.progress-bar .cur-step .step-desc {
-  color: #3b4;
-}
-/* line 71, ../../sass/page/register.scss */
-.progress-bar .done-step .step-index {
-  background-position: 0 0px;
-  color: transparent;
-}
-/* line 76, ../../sass/page/register.scss */
-.progress-bar .done-step .step-desc {
-  color: #3b4;
-}
-
-/* line 83, ../../sass/page/register.scss */
-.pro-step2 {
-  left: 105px;
-}
-
-/* line 87, ../../sass/page/register.scss */
-.pro-step3 {
-  left: 215px;
-}
-
-/* line 91, ../../sass/page/register.scss */
-.pro-step4 {
-  right: 10px;
-}
-
-/* line 95, ../../sass/page/register.scss */
-.pro-line1 {
-  left: 50px;
-}
-
-/* line 99, ../../sass/page/register.scss */
-.pro-line2 {
-  left: 160px;
-}
-
-/* line 103, ../../sass/page/register.scss */
-.pro-line3 {
-  left: 270px;
-}
-
-/* main */
-/* line 109, ../../sass/page/register.scss */
-.main {
-  margin: 50px auto 186px;
-  width: 400px;
-}
-
-/* line 114, ../../sass/page/register.scss */
-.reg-other {
-  margin-top: 28px;
-}
-/* line 117, ../../sass/page/register.scss */
-.reg-other a {
-  color: #333;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 14px;
-}
-/* line 124, ../../sass/page/register.scss */
-.reg-other a:hover {
-  color: #ff4d4f;
-}
-/* line 128, ../../sass/page/register.scss */
-.reg-other .iconfont {
-  font-size: 26px;
-  color: #adadad;
-  float: left;
-  margin-right: 8px;
-}
-/* line 135, ../../sass/page/register.scss */
-.reg-other .reg-other-inter {
-  float: right;
-}
-/* line 139, ../../sass/page/register.scss */
-.reg-other .reg-other-person {
-  float: left;
-}
-
-/* line 145, ../../sass/page/register.scss */
-.input-tip,
-.agree-tip {
-  color: #c5c5c5;
-}
-
-/* line 150, ../../sass/page/register.scss */
-.input-tip {
-  color: #c5c5c5;
-  height: 27px;
-  font-size: 12px;
-  padding-top: 5px;
-  clear: both;
-}
-/* line 157, ../../sass/page/register.scss */
-.input-tip span i {
-  display: inline-block;
   width: 16px;
   height: 16px;
-  vertical-align: text-top;
-  margin-right: 8px;
-}
-
-/* line 166, ../../sass/page/register.scss */
-.form-item {
-  position: relative;
-  border: solid 1px #d9d9d9;
-  width: 398px;
-  height: 52px;
-  z-index: 0;
-}
-/* line 172, ../../sass/page/register.scss */
-.form-item:hover {
-  border-color: #999 !important;
-}
-/* line 174, ../../sass/page/register.scss */
-.form-item:hover .select-country, .form-item:hover .item-input-wrap {
-  border-color: #999 !important;
-}
-/* line 178, ../../sass/page/register.scss */
-.form-item label {
-  float: left;
-  width: 87px;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 20px;
-}
-/* line 185, ../../sass/page/register.scss */
-.form-item .item-input-wrap {
-  float: left;
-  width: 288px;
-  height: 50px;
-  border: solid 1px #ddd;
-}
-/* line 191, ../../sass/page/register.scss */
-.form-item .field {
-  border: 0 none;
-  font-size: 14px;
-  width: 200px;
-  height: 19px;
-  padding-bottom: 11px;
-  padding-left: 20px;
-  padding-top: 16px;
-}
-
-/* line 201, ../../sass/page/register.scss */
-.item-phone-wrap {
-  height: 86px;
-  position: relative;
-  z-index: 2;
-}
-
-/* line 206, ../../sass/page/register.scss */
-.item-phonecode-wrap {
-  display: none;
-  height: 86px;
-}
-
-/* line 211, ../../sass/page/register.scss */
-.form-item-phone {
-  border: none;
-}
-/* line 213, ../../sass/page/register.scss */
-.form-item-phone .select-country {
-  border: solid 1px #d9d9d9;
-  border-right: none;
-  padding: 0 0 0 20px;
-  color: #666;
-}
-
-/* line 221, ../../sass/page/register.scss */
-.form-agreen .agree-tip i, .form-agreen .sim-checkbox, .reg-other .reg-ohter-icon {
-  background: url(../../images/form/reg-icon.png) no-repeat;
-}
-
-/* line 225, ../../sass/page/register.scss */
-txt {
-  position: absolute;
-  z-index: 2;
-  line-height: 46px;
-  margin-left: 20px;
-  font-size: 14px;
-  font-family: Arial;
-  color: #cccccc;
-  display: inline;
-}
-
-/* line 236, ../../sass/page/register.scss */
-.form-item-getcode {
-  line-height: 52px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-  cursor: pointer;
-  z-index: 2;
-}
-/* line 243, ../../sass/page/register.scss */
-.form-item-getcode:hover {
-  border-color: #666;
-  cursor: pointer;
-}
-
-/* line 248, ../../sass/page/register.scss */
-.form-agreen {
-  position: relative;
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 12px;
-  word-wrap: break-word;
-  white-space: nowrap;
-  margin-top: 30px;
-}
-/* line 256, ../../sass/page/register.scss */
-.form-agreen .sim-checkbox {
-  background-position: -107px -156px;
-  float: left;
   margin-right: 10px;
-  width: 18px;
-  height: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 10, ../../sass/layout/_form.scss */
+.normal-check.checked .icon-Group- {
+  display: block;
+}
+/* line 15, ../../sass/layout/_form.scss */
+.normal-check .sim-checkbox {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
   border: solid 1px #d9d9d9;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-/* line 264, ../../sass/page/register.scss */
-.form-agreen .sim-checkbox.not-checked {
-  background: 0 0;
+/* line 24, ../../sass/layout/_form.scss */
+.normal-check .icon-Group- {
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  font-weight: bold;
+  color: green;
+  line-height: 16px !important;
 }
-/* line 267, ../../sass/page/register.scss */
-.form-agreen input {
+/* line 33, ../../sass/layout/_form.scss */
+.normal-check input {
   position: absolute;
   left: 0;
   display: none;
@@ -527,42 +277,25 @@ txt {
   outline: none;
 }
 
-/* line 276, ../../sass/page/register.scss */
-.form-item .field::-webkit-input-placeholder {
-  color: #ccc;
-  font-size: 13px;
-}
-
-/* line 284, ../../sass/page/register.scss */
-.i-company, .i-def, .i-error1, .i-global, .i-info, .i-pwd-medium, .i-pwd-strong, .i-pwd-weak, .i-suc, .voiceVerifyDialog .ico {
-  background: url(../../images/form/icon.png) no-repeat;
-}
-
-/* line 287, ../../sass/page/register.scss */
-.i-error {
-  color: #c5c5c5;
-}
-
-/* line 290, ../../sass/page/register.scss */
-.i-cancel {
-  color: #c8c8c8;
-  position: absolute;
-  top: 16px;
-  right: 20px;
-  font-size: 20px;
+/* line 44, ../../sass/layout/_form.scss */
+.btn {
+  font-size: 12px;
+  color: #fff;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 30px;
+  border: none;
   cursor: pointer;
+  margin: 10px;
 }
 
-/* line 298, ../../sass/page/register.scss */
-.i-status {
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  color: green;
-  font-size: 20px;
+/* line 57, ../../sass/layout/_form.scss */
+.btn-normal {
+  background: #f5222d;
 }
 
-/* line 308, ../../sass/page/register.scss */
+/* line 60, ../../sass/layout/_form.scss */
 .btn-register {
   width: 100%;
   height: 54px;
@@ -574,4 +307,296 @@ txt {
   font-size: 16px;
   font-family: "Microsoft YaHei","Hiragino Sans GB";
   cursor: pointer;
+}
+
+/* line 8, ../../sass/page/register.scss */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 14, ../../sass/page/register.scss */
+.progress-bar {
+  position: relative;
+  margin: 80px auto 0;
+  width: 400px;
+  display: flex;
+  height: 52px;
+  overflow: hidden;
+}
+/* line 22, ../../sass/page/register.scss */
+.progress-bar .pro-step {
+  position: absolute;
+  text-align: center;
+}
+/* line 27, ../../sass/page/register.scss */
+.progress-bar .pro-line,
+.progress-bar .pro-step .step-index {
+  background: url(../../images/register/reg-icon.png) no-repeat;
+}
+/* line 32, ../../sass/page/register.scss */
+.progress-bar .pro-line {
+  position: absolute;
+  top: 7px;
+  width: 74px;
+  height: 10px;
+  background-position: 0 -40px;
+}
+/* line 41, ../../sass/page/register.scss */
+.progress-bar .pro-step .step-index {
+  margin: 0 auto;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-position: -45px -200px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+}
+/* line 53, ../../sass/page/register.scss */
+.progress-bar .pro-step .step-desc {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+/* line 61, ../../sass/page/register.scss */
+.progress-bar .cur-step .step-index {
+  background-position: 1px -200px;
+  color: #fff;
+}
+/* line 66, ../../sass/page/register.scss */
+.progress-bar .cur-step .step-desc {
+  color: #3b4;
+}
+/* line 72, ../../sass/page/register.scss */
+.progress-bar .done-step .step-index {
+  background-position: 0 0px;
+  color: transparent;
+}
+/* line 77, ../../sass/page/register.scss */
+.progress-bar .done-step .step-desc {
+  color: #3b4;
+}
+
+/* line 84, ../../sass/page/register.scss */
+.pro-step2 {
+  left: 105px;
+}
+
+/* line 88, ../../sass/page/register.scss */
+.pro-step3 {
+  left: 215px;
+}
+
+/* line 92, ../../sass/page/register.scss */
+.pro-step4 {
+  right: 10px;
+}
+
+/* line 96, ../../sass/page/register.scss */
+.pro-line1 {
+  left: 50px;
+}
+
+/* line 100, ../../sass/page/register.scss */
+.pro-line2 {
+  left: 160px;
+}
+
+/* line 104, ../../sass/page/register.scss */
+.pro-line3 {
+  left: 270px;
+}
+
+/* main */
+/* line 110, ../../sass/page/register.scss */
+.main {
+  margin: 50px auto 186px;
+  width: 400px;
+}
+
+/* line 115, ../../sass/page/register.scss */
+.reg-other {
+  margin-top: 28px;
+}
+/* line 118, ../../sass/page/register.scss */
+.reg-other a {
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* line 125, ../../sass/page/register.scss */
+.reg-other a:hover {
+  color: #ff4d4f;
+}
+/* line 129, ../../sass/page/register.scss */
+.reg-other .iconfont {
+  font-size: 26px;
+  color: #adadad;
+  float: left;
+  margin-right: 8px;
+}
+/* line 136, ../../sass/page/register.scss */
+.reg-other .reg-other-inter {
+  float: right;
+}
+/* line 140, ../../sass/page/register.scss */
+.reg-other .reg-other-person {
+  float: left;
+}
+
+/* line 146, ../../sass/page/register.scss */
+.input-tip,
+.agree-tip {
+  color: #c5c5c5;
+}
+
+/* line 151, ../../sass/page/register.scss */
+.input-tip {
+  color: #c5c5c5;
+  height: 27px;
+  font-size: 12px;
+  padding-top: 5px;
+  clear: both;
+}
+
+/* line 159, ../../sass/page/register.scss */
+.form-item {
+  position: relative;
+  border: solid 1px #d9d9d9;
+  width: 398px;
+  height: 52px;
+  z-index: 0;
+}
+/* line 165, ../../sass/page/register.scss */
+.form-item:hover {
+  border-color: #999 !important;
+}
+/* line 167, ../../sass/page/register.scss */
+.form-item:hover .select-country, .form-item:hover .item-input-wrap {
+  border-color: #999 !important;
+}
+/* line 171, ../../sass/page/register.scss */
+.form-item label {
+  float: left;
+  width: 87px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+/* line 178, ../../sass/page/register.scss */
+.form-item .item-input-wrap {
+  float: left;
+  width: 288px;
+  height: 50px;
+  border: solid 1px #ddd;
+}
+/* line 184, ../../sass/page/register.scss */
+.form-item .field {
+  border: 0 none;
+  font-size: 14px;
+  width: 200px;
+  height: 19px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+/* line 194, ../../sass/page/register.scss */
+.item-phone-wrap {
+  height: 86px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 199, ../../sass/page/register.scss */
+.item-phonecode-wrap {
+  display: none;
+  height: 86px;
+}
+
+/* line 204, ../../sass/page/register.scss */
+.form-item-phone {
+  border: none;
+}
+/* line 206, ../../sass/page/register.scss */
+.form-item-phone .select-country {
+  border: solid 1px #d9d9d9;
+  border-right: none;
+  padding: 0 0 0 20px;
+  color: #666;
+}
+
+/* line 216, ../../sass/page/register.scss */
+txt {
+  position: absolute;
+  z-index: 2;
+  line-height: 46px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #cccccc;
+  display: inline;
+}
+
+/* line 227, ../../sass/page/register.scss */
+.form-item-getcode {
+  line-height: 52px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+}
+/* line 234, ../../sass/page/register.scss */
+.form-item-getcode:hover {
+  border-color: #666;
+  cursor: pointer;
+}
+
+/* line 239, ../../sass/page/register.scss */
+.form-agreen {
+  position: relative;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 12px;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+/* line 247, ../../sass/page/register.scss */
+.form-item .field::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+/* line 255, ../../sass/page/register.scss */
+.i-company, .i-def, .i-error1, .i-global, .i-info, .i-pwd-medium, .i-pwd-strong, .i-pwd-weak, .i-suc, .voiceVerifyDialog .ico {
+  background: url(../../images/form/icon.png) no-repeat;
+}
+
+/* line 258, ../../sass/page/register.scss */
+.i-error {
+  color: #c5c5c5;
+}
+
+/* line 261, ../../sass/page/register.scss */
+.i-cancel {
+  color: #c8c8c8;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* line 269, ../../sass/page/register.scss */
+.i-status {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: green;
+  font-size: 20px;
 }

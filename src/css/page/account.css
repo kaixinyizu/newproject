@@ -581,17 +581,17 @@ body {
   border-color: #f5222d;
 }
 
-/* line 12, ../../sass/page/concern.scss */
+/* line 12, ../../sass/page/account.scss */
 .container {
   padding-top: 20px;
 }
 
-/* line 15, ../../sass/page/concern.scss */
+/* line 16, ../../sass/page/account.scss */
 .left-nav {
   float: left;
 }
 
-/* line 18, ../../sass/page/concern.scss */
+/* line 20, ../../sass/page/account.scss */
 .right-content {
   float: right;
   width: 980px;
@@ -600,79 +600,77 @@ body {
   padding: 10px 20px 50px;
   box-sizing: border-box;
   font-size: 12px;
-}
-
-/* line 29, ../../sass/page/concern.scss */
-.tab-list-content > div {
-  width: 200px;
-  height: 330px;
   position: relative;
-  float: left;
-  margin: 10px 6px;
-  cursor: pointer;
-}
-/* line 37, ../../sass/page/concern.scss */
-.tab-list-content > div:hover {
-  background: #f4f0ea;
-  box-shadow: 0 0 10px #aaa;
-}
-/* line 38, ../../sass/page/concern.scss */
-.tab-list-content > div:hover .icon-cuowu1 {
-  display: block;
-}
-/* line 45, ../../sass/page/concern.scss */
-.tab-list-content img {
-  width: 200px;
-}
-/* line 48, ../../sass/page/concern.scss */
-.tab-list-content .icon-cuowu1 {
-  display: none;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 24px;
-  height: 24px;
-  text-align: center;
-  background: #ccc;
-  text-align: center;
-  line-height: 24px;
-  color: #fff;
 }
 
-/* line 62, ../../sass/page/concern.scss */
-.tab-list-title {
-  width: 100%;
+/* line 31, ../../sass/page/account.scss */
+.user-content {
+  border-bottom: 1px dashed #ccc;
+}
+
+/* line 35, ../../sass/page/account.scss */
+.user-list {
+  height: 70px;
+}
+/* line 38, ../../sass/page/account.scss */
+.user-list > label {
+  width: 100px;
   text-align: center;
+  line-height: 70px;
+  float: left;
+}
+/* line 45, ../../sass/page/account.scss */
+.user-list img {
+  width: 68px;
+  height: 68px;
+  border-radius: 60px;
+  float: left;
+}
+/* line 52, ../../sass/page/account.scss */
+.user-list .user-detail {
+  line-height: 70px;
+  padding-left: 20px;
+  float: left;
+}
+/* line 58, ../../sass/page/account.scss */
+.user-list input {
+  height: 32px;
+  border: solid 1px #d9d9d9;
+  padding-left: 10px;
+}
+
+/* line 66, ../../sass/page/account.scss */
+.btnbox {
+  text-align: center;
+}
+/* line 68, ../../sass/page/account.scss */
+.btnbox .btn-normal {
+  padding: 0 50px;
+}
+
+/* line 73, ../../sass/page/account.scss */
+.head-portrait {
+  padding: 20px;
+}
+/* line 76, ../../sass/page/account.scss */
+.head-portrait > p {
   height: 40px;
-  padding: 30px 0 10px;
-}
-/* line 67, ../../sass/page/concern.scss */
-.tab-list-title p {
-  font-size: 14px;
-  font-weight: bold;
-}
-/* line 71, ../../sass/page/concern.scss */
-.tab-list-title .price {
-  color: #f5222d;
-  font-size: 12px;
-  line-height: 24px;
+  line-height: 40px;
 }
 
-/* line 77, ../../sass/page/concern.scss */
-.tab-list-btn {
-  padding: 0 10px;
+/* line 82, ../../sass/page/account.scss */
+.check-list {
+  border-bottom: 1px dashed #ccc;
 }
-/* line 79, ../../sass/page/concern.scss */
-.tab-list-btn button {
-  height: 24px;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
-  width: 90px;
+
+/* line 87, ../../sass/page/account.scss */
+.check-list li {
   float: left;
-  font-size: 12px;
-  text-align: center;
+  margin: 15px 20px;
 }
-/* line 88, ../../sass/page/concern.scss */
-.tab-list-btn button:last-child {
-  border-left: none;
+/* line 91, ../../sass/page/account.scss */
+.check-list li > div {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
 }

@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../layout/header2";
+@import "../layout/left-nav";
+@import "../reset/common";
+@import "../layout/grid";
+@import "../layout/form";
+@import "../layout/tab-list";
+
+
+.container {
+    padding-top: 20px;
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-content {
+    float: right;
+    width: 980px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 10px 20px 50px;
+    box-sizing: border-box;
+    font-size: 12px;
+    position: relative;
+}
+
+.user-content {
+    border-bottom: 1px dashed #ccc;
+}
+
+.user-list {
+    height: 70px;
+
+    >label {
+        width: 100px;
+        text-align: center;
+        line-height: 70px;
+        float: left;
+    }
+
+    img {
+        width: 68px;
+        height: 68px;
+        border-radius: 60px;
+        float: left;
+    }
+
+    .user-detail {
+        line-height: 70px;
+        padding-left: 20px;
+        float: left;
+    }
+
+    input {
+        height: 32px;
+        border: $form-border;
+        padding-left: 10px;
+    }
+}
+
+
+.btnbox {
+    text-align: center;
+    .btn-normal{
+        padding: 0 50px;
+    }
+}
+
+.head-portrait {
+    padding: 20px;
+
+    &>p {
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.check-list {
+    //padding-bottom:15px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.check-list li {
+    float: left;
+    margin: 15px 20px;
+
+    &>div {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
