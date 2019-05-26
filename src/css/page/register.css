@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, ../../sass/reset/_reset.scss */
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
   margin: 0;
@@ -235,7 +236,8 @@ body {
   margin: 0 10px;
 }
 
-/* line 2, ../../sass/layout/_form.scss */
+/*表单系列样式*/
+/* line 4, ../../sass/layout/_form.scss */
 .normal-check {
   position: relative;
   width: 16px;
@@ -244,11 +246,11 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-/* line 10, ../../sass/layout/_form.scss */
+/* line 12, ../../sass/layout/_form.scss */
 .normal-check.checked .icon-Group- {
   display: block;
 }
-/* line 15, ../../sass/layout/_form.scss */
+/* line 17, ../../sass/layout/_form.scss */
 .normal-check .sim-checkbox {
   width: 16px;
   height: 16px;
@@ -258,7 +260,7 @@ body {
   left: 0;
   top: 0;
 }
-/* line 24, ../../sass/layout/_form.scss */
+/* line 26, ../../sass/layout/_form.scss */
 .normal-check .icon-Group- {
   display: none;
   position: absolute;
@@ -268,7 +270,7 @@ body {
   color: green;
   line-height: 16px !important;
 }
-/* line 33, ../../sass/layout/_form.scss */
+/* line 35, ../../sass/layout/_form.scss */
 .normal-check input {
   position: absolute;
   left: 0;
@@ -277,7 +279,7 @@ body {
   outline: none;
 }
 
-/* line 44, ../../sass/layout/_form.scss */
+/* line 46, ../../sass/layout/_form.scss */
 .btn {
   font-size: 12px;
   color: #fff;
@@ -290,12 +292,12 @@ body {
   margin: 10px;
 }
 
-/* line 57, ../../sass/layout/_form.scss */
+/* line 59, ../../sass/layout/_form.scss */
 .btn-normal {
   background: #f5222d;
 }
 
-/* line 60, ../../sass/layout/_form.scss */
+/* line 62, ../../sass/layout/_form.scss */
 .btn-register {
   width: 100%;
   height: 54px;
@@ -305,6 +307,63 @@ body {
   background: #f5222d;
   border: 0;
   font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 75, ../../sass/layout/_form.scss */
+.btn-text-group {
+  display: inline-block;
+  width: 260px;
+  height: 34px;
+  line-height: 34px;
+  padding-right: 58px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+/* line 86, ../../sass/layout/_form.scss */
+.btn-text-group input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0 none;
+  outline: none;
+  float: left;
+  padding: 0 5px;
+  color: #666;
+}
+/* line 96, ../../sass/layout/_form.scss */
+.btn-text-group .group-btn {
+  width: 58px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+/* line 106, ../../sass/layout/_form.scss */
+.btn-square-red {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 30px;
+  background-color: #f5222d;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 121, ../../sass/layout/_form.scss */
+.btn-square-gray {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+  background-color: #cccccc;
+  font-size: 14px;
+  color: #fff;
   cursor: pointer;
 }
 
