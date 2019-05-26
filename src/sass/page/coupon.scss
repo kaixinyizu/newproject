@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../layout/header2";
+@import "../layout/left-nav";  
+@import "../reset/common";
+@import "../layout/form";
+@import "../layout/tab-list";
+@import "../layout/grid";
+
+
+
+body{
+    background-color: #f1f1f1;
+}
+.container{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.left-nav{
+    float: left;
+}
+.right-content{
+    float: right;
+    width: 980px;
+    min-height: 400px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+//优惠券内容区
+.coupon{
+  background-color: #fff;
+  padding: 25px 30px 50px 30px;
+}
+.coupon-search{
+    margin-bottom: 20px;
+    .link-a{
+        margin-left: 20px;
+    }
+}
+//优惠券使用状态
+.coupon-status{
+    margin-bottom: 30px;
+    .coupon-list{
+        padding: 20px 15px;
+        clear: both;
+        li{
+           float: left;
+           margin: 0 12px 12px 0;
+        }
+    }
+}
+
+//优惠券使用明细
+.coupon-detailed{
+    // 交易明细
+    .transaction{
+        padding:10px 20px;
+        .td-a{width: 14%}
+        .td-b{width: 20%}
+        .td-c{width: 20%}
+        .td-d{width: 15%}
+        .td-e{width: 16%}
+        .td-f{width: 15%}
+
+        .grid-nodata{text-align: center;line-height: 100px;}
+    }
+}

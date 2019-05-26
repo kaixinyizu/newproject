@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../swiper/swiper.min.css">
     <link rel="stylesheet" href="../css/page/personal-data.css">
     <script src="../font/iconfont.js"></script>
-    <script src="../swiper/swiper.min.js"></script>
 </head>
 
 <body>
@@ -251,23 +250,18 @@
                             </ul>
                         </div>
                         <div class="shopping-list">
-                            <p  class="module-title">常购清单 <span class="flr">更多></span></p>
+                            <p  class="module-title">常购清单 <span class="flr more-link">更多></span></p>
                             <div class="shopping-imgs">
-                                    <div class="swiper-container shopping-imgs-container">
-                                            <div class="swiper-wrapper">
-                                              <div class="swiper-slide">Slide 1</div>
-                                              <div class="swiper-slide">Slide 2</div>
-                                              <div class="swiper-slide">Slide 3</div>               <div class="swiper-slide">Slide 4</div>
-                                              <div class="swiper-slide">Slide 5</div>
-                                              <div class="swiper-slide">Slide 6</div>
-                                              <div class="swiper-slide">Slide 7</div>
-                                              <div class="swiper-slide">Slide 8</div>
-                                              <div class="swiper-slide">Slide 9</div>
-                                              <div class="swiper-slide">Slide 10</div>                           
-                                            </div>
-                                            <!-- Add Pagination -->
-                                            <div class="swiper-pagination"></div>                                    
-                                          </div>
+                                <ul class="clearfix">
+                                    <li><img src="../images/personal-data/demo.jpg" alt=""></li>
+                                    <li><img src="../images/personal-data/demo.jpg" alt=""></li>
+                                    <li><img src="../images/personal-data/demo.jpg" alt=""></li>
+                                    <li><img src="../images/personal-data/demo.jpg" alt=""></li>
+                                </ul>
+                                <div class="shopping-imgs-btn">
+                                    <span class="active"></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -276,19 +270,7 @@
             </div>
         </div>
     </div>
-    <script>
-            var swiper = new Swiper('.shopping-imgs-container', {
-              slidesPerView: 4,
-              spaceBetween: 30,
-              slidesPerGroup: 4,
-              loop: true,
-              loopFillGroupWithBlank: true,
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-              }
-            });
-          </script>
+
 </body>
 
 </html>

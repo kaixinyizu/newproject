@@ -111,3 +111,75 @@
     text-align: center;
     font-size: 12px;
 }
+//优惠券样式
+.coupon-label{
+    width: 282px;
+    height:121px;
+    .coupon-label-top{
+        width: 100%;
+        height: 89px;
+        padding-top:24px;
+        background: url(../../images/public/coupon-up.png);
+        box-sizing: border-box;
+        color: #fff;
+        position: relative;
+        .coupon-val{
+            float: left;
+            width: 108px;
+            text-align: center;
+            span:nth-child(1){
+                font-size: 38px;
+            }
+            span:nth-child(2){
+                font-size: 22px;
+            }
+        }
+        .coupon-effective-time{
+            line-height: 20px;
+            font-size: 12px;
+            p:nth-child(1){
+                font-weight: bold;
+            }
+            >span{
+                display: inline-block;
+                padding:0 3px;
+                border-radius: 3px;
+                background-color: #fff;
+                color: #a95147;
+            }
+        }
+        .coupon-type{
+            position: absolute;
+            top:2px;
+            left:10px;
+            display: inline-block;
+            padding:3px 5px;
+            border-radius: 3px;
+            background-color: #ce5649;
+            color: #fff;
+        }
+    }
+    .coupon-label-bottom{
+        width: 100%;
+        height: 32px;
+        line-height: 30px;
+        background: url(../../images/public/coupon-down.png);
+        color: #dd7781;
+        p{
+            padding-left: 18px;
+            padding-right: 40px;
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            .iconfont{
+                position: absolute;
+                top:1px;
+                right:16px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
