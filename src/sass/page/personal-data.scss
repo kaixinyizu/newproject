@@ -1,0 +1,252 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../layout/header2";
+@import "../reset/common";
+@import "../layout/left-nav";  
+@import "../layout/grid";  
+
+// 公共模块title
+.module-title{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+.container{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.left-nav{
+    float: left;
+}
+.right-content{
+    float: right;
+    width: 980px;
+    min-height: 400px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+// 我的钱包
+.my-Wallet{
+    position: relative;
+    height:230px;
+    padding-left: 250px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    .wallet-info{
+        padding-top: 30px;
+        padding-left: 20px;
+        >li{
+            float: left;
+            margin-right:60px;
+            
+        }
+        .submodule-title{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .submodule-name{
+            height: 54px;
+            span{
+                display: block;
+                margin-bottom: 5px;
+                &:nth-child(2){
+                    color: #999;;
+                }
+            }
+        }
+    }
+}
+// 会员权益
+.member{
+   width: 250px;
+   height:240px;
+   position: absolute;
+   top:-5px;
+   left:0;
+   padding-top:20px;
+   box-sizing: border-box; 
+   background-color: #ea6161;
+   text-align: center;
+   .member-portrait{
+       margin-bottom: 10px;
+   }
+   .member-plus{
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    span:nth-child(2){
+        font-size: 14px;
+        display: inline-block;
+        color: #e2e247;
+        background-color: #333;
+        padding: 0 3px;
+    }
+   }
+   .member-integral{
+       margin-bottom: 16px;
+       span{
+           display: inline-block;
+           padding: 2px 8px;
+           color: #333;
+           border:1px solid #333;
+           border-radius: 10px;
+       }
+   }
+   .member-good{
+       height:55px;
+       line-height: 55px;
+       background-color: #333;
+       font-size: 14px;
+       color: #e2e247;
+       .toshops{
+        line-height: 1.5;
+        display: inline-block;
+        padding: 2px 8px;
+        margin-left: 28px;
+        border:1px solid #333;
+        border-radius: 18px;
+        background-color: #e2e247;
+        color: #333;
+       }
+   }
+}
+.my-other-info{
+    overflow: hidden;
+    .my-info-left{
+         float: left;
+         width: 690px;
+         background-color: #fff;
+    }
+    .my-info-right{
+        float: right;
+        width: 270px;
+    }
+}
+//我的订单
+.my-order{
+    .order-operation{
+        overflow: hidden;
+        border-bottom: 1px solid #dddddd;
+        li{
+            float: left;
+            width: 20%;
+            height:120px;
+            text-align: center;
+            position: relative;
+            .bubble-tips{
+                position: absolute;
+                left:73px;
+                top: 30px;
+            }
+        }
+        .iconfont{
+            display: inline-block;
+            font-size: 40px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+    }
+    .order-info{
+       ul{
+           width: 100%;
+           height:80px;
+           border-bottom: 1px solid #ddd;
+           overflow: hidden;
+           &:nth-last-child(1){
+               border-bottom: none;
+           }
+          li{
+              float: left;
+              box-sizing: border-box;
+          }
+          .li-a{
+               padding-top: 10px;
+               width: 15%; 
+               text-align: center;
+               
+               img{
+                   width: 60px;
+                   height: 60px;
+                   background-color: aqua;
+               }
+          }
+          .li-b{
+               width: 62%; 
+               line-height: 20px;
+               color: #666;
+               padding-top: 20px;
+               p{
+                   width: 90%;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                   white-space: nowrap;}
+          }
+          .li-c{
+               width: 23%; 
+               line-height: 80px;
+               color: #999;
+               text-align: right;
+               padding-right: 15px;
+               a{
+                   margin:10px;
+                   color: #333;
+               }
+          }
+       }
+    }
+}
+//我的关注
+.my-concern{
+   margin-bottom: 20px;
+   background-color: #fff;
+   ul{
+       overflow: hidden;
+       padding: 20px 0 0 20px;
+       height:100px;
+       box-sizing: border-box;
+   }
+   li{
+       float: left;
+       width: 33.3%;
+
+       p{
+           line-height: 30px;
+           font-size:12px;
+           color: #666;
+       }
+       .concern-num{
+           font-size:14px;
+           .bubble-tips2{  
+              transform: translate(-3px,-15px)
+           }
+       }
+   }
+}
+//常购清单
+.shopping-list{
+    background-color: #fff;
+    .shopping-imgs{
+        padding: 30px 20px 0;
+    }
+    .shopping-imgs-container{
+        padding-bottom: 30px;
+    }
+    .shopping-imgs .swiper-slide{
+          height: 60px;
+    }
+    .swiper-slide img{
+        width: 50px;
+    }
+}

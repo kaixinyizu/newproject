@@ -48,7 +48,7 @@
 .link-a:hover{
      text-decoration: underline
 }
-
+.link-b{  }
 /*文字字号*/
 .f18{
     font-size: 18px;
@@ -62,4 +62,41 @@
 /*文字常用颜色 以fc起头*/
 .fc01{
     color: red;
+}
+
+/*气泡提示消息样式*/
+.bubble-news{  //左下尖角 其他圆角 白色气泡
+    font-size: 12px;
+    display: inline-block;
+    height:15px;
+    line-height:15px;
+    padding: 0 4px;
+    border-radius: 50% 40% 40% 0;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500!important;
+}
+
+.bubble-tips{ //圆角红背景白字气泡
+    font-size: 12px;
+    display: inline-block;
+    height:15px;
+    line-height:15px;
+    padding: 1px 5px;
+    border-radius: 35%;
+    background-color: rgb(201, 74, 74);
+    color: #fff;
+    font-weight: 500!important;
+}
+.bubble-tips2{ //圆角红边白背景气泡
+    font-size: 12px;
+    display: inline-block;
+    height:12px;
+    line-height:12px;
+    padding: 1px 2px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: rgb(201, 74, 74);
+    font-weight: 500!important;
+    border: 1px solid rgb(201, 74, 74);
 }
