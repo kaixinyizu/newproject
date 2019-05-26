@@ -38,12 +38,9 @@
 .header{
     width: 100%;
     height:100px;
-    background-color: red;
+    background-color: $bg;
     .logoleft{
         float:left;
-        img{
-            margin-top:25px;
-        }
         .logo{
             float:left;
         }
@@ -72,12 +69,12 @@
         }
         >li:hover{
             font-weight: bold;
-            background-color:#fd7171;
+            background-color:$nav-hc1;
             font-weight: bold;
             .header-nav-detailed{display: block}
         }
         >.selected{
-            background-color:#fd7171;
+            background-color:$nav-hc1;
             font-weight: bold;
         }
         .header-nav-detailed{
@@ -87,7 +84,7 @@
             top:100%;
             width: 100%;
             z-index: 9;
-            background-color: #fd7171;
+            background-color: $nav-hc1;
             font-size: 14px;
             font-weight: 500;
             padding-bottom: 10px;
@@ -97,7 +94,7 @@
                 padding-left: 30px;
                 box-sizing: border-box;
                 &:hover{
-                    background-color:red;
+                    background-color:$bg;
                 }  
             }
         }

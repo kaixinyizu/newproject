@@ -33,7 +33,7 @@ a {
 
 /* line 8, ../../sass/reset/_reset.scss */
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* line 9, ../../sass/reset/_reset.scss */
@@ -188,21 +188,17 @@ body {
 .header {
   width: 100%;
   height: 100px;
-  background-color: red;
+  background-color: #f5222d;
 }
 /* line 42, ../../sass/layout/_header2.scss */
 .header .logoleft {
   float: left;
 }
 /* line 44, ../../sass/layout/_header2.scss */
-.header .logoleft img {
-  margin-top: 25px;
-}
-/* line 47, ../../sass/layout/_header2.scss */
 .header .logoleft .logo {
   float: left;
 }
-/* line 51, ../../sass/layout/_header2.scss */
+/* line 48, ../../sass/layout/_header2.scss */
 .header .header-nav {
   position: absolute;
   height: 100px;
@@ -212,7 +208,7 @@ body {
   top: 0;
   color: #fff;
 }
-/* line 59, ../../sass/layout/_header2.scss */
+/* line 56, ../../sass/layout/_header2.scss */
 .header .header-nav > li {
   float: left;
   height: 100%;
@@ -221,30 +217,30 @@ body {
   margin: 0 5px;
   position: relative;
 }
-/* line 66, ../../sass/layout/_header2.scss */
+/* line 63, ../../sass/layout/_header2.scss */
 .header .header-nav > li i {
   margin-left: 10px;
 }
-/* line 69, ../../sass/layout/_header2.scss */
+/* line 66, ../../sass/layout/_header2.scss */
 .header .header-nav > li .bubble-news {
   transform: translate(-3px, -15px);
 }
-/* line 73, ../../sass/layout/_header2.scss */
+/* line 70, ../../sass/layout/_header2.scss */
 .header .header-nav > li:hover {
   font-weight: bold;
   background-color: #fd7171;
   font-weight: bold;
 }
-/* line 77, ../../sass/layout/_header2.scss */
+/* line 74, ../../sass/layout/_header2.scss */
 .header .header-nav > li:hover .header-nav-detailed {
   display: block;
 }
-/* line 79, ../../sass/layout/_header2.scss */
+/* line 76, ../../sass/layout/_header2.scss */
 .header .header-nav > .selected {
   background-color: #fd7171;
   font-weight: bold;
 }
-/* line 83, ../../sass/layout/_header2.scss */
+/* line 80, ../../sass/layout/_header2.scss */
 .header .header-nav .header-nav-detailed {
   display: none;
   position: absolute;
@@ -257,18 +253,18 @@ body {
   font-weight: 500;
   padding-bottom: 10px;
 }
-/* line 94, ../../sass/layout/_header2.scss */
+/* line 91, ../../sass/layout/_header2.scss */
 .header .header-nav .header-nav-detailed li {
   height: 36px;
   line-height: 36px;
   padding-left: 30px;
   box-sizing: border-box;
 }
-/* line 99, ../../sass/layout/_header2.scss */
+/* line 96, ../../sass/layout/_header2.scss */
 .header .header-nav .header-nav-detailed li:hover {
-  background-color: red;
+  background-color: #f5222d;
 }
-/* line 105, ../../sass/layout/_header2.scss */
+/* line 102, ../../sass/layout/_header2.scss */
 .header .header-search {
   position: absolute;
   right: 0;
@@ -281,7 +277,7 @@ body {
   overflow: hidden;
   padding-left: 30px;
 }
-/* line 116, ../../sass/layout/_header2.scss */
+/* line 113, ../../sass/layout/_header2.scss */
 .header .header-search .header-search-icon {
   position: absolute;
   left: 20px;
@@ -289,7 +285,7 @@ body {
   font-size: 18px;
   cursor: pointer;
 }
-/* line 123, ../../sass/layout/_header2.scss */
+/* line 120, ../../sass/layout/_header2.scss */
 .header .header-search input {
   border: none;
   outline: none;
@@ -299,7 +295,7 @@ body {
   padding: 0 10px 0 20px;
   float: left;
 }
-/* line 132, ../../sass/layout/_header2.scss */
+/* line 129, ../../sass/layout/_header2.scss */
 .header .header-search .header-search-btn {
   position: absolute;
   top: 0;
@@ -331,25 +327,29 @@ body {
 }
 /* line 13, ../../sass/layout/_left-nav.scss */
 .navigation .navigation-item li.selected {
-  color: red;
+  color: #f5222d;
 }
 /* line 16, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item li:hover {
+  color: #ff4d4f;
+}
+/* line 19, ../../sass/layout/_left-nav.scss */
 .navigation .navigation-item li span {
   cursor: pointer;
 }
-/* line 20, ../../sass/layout/_left-nav.scss */
+/* line 23, ../../sass/layout/_left-nav.scss */
 .navigation .navigation-item .navigation-item-title {
   font-size: 16px;
   color: #000;
   line-height: 40px;
 }
 
-/* line 29, ../../sass/layout/_left-nav.scss */
+/* line 32, ../../sass/layout/_left-nav.scss */
 .reddot {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background-color: #c30a0a;
+  background-color: #f5222d;
   border-radius: 50%;
   vertical-align: text-top;
 }
@@ -413,7 +413,7 @@ body {
 /*文字链接样式*/
 /* line 43, ../../sass/reset/_common.scss */
 .link-a {
-  color: #07a9c7;
+  color: #4184e8;
   cursor: pointer;
   margin: 0 3px;
 }
@@ -484,6 +484,19 @@ body {
   color: #c94a4a;
   font-weight: 500 !important;
   border: 1px solid #c94a4a;
+}
+
+/* line 103, ../../sass/reset/_common.scss */
+.tips {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background: #f5222d;
+  display: inline-block;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
 }
 
 /* line 1, ../../sass/layout/_grid.scss */
@@ -643,65 +656,69 @@ body {
   border-bottom: solid 1px #dddddd;
 }
 
-/* line 37, ../../sass/page/security.scss */
+/* line 36, ../../sass/page/security.scss */
+.safe-list {
+  overflow: hidden;
+}
+/* line 38, ../../sass/page/security.scss */
 .safe-list span {
   float: left;
 }
-/* line 41, ../../sass/page/security.scss */
+/* line 42, ../../sass/page/security.scss */
 .safe-list span:nth-child(1) {
   width: 150px;
 }
-/* line 45, ../../sass/page/security.scss */
+/* line 46, ../../sass/page/security.scss */
 .safe-list a:nth-child(3) {
   float: right;
 }
 
-/* line 50, ../../sass/page/security.scss */
+/* line 51, ../../sass/page/security.scss */
 .safe-menu {
   margin-bottom: 20px;
 }
 
-/* line 54, ../../sass/page/security.scss */
+/* line 55, ../../sass/page/security.scss */
 .safe-menu .safe-list {
   height: 80px;
   line-height: 80px;
   border-bottom: 1px dashed #ccc;
 }
-/* line 59, ../../sass/page/security.scss */
+/* line 60, ../../sass/page/security.scss */
 .safe-menu .safe-list span:nth-child(2) {
   color: #999999;
 }
-/* line 63, ../../sass/page/security.scss */
+/* line 64, ../../sass/page/security.scss */
 .safe-menu .safe-list .iconfont {
   margin-right: 5px;
 }
-/* line 67, ../../sass/page/security.scss */
+/* line 68, ../../sass/page/security.scss */
 .safe-menu .safe-list .icon-Group-1 {
   color: #52ce52;
 }
-/* line 71, ../../sass/page/security.scss */
+/* line 72, ../../sass/page/security.scss */
 .safe-menu .safe-list .icon-gantanhao-yuankuang {
   color: #f5222d;
 }
 
-/* line 76, ../../sass/page/security.scss */
+/* line 77, ../../sass/page/security.scss */
 .safe-tips {
   padding: 15px;
   background: #f5f5f5;
   margin: 20px 0;
 }
-/* line 81, ../../sass/page/security.scss */
+/* line 82, ../../sass/page/security.scss */
 .safe-tips .title {
   font-weight: bold;
   line-height: 30px;
   font-size: 14px;
 }
-/* line 87, ../../sass/page/security.scss */
+/* line 88, ../../sass/page/security.scss */
 .safe-tips li {
   line-height: 22px;
   color: #999999;
 }
-/* line 91, ../../sass/page/security.scss */
+/* line 92, ../../sass/page/security.scss */
 .safe-tips li .dot {
   width: 3px;
   height: 3px;
@@ -711,22 +728,22 @@ body {
   margin: 5px;
 }
 
-/* line 102, ../../sass/page/security.scss */
+/* line 103, ../../sass/page/security.scss */
 .set-pas .title {
   font-weight: bold;
   font-size: 18px;
 }
 
-/* line 107, ../../sass/page/security.scss */
+/* line 108, ../../sass/page/security.scss */
 .set-detail {
   width: 450px;
   margin: 20px auto;
 }
-/* line 110, ../../sass/page/security.scss */
+/* line 111, ../../sass/page/security.scss */
 .set-detail .set-num {
   height: 60px;
 }
-/* line 113, ../../sass/page/security.scss */
+/* line 114, ../../sass/page/security.scss */
 .set-detail .set-list {
   float: left;
   width: 150px;
@@ -736,12 +753,12 @@ body {
   padding-top: 30px;
   line-height: 30px;
 }
-/* line 121, ../../sass/page/security.scss */
+/* line 122, ../../sass/page/security.scss */
 .set-detail .set-list span {
   background: #e8e8e8;
   display: inline-block;
 }
-/* line 126, ../../sass/page/security.scss */
+/* line 127, ../../sass/page/security.scss */
 .set-detail .num {
   width: 30px;
   height: 30px;
@@ -754,7 +771,7 @@ body {
   left: 60px;
   z-index: 9;
 }
-/* line 138, ../../sass/page/security.scss */
+/* line 139, ../../sass/page/security.scss */
 .set-detail .line {
   height: 7px;
   width: 100%;
@@ -762,30 +779,30 @@ body {
   left: 0;
   top: 12px;
 }
-/* line 145, ../../sass/page/security.scss */
+/* line 146, ../../sass/page/security.scss */
 .set-detail .set-list:nth-child(1) .line {
   width: 50%;
   left: 75px;
 }
-/* line 149, ../../sass/page/security.scss */
+/* line 150, ../../sass/page/security.scss */
 .set-detail .set-list:nth-child(3) .line {
   width: 50%;
 }
-/* line 153, ../../sass/page/security.scss */
+/* line 154, ../../sass/page/security.scss */
 .set-detail .set-list.current span {
   background: #f5222d;
   color: #fff;
 }
-/* line 157, ../../sass/page/security.scss */
+/* line 158, ../../sass/page/security.scss */
 .set-detail .set-list.current .line {
   border-radius: 0 5px 5px 0;
 }
-/* line 161, ../../sass/page/security.scss */
+/* line 162, ../../sass/page/security.scss */
 .set-detail form {
   width: 250px;
   margin: 30px auto;
 }
-/* line 164, ../../sass/page/security.scss */
+/* line 165, ../../sass/page/security.scss */
 .set-detail form input[type="text"] {
   width: 240px;
   height: 34px;
@@ -793,16 +810,16 @@ body {
   padding-left: 10px;
   margin-bottom: 10px;
 }
-/* line 171, ../../sass/page/security.scss */
+/* line 172, ../../sass/page/security.scss */
 .set-detail form button {
   background: #cccccc;
 }
-/* line 176, ../../sass/page/security.scss */
+/* line 177, ../../sass/page/security.scss */
 .set-detail form .verification input {
   float: left;
   width: 150px;
 }
-/* line 180, ../../sass/page/security.scss */
+/* line 181, ../../sass/page/security.scss */
 .set-detail form .verification button {
   float: left;
   width: 88px;
@@ -810,7 +827,7 @@ body {
   margin: 0;
   text-align: center;
 }
-/* line 188, ../../sass/page/security.scss */
+/* line 189, ../../sass/page/security.scss */
 .set-detail form .set-btn {
   text-align: center;
 }

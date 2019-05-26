@@ -34,6 +34,7 @@
 }
 
 .safe-list {
+    overflow: hidden;
     span {
         float: left;
     }
@@ -69,7 +70,7 @@
     }
 
     .icon-gantanhao-yuankuang {
-        color: $red-6;
+        color: $link-a1;
     }
 }
 
@@ -151,7 +152,7 @@
     }
     .set-list.current{
         span{
-            background:$red-6;
+            background:$bg;
             color:#fff;
         }
         .line{
@@ -169,7 +170,7 @@
             margin-bottom:10px;
         }
         button{
-            background:#cccccc;
+            background:$btn-disable;
         }
     
         .verification{

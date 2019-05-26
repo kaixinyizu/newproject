@@ -41,14 +41,14 @@
 }
 /*文字链接样式*/
 .link-a{
-    color: #07a9c7;
+    color: #4184e8;
     cursor: pointer;
     margin: 0 3px;
 }
 .link-a:hover{
      text-decoration: underline
 }
-.link-b{  }
+
 /*文字字号*/
 .f18{
     font-size: 18px;
@@ -99,4 +99,15 @@
     color: rgb(201, 74, 74);
     font-weight: 500!important;
     border: 1px solid rgb(201, 74, 74);
+}
+.tips {//正圆红底白字气泡
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background: $bg;
+    display: inline-block;
+    line-height: 22px;
+    text-align: center;
+    font-size: 12px;
 }

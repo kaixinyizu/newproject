@@ -11,7 +11,10 @@
             color: #888;
             line-height: 36px;
             &.selected{
-                color: red;
+                color: $link-a1;
+            }
+            &:hover{
+                color: $link-a1-hover;
             }
             span{
                 cursor: pointer;
@@ -27,5 +30,5 @@
 }
 //红色消息圆点提示
 .reddot{
-    display:inline-block;width: 6px;height:6px;background-color: #c30a0a;border-radius: 50%;vertical-align: text-top;
+    display:inline-block;width: 6px;height:6px;background-color: $bg;border-radius: 50%;vertical-align: text-top;
 }

@@ -86,7 +86,7 @@ em {
                 text-decoration: none;
                 &.checked,&:hover{
                     font-weight: 700;
-                    color: #e4393c;
+                    color: $link-a1;
                 }
             }
         }
@@ -96,7 +96,6 @@ em {
         .login-tab-r{right:0;}
         // 输入登录区域
         .login-box{
-            display: none;
             width: 306px;
             padding: 20px;
             .td-h{
@@ -247,23 +246,21 @@ em {
             }
             // 登录按钮
             .login-btn {
-                border: 1px solid #cb2a2d;
                 margin: 0 auto;
                 height: 32px;
                 width: 99%;
                 position: relative;
                .btn-img {
-                    border: 1px solid #e85356;
+                    border: 1px solid $border-btn1;
                     display: block;
                     width: 302px;
-                    background: #e4393c;
+                    background: $bg;
                     height: 31px;
                     line-height: 31px;
                     color: #fff;
-                    font-size: 20px;
+                    font-size: 18px;
                     font-family: 'Microsoft YaHei';
                 }
-                a:hover { text-decoration:none; }
             }
         }
         // 二维码登录区域
@@ -434,7 +431,7 @@ em {
                 }
             }
             .regist-link {
-                color: #b61d1d;
+                color: $link-a1;
                 font-size: 14px;
                 b{
                     display: inline-block;
@@ -448,7 +445,7 @@ em {
                     margin-right: 5px;
                 }
                 a {
-                    color: #b61d1d;
+                    color: $link-a1;
                     outline: rgb(109, 109, 109) none 0px;
                 }
             }
@@ -485,7 +482,7 @@ em {
             .msg-error{
                 position: relative;
                 background: #ffebeb;
-                color: #e4393c;
+                color: $link-a1;
                 border: 1px solid #faccc6;
                 padding: 3px 10px 3px 40px;
                 line-height: 15px;
@@ -516,5 +513,6 @@ em {
         position: relative;
         z-index: 3;
         height: 475px;
+        background: url(../../images/signin/5cdcd316N971aa390.jpg) 0px 0px no-repeat;
     }
 }

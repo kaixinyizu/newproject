@@ -60,15 +60,43 @@
         border: $form-border;
         padding-left: 10px;
     }
+
     input[type="radio"] {
-      margin:0 5px 0 10px;
+        margin: 0 5px 0 10px;
     }
+
+    select {
+        /*将默认的select选择框样式清除*/
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        width:100px;
+        height:26px;
+        line-height:26px;
+        padding-left:5px;
+        border: $form-border;
+
+    }
+    select::-ms-expand{display:none;}
+    .selectdiv{
+        position: relative;
+        width: 120px;
+        line-height:26px;
+        margin-top:25px;
+        i{
+            position: absolute;
+            right:24px;
+            top:0px;
+        }
+    }
+
 }
 
 
 .btnbox {
     text-align: center;
-    .btn-normal{
+
+    .btn-normal {
         padding: 0 50px;
     }
 }
