@@ -1,24 +1,148 @@
-$form-border:solid 1px #d9d9d9;
+
 $redcolr:#ff4040;
-$red-1:#fff1f0;//selected
+
+//规范颜色
+$red-1:#fff1f0; //selected
 $red-2:#ffccc7;
 $red-3:#ffa39e;
 $red-4:#ff7875;
-$red-5:#ff4d4f;//hover
-$red-6:#f5222d;//brandcolor
-$red-7:#cf1322;//click
+$red-5:#ff4d4f; //hover
+$red-6:#f5222d; //brandcolor
+$red-7:#cf1322; //click
 $red-8:#a8071a;
 $red-9:#820014;
 $red-10:#5c0011;
 
 
-$gray-1:#fff;//背景色
+$gray-1:#fff; //背景色
 $gray-2:#fafafa;
 $gray-3:#f5f5f5;
 $gray-4:#e8e8e8;
-$gray-5:#d9d9d9;//不可点击色+分割线色
+$gray-5:#d9d9d9; //不可点击色+分割线色
 $gray-6:#bfbfbf;
 $gray-7:#8c8c8c;
-$gray-8:#595959;//弹出层蒙版
+$gray-8:#595959; //弹出层蒙版
 $gray-9:#262626;
 $gray-10:#000;
+
+
+//主题变量
+$bg: $red-6; 
+//文字颜色
+$font-c1:#3e3e3e; //默认文字颜色
+$place-c1:#cdcdcb; //注册inputplaceholder颜色
+$place-c2:#a4a4a4; //登陆inputplaceholder颜色
+
+//连接文字颜色
+$link-a1:$red-6; //默认品牌色连接
+$link-a1-hover:$red-5;
+$link-a2:#6699cc; //蓝色字体连接
+
+// 按钮背景颜色变量
+$btn-bgc1:$red-6; //默认品牌色
+$btn-bgc2:#f5f5f5; //立即购买按钮颜色
+$btn-bgc3:#fff1f0; //默认地址按钮颜色
+$btn-disable:#cccccc; //btn不可点击背景色
+
+// 按钮字体颜色变量
+$btn-c1:#fff;
+$btn-c2:#f5222d; //立即购买文字颜色
+$btn-c3:#f5222d; //默认地址文字颜色
+$btn-disablec:#fff; //btn不可点击文字色
+
+//按钮边框颜色
+$border-btn1:$red-6; //默认品牌色
+$border-btn1:#cccccc; //立即购买边框颜色
+$border-btn1:#f5222d; //默认地址边框颜色
+
+// 按钮选中色颜色变量
+$btn-hc1:$red-1; //默认选中
+
+// 导航背景颜色变量
+$nav-bgc1:#fff; //白色导航
+$nav-bgc2:$red-6; //红色（品牌色）导航
+
+// 导航字体颜色变量
+$nav-c1:$font-c1;
+$nav-c2:#fff; //红色（品牌色）导航白色
+
+// 导航项选中背景色颜色变量
+$nav-hc1:#fd7171; //红色导航项选中背景色
+$nav-fc1:#fff; //红色导航项选中文字色
+
+// 列表背景颜色变量
+$grid-bgc1:#f5f5f5;
+
+// 列表字体颜色变量
+$grid-c1:#333333;
+
+//边框颜色
+$border-c1:#dddddd; //注册input边框颜色+搜索input+select框
+$border-c2:#999999; //注册input边框hover
+$border-c3:#a6a6a6; //登陆input边框颜色
+$border-c4:#eaeaea; //tab下划线
+$border-c5:#e8e8e8; //列表边框颜色+分割线颜色
+$form-border:solid 1px $border-c1;
+
+//安全提示框
+$tip-bg:#f5f5f5; //安全提示背景色
+
+//遮罩弹出层背景颜色
+$mask-bg:$gray-8;
+
+
+// 输入框背景颜色变量
+
+// 单选框背景颜色变量
+
+// 复选框背景颜色变量
+
+// 主题风格
+$thems:"blue";
+
+// 对应主题对应变量值
+@if $thems=='red' {
+    $bg: $red-6; 
+
+    //连接文字颜色
+    $link-a1: $red-6; //默认品牌色连接
+    $link-a1-hover:$red-5;
+
+    // 按钮背景颜色变量
+    $btn-bgc1: $red-6; //默认品牌色
+
+    //按钮边框颜色
+    $border-btn1: $red-6; //默认品牌色
+
+    // 按钮选中色颜色变量
+    $btn-hc1: $red-1; //默认选中
+
+    // 导航背景颜色变量
+    $nav-bgc2: $red-6; //红色（品牌色）导航
+
+    // 导航项选中背景色颜色变量
+    $nav-hc1:#fd7171; //红色导航项选中背景色
+    $nav-fc1:#fff; //红色导航项选中文字色
+}
+
+@if $thems=='blue' {
+    $bg: $gray-6; 
+    //连接文字颜色
+    $link-a1: $gray-6; //默认品牌色连接
+    $link-a1-hover:$gray-5;
+    // 按钮背景颜色变量
+    $btn-bgc1: $gray-6; //默认品牌色
+
+    //按钮边框颜色
+    $border-btn1: $gray-6; //默认品牌色
+
+    // 按钮选中色颜色变量
+    $btn-hc1: $gray-1; //默认选中
+
+    // 导航背景颜色变量
+    $nav-bgc2: $gray-6;
+
+    // 导航项选中背景色颜色变量
+    $nav-hc1:$gray-3; //红色导航项选中背景色
+    $nav-fc1:#000; //红色导航项选中文字色
+}

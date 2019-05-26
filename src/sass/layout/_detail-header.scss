@@ -26,7 +26,7 @@
         height: 38px;
         width: 100%;
         border-radius: 20px;
-        border: 1px solid $red-6;
+        border: 1px solid $border-btn1;
 
         input {
             border: none;
@@ -42,7 +42,7 @@
         button {
             float: right;
             width: 90px;
-            background: $red-6;
+            background: $btn-bgc1;
             border: none;
             box-shadow: none;
             color: #fff;
@@ -69,7 +69,7 @@
         }
 
         a:hover {
-            color: $red-5;
+            color: $link-a1-hover;
         }
     }
 
@@ -79,7 +79,7 @@
         width: 122px;
         height: 38px;
         border-radius: 20px;
-        border: 1px solid $red-6;
+        border: 1px solid $border-btn1;
         font-size: 14px;
         position: relative;
         &:hover .shopingdetail{
@@ -87,7 +87,7 @@
         }
 
         a {
-            color: $red-6;
+            color: $link-a1;
             text-decoration: none;
             position: absolute;
             left: 16px;
@@ -101,7 +101,7 @@
         }
 
         .num {
-            background: $red-6;
+            background: $link-a1;
             border-radius: 10px;
             color: #fff;
             padding: 0 5px;
@@ -144,7 +144,7 @@
         line-height: 0;
         border: 8px;
         border-style: dashed dashed solid dashed;
-        border-color: transparent transparent $red-6 transparent;
+        border-color: transparent transparent $link-a1 transparent;
     }
 
     .triangle:after,
@@ -165,7 +165,7 @@
     }
 
     .shoppinglist {
-        border: 1px solid $red-6;
+        border: 1px solid $border-btn1;
         height: 326px;
     }
 
@@ -180,7 +180,7 @@
         cursor: pointer;
         .shoppingprice{
             font-size:12px;
-            color:$red-6;
+            color:$link-a1;
             line-height:35px;
             margin-left:10px;
             float:left;
@@ -230,13 +230,13 @@
             color:#9b9b9b;
         }
         .totalprice{
-            color:$red-6;
+            color:$link-a1;
         }
         .btn-register{
             float:right;
         }
         .btn{
-            background:$red-6;
+            background:$btn-bgc1;
             font-size:12px;
             color:#fff;
             border-radius: 2px;
@@ -321,7 +321,7 @@
     }
 
     & a:hover {
-        color: $red-5;
+        color: $link-a1-hover;
     }
 
     .cw-icon {
@@ -378,7 +378,7 @@
     }
 
     .item a.selected {
-        background-color: $red-6;
+        background-color: $bg;
         color: #fff;
     }
 
@@ -401,7 +401,7 @@
     }
 
     .style-red {
-        color: $red-6;
+        color: $link-a1;
     }
 
     li.spacer {
@@ -450,7 +450,7 @@
         width: 15px;
         height: 10px;
         border: solid 1px transparent;
-        background: $red-6;
+        background: $bg;
     }
 
     .shortcut_btn:hover {
@@ -578,7 +578,7 @@
         }
 
         .redtxt {
-            color: $red-6;
+            color: $link-a1;
         }
     }
 }
@@ -601,7 +601,7 @@
 
     .header_nav_left_title {
         width: 170px;
-        background: $redcolr;
+        background: $link-a1;
         color: #fff;
         height: 38px;
         text-align: left;
@@ -626,7 +626,7 @@
         }
 
         a:hover {
-            color: $red-5;
+            color: $link-a1-hover;
         }
     }
 }

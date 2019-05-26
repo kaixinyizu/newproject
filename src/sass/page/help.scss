@@ -6,8 +6,10 @@
 @import "../reset/common";
 @import "../layout/grid";
 @import "../layout/form";
-@import "../layout/tab-list2";
 
+body {
+    background: #fff;
+}
 
 .container {
     padding-top: 20px;
@@ -15,15 +17,107 @@
 
 .left-nav {
     float: left;
+    font-size: 13px;
+
 }
+
+.left-navigation {
+    width: 200px;
+    background: #fff;
+
+}
+
+.nav-title {
+    min-height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+}
+
+.nav-list {
+    border: 1px solid #e8e8e8;
+    margin-bottom: 15px;
+
+    li {
+        min-height: 45px;
+        text-align: center;
+        line-height: 45px;
+
+        a {
+            color: #3e3e3e;
+            text-decoration: none;
+            display: block;
+        }
+
+        a:hover {
+            background: $gray-3;
+        }
+    }
+
+    &>li {
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    &>li:last-child {
+        border: none;
+    }
+    .icon-xiangshang1 {
+        display: none;
+    }
+
+    &>li.current {
+        .icon-xiangshang1 {
+            display: inline-block;
+        }
+        .icon-xiangxia1{
+            display: none;
+        }
+        &>a {
+            background: $gray-3;
+        }
+    }
+
+    
+}
+
+.nav-list-dropdown {
+    .current a {
+        color: $red-6;
+    }
+}
+
 
 .right-content {
     float: right;
     width: 980px;
     min-height: 400px;
     background-color: #fff;
-    padding: 10px 20px 50px;
+    padding: 10px 30px 50px;
     box-sizing: border-box;
     font-size: 12px;
     position: relative;
+
+    border: 1px solid #e8e8e8;
+}
+
+.right-title {
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.right-list {
+    padding: 20px 0;
+    font-size: 12px;
+    line-height: 22px;
+
+    dt {
+        font-weight: bold;
+    }
+
+    dd {
+        padding-left: 12px;
+    }
 }

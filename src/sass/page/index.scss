@@ -35,10 +35,9 @@ body {
             a {
                 font-size: 14px;
                 color: #626262;
-                text-decoration: none;
 
                 &:hover {
-                    color: $red-5;
+                    color: $link-a1-hover;
                 }
             }
 
@@ -76,7 +75,6 @@ body {
     }
 
     .cate_pop_left {
-        float: left;
         width: 800px;
     }
 
@@ -95,7 +93,6 @@ body {
             background-color: #333;
             line-height: 24px;
             color: #fff;
-            text-decoration: none;
 
             &:hover {
                 background-color: #5c5251;
@@ -119,7 +116,7 @@ body {
         }
 
         a:hover {
-            color: $red-5;
+            color: $link-a1-hover;
         }
     }
 
@@ -308,7 +305,7 @@ body {
                     -moz-border-radius: 2px;
                     border-radius: 2px;
                     color: #fff;
-                    background-color: #e47f7f;
+                    background-color: $link-a1;
                     margin-right: 6px;
                 }
             }
@@ -373,7 +370,7 @@ body {
         i {
             float: left;
             font-size: 23px;
-            color: $redcolr;
+            color: $link-a1;
             position: relative;
             top: 0px;
             left: 4px;
@@ -417,7 +414,7 @@ body {
                 text-decoration: none;
 
                 &:hover {
-                    color: $red-5;
+                    color: $link-a1-hover;
                 }
             }
         }
@@ -443,7 +440,7 @@ body {
             }
 
             .slider-list-num {
-                color: $redcolr;
+                color: $link-a1;
                 float: left;
                 width: 30px;
                 height: 40px;
@@ -465,7 +462,7 @@ body {
                 cursor: pointer;
 
                 &:hover {
-                    color: $red-5;
+                    color: $link-a1-hover;
                 }
             }
 
@@ -566,7 +563,7 @@ body {
 
             .mod_price {
                 font-size: 14px;
-                color: #e33333;
+                color: $link-a1;
                 font-family: 'impact', sans-serif;
                 display: block;
                 height: 38px;
@@ -628,7 +625,7 @@ body {
                 cursor: pointer;
 
                 &:hover {
-                    color: $red-5;
+                    color: $link-a1-hover;
                 }
             }
 
@@ -645,7 +642,8 @@ body {
 }
 
 .content.list3 {
-    height: 425px;
+    height: auto;
+    overflow: hidden;
     background: #fff;
 
     .box {
@@ -790,8 +788,6 @@ body {
     }
 
     .box.left {
-
-
         .qua_nav {
             height: 30px;
             position: absolute;
@@ -818,6 +814,8 @@ body {
         .qua_show_con {
             position: relative;
             padding-left: 20px;
+            overflow: hidden;
+            padding-bottom: 26px;
 
             >img {
                 width: 189px;
@@ -989,7 +987,7 @@ body {
 
         .imgdetail {
             text-align: center;
-            padding: 0 40px;
+            padding: 0 40px 25px;
             margin-top: 5px;
 
             p {
@@ -999,7 +997,7 @@ body {
 
             .price {
                 font-weight: normal;
-                color: $red-6;
+                color: $link-a1;
                 border-bottoM: $form-border;
                 padding-bottom: 5px;
                 margin-bottom: 5px;
@@ -1012,12 +1010,13 @@ body {
 
             .detail {
                 color: $gray-7;
+                font-size:12px;
             }
         }
 
         .xianshi {
             font-size: 12px;
-            background: $red-6;
+            background: $link-a1;
             padding: 1px 3px;
             display: block;
             width: 50px;
@@ -1059,7 +1058,7 @@ body {
 
 .mui-lift .mui-lift-nav.nav-header,
 .mui-lift .mui-lift-nav.nav-header:hover {
-    background-color: $red-6;
+    background-color: $link-a1;
 }
 
 .mui-lift .mui-lift-nav .mui-lift-nav-name {
@@ -1076,7 +1075,7 @@ body {
 }
 
 .mui-lift .mui-lift-nav:hover {
-    background-color: $red-5;
+    background-color: $link-a1-hover;
 }
 
 // 品牌
@@ -1105,8 +1104,8 @@ body {
         left: 0;
         top: 0;
         z-index: 1;
-        background-color: #333;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: $mask-bg;
+        background-color: rgba(89, 89, 89, .8);
         transition: all .3s ease-out;
         opacity: 0;
         filter: alpha(opacity=0);
@@ -1143,7 +1142,7 @@ body {
         height: 18px;
         font-size: 12px;
         line-height: 15px;
-        background-color: #FF0036;
+        background-color: $link-a1;
         border-radius: 9px;
     }
 
@@ -1174,7 +1173,7 @@ body {
 
     .refresh-btn:hover {
         color: #fff;
-        background-color: $red-6;
+        background-color: $link-a1;
     }
 
     .refresh-btn .btn-text {

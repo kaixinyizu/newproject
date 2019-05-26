@@ -228,6 +228,47 @@ body {
   color: red;
 }
 
+/*气泡提示消息样式*/
+/* line 68, ../../sass/reset/_common.scss */
+.bubble-news {
+  font-size: 12px;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  padding: 0 4px;
+  border-radius: 50% 40% 40% 0;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500 !important;
+}
+
+/* line 80, ../../sass/reset/_common.scss */
+.bubble-tips {
+  font-size: 12px;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  padding: 1px 5px;
+  border-radius: 35%;
+  background-color: #c94a4a;
+  color: #fff;
+  font-weight: 500 !important;
+}
+
+/* line 91, ../../sass/reset/_common.scss */
+.bubble-tips2 {
+  font-size: 12px;
+  display: inline-block;
+  height: 12px;
+  line-height: 12px;
+  padding: 1px 2px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #c94a4a;
+  font-weight: 500 !important;
+  border: 1px solid #c94a4a;
+}
+
 /* line 1, ../../sass/layout/_header.scss */
 body {
   font: 12px/150% tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;

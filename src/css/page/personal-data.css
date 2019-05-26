@@ -311,49 +311,6 @@ body {
   cursor: pointer;
 }
 
-/* line 1, ../../sass/layout/_left-nav.scss */
-.navigation {
-  width: 200px;
-  background-color: #fff;
-  padding: 40px 0 40px 50px;
-  box-sizing: border-box;
-}
-/* line 6, ../../sass/layout/_left-nav.scss */
-.navigation .navigation-item {
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-/* line 9, ../../sass/layout/_left-nav.scss */
-.navigation .navigation-item li {
-  font-size: 14px;
-  color: #888;
-  line-height: 36px;
-}
-/* line 13, ../../sass/layout/_left-nav.scss */
-.navigation .navigation-item li.selected {
-  color: red;
-}
-/* line 16, ../../sass/layout/_left-nav.scss */
-.navigation .navigation-item li span {
-  cursor: pointer;
-}
-/* line 20, ../../sass/layout/_left-nav.scss */
-.navigation .navigation-item .navigation-item-title {
-  font-size: 16px;
-  color: #000;
-  line-height: 40px;
-}
-
-/* line 29, ../../sass/layout/_left-nav.scss */
-.reddot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: #c30a0a;
-  border-radius: 50%;
-  vertical-align: text-top;
-}
-
 /* line 1, ../../sass/reset/_common.scss */
 .fll {
   float: left;
@@ -486,6 +443,49 @@ body {
   border: 1px solid #c94a4a;
 }
 
+/* line 1, ../../sass/layout/_left-nav.scss */
+.navigation {
+  width: 200px;
+  background-color: #fff;
+  padding: 40px 0 40px 50px;
+  box-sizing: border-box;
+}
+/* line 6, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* line 9, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item li {
+  font-size: 14px;
+  color: #888;
+  line-height: 36px;
+}
+/* line 13, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item li.selected {
+  color: red;
+}
+/* line 16, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item li span {
+  cursor: pointer;
+}
+/* line 20, ../../sass/layout/_left-nav.scss */
+.navigation .navigation-item .navigation-item-title {
+  font-size: 16px;
+  color: #000;
+  line-height: 40px;
+}
+
+/* line 29, ../../sass/layout/_left-nav.scss */
+.reddot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #c30a0a;
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+
 /* line 1, ../../sass/layout/_grid.scss */
 .bare-grid {
   border: 1px solid #ccc;
@@ -513,69 +513,291 @@ body {
   color: #666;
 }
 
-/* line 11, ../../sass/page/adress.scss */
+/* line 10, ../../sass/page/personal-data.scss */
+.module-title {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 19, ../../sass/page/personal-data.scss */
 body {
   background-color: #f1f1f1;
 }
 
-/* line 14, ../../sass/page/adress.scss */
+/* line 22, ../../sass/page/personal-data.scss */
 .container {
   padding-top: 20px;
+  padding-bottom: 50px;
+  overflow: hidden;
 }
 
-/* line 17, ../../sass/page/adress.scss */
+/* line 27, ../../sass/page/personal-data.scss */
 .left-nav {
   float: left;
 }
 
-/* line 20, ../../sass/page/adress.scss */
+/* line 30, ../../sass/page/personal-data.scss */
 .right-content {
   float: right;
   width: 980px;
   min-height: 400px;
-  background-color: #fff;
-  padding: 50px 100px 50px 50px;
   box-sizing: border-box;
   font-size: 12px;
 }
-/* line 28, ../../sass/page/adress.scss */
-.right-content .receiving-address-info {
+
+/* line 38, ../../sass/page/personal-data.scss */
+.my-Wallet {
+  position: relative;
+  height: 230px;
+  padding-left: 250px;
+  background-color: #fff;
   margin-bottom: 20px;
 }
-/* line 30, ../../sass/page/adress.scss */
-.right-content .receiving-address .td-a {
-  width: 10%;
+/* line 44, ../../sass/page/personal-data.scss */
+.my-Wallet .wallet-info {
+  padding-top: 30px;
+  padding-left: 20px;
 }
-/* line 31, ../../sass/page/adress.scss */
-.right-content .receiving-address .td-b {
-  width: 38%;
-  text-align: left;
+/* line 47, ../../sass/page/personal-data.scss */
+.my-Wallet .wallet-info > li {
+  float: left;
+  margin-right: 60px;
 }
-/* line 32, ../../sass/page/adress.scss */
-.right-content .receiving-address .td-c {
-  width: 20%;
+/* line 52, ../../sass/page/personal-data.scss */
+.my-Wallet .wallet-info .submodule-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-/* line 33, ../../sass/page/adress.scss */
-.right-content .receiving-address .td-d {
-  width: 16%;
+/* line 57, ../../sass/page/personal-data.scss */
+.my-Wallet .wallet-info .submodule-name {
+  height: 54px;
 }
-/* line 34, ../../sass/page/adress.scss */
-.right-content .receiving-address .td-e {
-  width: 16%;
+/* line 59, ../../sass/page/personal-data.scss */
+.my-Wallet .wallet-info .submodule-name span {
+  display: block;
+  margin-bottom: 5px;
 }
-/* line 35, ../../sass/page/adress.scss */
-.right-content .receiving-address .bare-grid-title li {
-  text-align: center;
+/* line 62, ../../sass/page/personal-data.scss */
+.my-Wallet .wallet-info .submodule-name span:nth-child(2) {
+  color: #999;
 }
 
-/* line 40, ../../sass/page/adress.scss */
-.default-address {
-  display: inline-block;
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
+/* line 70, ../../sass/page/personal-data.scss */
+.member {
+  width: 250px;
+  height: 240px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-color: #ea6161;
   text-align: center;
-  background-color: #f9d7d7;
-  border: 1px solid #ef3f3f;
-  color: #ef3f3f;
+}
+/* line 80, ../../sass/page/personal-data.scss */
+.member .member-portrait {
+  margin-bottom: 10px;
+}
+/* line 83, ../../sass/page/personal-data.scss */
+.member .member-plus {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 88, ../../sass/page/personal-data.scss */
+.member .member-plus span:nth-child(2) {
+  font-size: 14px;
+  display: inline-block;
+  color: #e2e247;
+  background-color: #333;
+  padding: 0 3px;
+}
+/* line 96, ../../sass/page/personal-data.scss */
+.member .member-integral {
+  margin-bottom: 16px;
+}
+/* line 98, ../../sass/page/personal-data.scss */
+.member .member-integral span {
+  display: inline-block;
+  padding: 2px 8px;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+/* line 106, ../../sass/page/personal-data.scss */
+.member .member-good {
+  height: 55px;
+  line-height: 55px;
+  background-color: #333;
+  font-size: 14px;
+  color: #e2e247;
+}
+/* line 112, ../../sass/page/personal-data.scss */
+.member .member-good .toshops {
+  line-height: 1.5;
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 28px;
+  border: 1px solid #333;
+  border-radius: 18px;
+  background-color: #e2e247;
+  color: #333;
+}
+
+/* line 124, ../../sass/page/personal-data.scss */
+.my-other-info {
+  overflow: hidden;
+}
+/* line 126, ../../sass/page/personal-data.scss */
+.my-other-info .my-info-left {
+  float: left;
+  width: 690px;
+  background-color: #fff;
+}
+/* line 131, ../../sass/page/personal-data.scss */
+.my-other-info .my-info-right {
+  float: right;
+  width: 270px;
+}
+
+/* line 138, ../../sass/page/personal-data.scss */
+.my-order .order-operation {
+  overflow: hidden;
+  border-bottom: 1px solid #dddddd;
+}
+/* line 141, ../../sass/page/personal-data.scss */
+.my-order .order-operation li {
+  float: left;
+  width: 20%;
+  height: 120px;
+  text-align: center;
+  position: relative;
+}
+/* line 147, ../../sass/page/personal-data.scss */
+.my-order .order-operation li .bubble-tips {
+  position: absolute;
+  left: 73px;
+  top: 30px;
+}
+/* line 153, ../../sass/page/personal-data.scss */
+.my-order .order-operation .iconfont {
+  display: inline-block;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+/* line 162, ../../sass/page/personal-data.scss */
+.my-order .order-info ul {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+/* line 167, ../../sass/page/personal-data.scss */
+.my-order .order-info ul:nth-last-child(1) {
+  border-bottom: none;
+}
+/* line 170, ../../sass/page/personal-data.scss */
+.my-order .order-info ul li {
+  float: left;
+  box-sizing: border-box;
+}
+/* line 174, ../../sass/page/personal-data.scss */
+.my-order .order-info ul .li-a {
+  padding-top: 10px;
+  width: 15%;
+  text-align: center;
+}
+/* line 179, ../../sass/page/personal-data.scss */
+.my-order .order-info ul .li-a img {
+  width: 60px;
+  height: 60px;
+  background-color: aqua;
+}
+/* line 185, ../../sass/page/personal-data.scss */
+.my-order .order-info ul .li-b {
+  width: 62%;
+  line-height: 20px;
+  color: #666;
+  padding-top: 20px;
+}
+/* line 190, ../../sass/page/personal-data.scss */
+.my-order .order-info ul .li-b p {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 196, ../../sass/page/personal-data.scss */
+.my-order .order-info ul .li-c {
+  width: 23%;
+  line-height: 80px;
+  color: #999;
+  text-align: right;
+  padding-right: 15px;
+}
+/* line 202, ../../sass/page/personal-data.scss */
+.my-order .order-info ul .li-c a {
+  margin: 10px;
+  color: #333;
+}
+
+/* line 211, ../../sass/page/personal-data.scss */
+.my-concern {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+/* line 214, ../../sass/page/personal-data.scss */
+.my-concern ul {
+  overflow: hidden;
+  padding: 20px 0 0 20px;
+  height: 100px;
+  box-sizing: border-box;
+}
+/* line 220, ../../sass/page/personal-data.scss */
+.my-concern li {
+  float: left;
+  width: 33.3%;
+}
+/* line 224, ../../sass/page/personal-data.scss */
+.my-concern li p {
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+}
+/* line 229, ../../sass/page/personal-data.scss */
+.my-concern li .concern-num {
+  font-size: 14px;
+}
+/* line 231, ../../sass/page/personal-data.scss */
+.my-concern li .concern-num .bubble-tips2 {
+  transform: translate(-3px, -15px);
+}
+
+/* line 238, ../../sass/page/personal-data.scss */
+.shopping-list {
+  background-color: #fff;
+}
+/* line 240, ../../sass/page/personal-data.scss */
+.shopping-list .shopping-imgs {
+  padding: 30px 20px 0;
+}
+/* line 243, ../../sass/page/personal-data.scss */
+.shopping-list .shopping-imgs-container {
+  padding-bottom: 30px;
+}
+/* line 246, ../../sass/page/personal-data.scss */
+.shopping-list .shopping-imgs .swiper-slide {
+  height: 60px;
+}
+/* line 249, ../../sass/page/personal-data.scss */
+.shopping-list .swiper-slide img {
+  width: 50px;
 }

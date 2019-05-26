@@ -118,12 +118,11 @@
     a {
         color: #333;
         cursor: pointer;
-        text-decoration: none;
         font-size:14px;
     }
 
     a:hover {
-        color: $red-5;
+        color: $link-a1-hover;
     }
 
     .iconfont {
@@ -131,14 +130,6 @@
         color:#adadad;
         float:left;
         margin-right:8px;
-    }
-
-    .reg-other-inter {
-        float: right;
-    }
-
-    .reg-other-person {
-        float: left;
     }
 
 }
@@ -165,7 +156,7 @@
     &:hover {
         border-color:#999!important;
         .select-country,.item-input-wrap{
-            border-color:#999!important;
+            border-color:$border-c2!important;
         }
     }
     label {
@@ -179,7 +170,7 @@
         float: left;
         width: 288px;
         height: 50px;
-        border: solid 1px #ddd;
+        border: $form-border;
     }
     .field {
         border: 0 none;
@@ -213,16 +204,16 @@
 
 
 
-txt{
-    position: absolute;
-    z-index: 2;
-    line-height: 46px;
-    margin-left: 20px;
-    font-size: 14px;
-    font-family: Arial;
-    color: rgb(204, 204, 204);
-    display: inline;
-}
+// txt{
+//     position: absolute;
+//     z-index: 2;
+//     line-height: 46px;
+//     margin-left: 20px;
+//     font-size: 14px;
+//     font-family: Arial;
+//     color: rgb(204, 204, 204);
+//     display: inline;
+// }
 
 .form-item-getcode {
     line-height: 52px;
@@ -232,7 +223,7 @@ txt{
     cursor: pointer;
     z-index: 2;
     &:hover {
-        border-color: #666;
+        border-color:$border-c2!important;
         cursor: pointer;
     }
 }
@@ -273,6 +264,3 @@ txt{
     color: green;
     font-size: 20px;
 }
-
-
-//btn
