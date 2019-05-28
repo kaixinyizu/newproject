@@ -169,3 +169,29 @@
     display: block;
     
 }
+.product-dropdown{
+    width:400px;
+    height:auto;
+    background:#fff;
+    position: relative;
+    border:1px solid $border-btn2;
+    padding:10px 20px;
+    margin-top:10px;
+    .triangle{
+        top:-16px;
+        left:10px;
+    }
+}
+.product-detail{
+    p{
+        height:24px;
+        line-height:24px;
+        margin:5px 0;
+    }
+}
+.iconforbr{
+    span {
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+}

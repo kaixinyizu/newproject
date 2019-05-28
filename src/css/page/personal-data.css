@@ -312,18 +312,18 @@ body {
   float: left;
 }
 
-/* line 4, ../../sass/reset/_common.scss */
+/* line 5, ../../sass/reset/_common.scss */
 .flr {
   float: right;
 }
 
-/* line 7, ../../sass/reset/_common.scss */
+/* line 9, ../../sass/reset/_common.scss */
 .bold {
   font-weight: bold;
 }
 
 /*版心*/
-/* line 11, ../../sass/reset/_common.scss */
+/* line 14, ../../sass/reset/_common.scss */
 .page-auto {
   width: 1200px;
   margin: 0 auto;
@@ -332,7 +332,7 @@ body {
 }
 
 /*其他版心定义 以w开头*/
-/* line 18, ../../sass/reset/_common.scss */
+/* line 22, ../../sass/reset/_common.scss */
 .w99 {
   width: 990px;
   margin: 0 auto;
@@ -341,7 +341,7 @@ body {
 }
 
 /*清除浮动*/
-/* line 25, ../../sass/reset/_common.scss */
+/* line 30, ../../sass/reset/_common.scss */
 .clearfix:after {
   content: ".";
   visibility: hidden;
@@ -350,13 +350,13 @@ body {
   clear: both;
 }
 
-/* line 33, ../../sass/reset/_common.scss */
+/* line 38, ../../sass/reset/_common.scss */
 .clearfix {
   zoom: 1;
 }
 
 /*多余字符串省略号代替*/
-/* line 37, ../../sass/reset/_common.scss */
+/* line 43, ../../sass/reset/_common.scss */
 .box-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -364,55 +364,55 @@ body {
 }
 
 /*文字链接样式*/
-/* line 43, ../../sass/reset/_common.scss */
+/* line 50, ../../sass/reset/_common.scss */
 .link-a {
   color: #4184e8;
   cursor: pointer;
   margin: 0 3px;
 }
 
-/* line 48, ../../sass/reset/_common.scss */
+/* line 56, ../../sass/reset/_common.scss */
 .link-a:hover {
   text-decoration: underline;
 }
 
 /*灰色连接*/
-/* line 52, ../../sass/reset/_common.scss */
+/* line 61, ../../sass/reset/_common.scss */
 .link-b {
   color: #656565;
   cursor: pointer;
   margin: 0 3px;
 }
 
-/* line 57, ../../sass/reset/_common.scss */
+/* line 67, ../../sass/reset/_common.scss */
 .link-b:hover {
   text-decoration: underline;
 }
 
 /*文字字号*/
-/* line 62, ../../sass/reset/_common.scss */
+/* line 72, ../../sass/reset/_common.scss */
 .f18 {
   font-size: 18px;
 }
 
-/* line 65, ../../sass/reset/_common.scss */
+/* line 76, ../../sass/reset/_common.scss */
 .f22 {
   font-size: 22px;
 }
 
-/* line 68, ../../sass/reset/_common.scss */
+/* line 80, ../../sass/reset/_common.scss */
 .f26 {
   font-size: 26px;
 }
 
 /*文字常用颜色 以fc起头*/
-/* line 72, ../../sass/reset/_common.scss */
+/* line 85, ../../sass/reset/_common.scss */
 .fc01 {
   color: red;
 }
 
 /*气泡提示消息样式*/
-/* line 77, ../../sass/reset/_common.scss */
+/* line 90, ../../sass/reset/_common.scss */
 .bubble-news {
   font-size: 12px;
   display: inline-block;
@@ -425,7 +425,7 @@ body {
   font-weight: 500 !important;
 }
 
-/* line 89, ../../sass/reset/_common.scss */
+/* line 103, ../../sass/reset/_common.scss */
 .bubble-tips {
   font-size: 12px;
   display: inline-block;
@@ -438,7 +438,7 @@ body {
   font-weight: 500 !important;
 }
 
-/* line 100, ../../sass/reset/_common.scss */
+/* line 116, ../../sass/reset/_common.scss */
 .bubble-tips2 {
   font-size: 12px;
   display: inline-block;
@@ -452,7 +452,7 @@ body {
   border: 1px solid #c94a4a;
 }
 
-/* line 112, ../../sass/reset/_common.scss */
+/* line 130, ../../sass/reset/_common.scss */
 .tips {
   color: #fff;
   width: 22px;
@@ -465,12 +465,12 @@ body {
   font-size: 12px;
 }
 
-/* line 124, ../../sass/reset/_common.scss */
+/* line 144, ../../sass/reset/_common.scss */
 .coupon-label {
   width: 282px;
   height: 121px;
 }
-/* line 127, ../../sass/reset/_common.scss */
+/* line 148, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top {
   width: 100%;
   height: 89px;
@@ -480,30 +480,30 @@ body {
   color: #fff;
   position: relative;
 }
-/* line 135, ../../sass/reset/_common.scss */
+/* line 157, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top .coupon-val {
   float: left;
   width: 108px;
   text-align: center;
 }
-/* line 139, ../../sass/reset/_common.scss */
+/* line 162, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top .coupon-val span:nth-child(1) {
   font-size: 38px;
 }
-/* line 142, ../../sass/reset/_common.scss */
+/* line 166, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top .coupon-val span:nth-child(2) {
   font-size: 22px;
 }
-/* line 146, ../../sass/reset/_common.scss */
+/* line 171, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top .coupon-effective-time {
   line-height: 20px;
   font-size: 12px;
 }
-/* line 149, ../../sass/reset/_common.scss */
+/* line 175, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top .coupon-effective-time p:nth-child(1) {
   font-weight: bold;
 }
-/* line 152, ../../sass/reset/_common.scss */
+/* line 179, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top .coupon-effective-time > span {
   display: inline-block;
   padding: 0 3px;
@@ -511,7 +511,7 @@ body {
   background-color: #fff;
   color: #a95147;
 }
-/* line 160, ../../sass/reset/_common.scss */
+/* line 188, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-top .coupon-type {
   position: absolute;
   top: 2px;
@@ -522,7 +522,7 @@ body {
   background-color: #ce5649;
   color: #fff;
 }
-/* line 171, ../../sass/reset/_common.scss */
+/* line 200, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-bottom {
   width: 100%;
   height: 32px;
@@ -530,7 +530,7 @@ body {
   background: url(../../images/public/coupon-down.png);
   color: #dd7781;
 }
-/* line 177, ../../sass/reset/_common.scss */
+/* line 207, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-bottom p {
   padding-left: 18px;
   padding-right: 40px;
@@ -539,13 +539,121 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 184, ../../sass/reset/_common.scss */
+/* line 215, ../../sass/reset/_common.scss */
 .coupon-label .coupon-label-bottom p .iconfont {
   position: absolute;
   top: 1px;
   right: 16px;
   font-size: 14px;
   cursor: pointer;
+}
+
+/* line 227, ../../sass/reset/_common.scss */
+.triangle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 233, ../../sass/reset/_common.scss */
+.triangle:before,
+.triangle .before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #f5222d transparent;
+}
+
+/* line 250, ../../sass/reset/_common.scss */
+.triangle:after,
+.triangle .after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 7px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  left: 1px;
+  top: 2px;
+}
+
+/* line 268, ../../sass/reset/_common.scss */
+.triangle.white:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* line 283, ../../sass/reset/_common.scss */
+.triangle.gray:before,
+.triangle.gray .before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #cccccc transparent;
+}
+
+/*
+<div class="iconforbr">
+<span class="current">iphone7/8</span>
+<span>iphone7/8</span>
+</div>*/
+/* line 307, ../../sass/reset/_common.scss */
+.iconforbr span {
+  display: inline-block;
+  height: 22px;
+  border: 1px solid #cccccc;
+  line-height: 22px;
+  padding: 0 5px;
+}
+/* line 314, ../../sass/reset/_common.scss */
+.iconforbr span.sell-out {
+  border: 1px dashed #cccccc;
+}
+/* line 318, ../../sass/reset/_common.scss */
+.iconforbr span.current {
+  position: relative;
+  border: 2px solid #b3a078;
+}
+/* line 321, ../../sass/reset/_common.scss */
+.iconforbr span.current i {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #b3a078;
 }
 
 /* line 1, ../../sass/layout/_left-nav.scss */

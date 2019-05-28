@@ -1,12 +1,15 @@
 .fll {
     float: left;
 }
+
 .flr {
     float: right;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
+
 /*版心*/
 .page-auto {
     width: 1200px;
@@ -14,13 +17,15 @@
     position: relative;
     clear: both;
 }
+
 /*其他版心定义 以w开头*/
-.w99{
+.w99 {
     width: 990px;
     margin: 0 auto;
     position: relative;
     clear: both;
 }
+
 /*清除浮动*/
 .clearfix:after {
     content: ".";
@@ -33,83 +38,97 @@
 .clearfix {
     zoom: 1;
 }
+
 /*多余字符串省略号代替*/
 .box-ellipsis {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 /*文字链接样式*/
-.link-a{
+.link-a {
     color: #4184e8;
     cursor: pointer;
     margin: 0 3px;
 }
-.link-a:hover{
-     text-decoration: underline
+
+.link-a:hover {
+    text-decoration: underline
 }
+
 /*灰色连接*/
-.link-b{
-    color:#656565;
+.link-b {
+    color: #656565;
     cursor: pointer;
     margin: 0 3px;
 }
-.link-b:hover{
+
+.link-b:hover {
     text-decoration: underline
 }
 
 /*文字字号*/
-.f18{
+.f18 {
     font-size: 18px;
 }
-.f22{
+
+.f22 {
     font-size: 22px;
 }
-.f26{
+
+.f26 {
     font-size: 26px;
 }
+
 /*文字常用颜色 以fc起头*/
-.fc01{
+.fc01 {
     color: red;
 }
 
 /*气泡提示消息样式*/
-.bubble-news{  //左下尖角 其他圆角 白色气泡
+.bubble-news {
+    //左下尖角 其他圆角 白色气泡
     font-size: 12px;
     display: inline-block;
-    height:15px;
-    line-height:15px;
+    height: 15px;
+    line-height: 15px;
     padding: 0 4px;
     border-radius: 50% 40% 40% 0;
     background-color: #fff;
     color: #000;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
 
-.bubble-tips{ //圆角红背景白字气泡
+.bubble-tips {
+    //圆角红背景白字气泡
     font-size: 12px;
     display: inline-block;
-    height:15px;
-    line-height:15px;
+    height: 15px;
+    line-height: 15px;
     padding: 1px 5px;
     border-radius: 35%;
     background-color: rgb(201, 74, 74);
     color: #fff;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
-.bubble-tips2{ //圆角红边白背景气泡
+
+.bubble-tips2 {
+    //圆角红边白背景气泡
     font-size: 12px;
     display: inline-block;
-    height:12px;
-    line-height:12px;
+    height: 12px;
+    line-height: 12px;
     padding: 1px 2px;
     border-radius: 8px;
     background-color: #fff;
     color: rgb(201, 74, 74);
-    font-weight: 500!important;
+    font-weight: 500 !important;
     border: 1px solid rgb(201, 74, 74);
 }
-.tips {//正圆红底白字气泡
+
+.tips {
+    //正圆红底白字气泡
     color: #fff;
     width: 22px;
     height: 22px;
@@ -120,71 +139,83 @@
     text-align: center;
     font-size: 12px;
 }
+
 //优惠券样式
-.coupon-label{
+.coupon-label {
     width: 282px;
-    height:121px;
-    .coupon-label-top{
+    height: 121px;
+
+    .coupon-label-top {
         width: 100%;
         height: 89px;
-        padding-top:24px;
+        padding-top: 24px;
         background: url(../../images/public/coupon-up.png);
         box-sizing: border-box;
         color: #fff;
         position: relative;
-        .coupon-val{
+
+        .coupon-val {
             float: left;
             width: 108px;
             text-align: center;
-            span:nth-child(1){
+
+            span:nth-child(1) {
                 font-size: 38px;
             }
-            span:nth-child(2){
+
+            span:nth-child(2) {
                 font-size: 22px;
             }
         }
-        .coupon-effective-time{
+
+        .coupon-effective-time {
             line-height: 20px;
             font-size: 12px;
-            p:nth-child(1){
+
+            p:nth-child(1) {
                 font-weight: bold;
             }
-            >span{
+
+            >span {
                 display: inline-block;
-                padding:0 3px;
+                padding: 0 3px;
                 border-radius: 3px;
                 background-color: #fff;
                 color: #a95147;
             }
         }
-        .coupon-type{
+
+        .coupon-type {
             position: absolute;
-            top:2px;
-            left:10px;
+            top: 2px;
+            left: 10px;
             display: inline-block;
-            padding:3px 5px;
+            padding: 3px 5px;
             border-radius: 3px;
             background-color: #ce5649;
             color: #fff;
         }
     }
-    .coupon-label-bottom{
+
+    .coupon-label-bottom {
         width: 100%;
         height: 32px;
         line-height: 30px;
         background: url(../../images/public/coupon-down.png);
         color: #dd7781;
-        p{
+
+        p {
             padding-left: 18px;
             padding-right: 40px;
             position: relative;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            .iconfont{
+
+            .iconfont {
                 position: absolute;
-                top:1px;
-                right:16px;
+                top: 1px;
+                right: 16px;
                 font-size: 14px;
                 cursor: pointer;
             }
@@ -192,3 +223,108 @@
     }
 }
 
+//红边小三角样式
+.triangle {
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.triangle:before,
+.triangle .before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent $link-a1 transparent;
+}
+
+.triangle:after,
+.triangle .after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border: 7px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    left: 1px;
+    top: 2px;
+}
+
+//白色小三角样式
+.triangle.white:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #fff transparent;
+}
+
+//白色灰边小三角样式
+.triangle.gray:before,
+.triangle.gray .before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent $border-btn2 transparent;
+}
+
+//筛选产品--默认灰色实线，选中current金色实线+金色下角标，无此产品sell-out 灰色虚线
+/*
+<div class="iconforbr">
+<span class="current">iphone7/8</span>
+<span>iphone7/8</span>
+</div>*/
+.iconforbr {
+    span {
+        display: inline-block;
+        height: 22px;
+        border: 1px solid $border-btn2;
+        line-height: 22px;
+        padding: 0 5px;
+    }
+    span.sell-out {
+        border: 1px dashed $border-btn2;
+    }
+
+    span.current {
+        position: relative;
+        border: 2px solid #b3a078;
+        i {
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #b3a078;
+        }
+    }
+}
