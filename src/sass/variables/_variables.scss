@@ -30,6 +30,7 @@ $gray-10:#000;
 $bg: $red-6; 
 //文字颜色
 $font-c1:#3e3e3e; //默认文字颜色
+$font-c2:$gray-7;//灰色字体
 $place-c1:#cdcdcb; //注册inputplaceholder颜色
 $place-c2:#a4a4a4; //登陆inputplaceholder颜色
 
@@ -52,8 +53,8 @@ $btn-disablec:#fff; //btn不可点击文字色
 
 //按钮边框颜色
 $border-btn1:$red-6; //默认品牌色
-$border-btn1:#cccccc; //立即购买边框颜色
-$border-btn1:#f5222d; //默认地址边框颜色
+$border-btn2:#cccccc; //立即购买边框颜色
+$border-btn3:#f5222d; //默认地址边框颜色
 
 // 按钮选中色颜色变量
 $btn-hc1:$red-1; //默认选中

@@ -39,3 +39,12 @@
         }
     }
 }
+//列表灰色背景头部
+.titlegray {
+    height: 42px;
+    border: $form-border;
+    background: $gray-3;
+    font-size: 13px;
+    color: #666;
+    line-height: 42px;
+}

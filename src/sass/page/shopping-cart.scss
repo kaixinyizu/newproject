@@ -1,0 +1,171 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../reset/common";
+@import "../layout/header";
+@import "../layout/footer";
+@import "../layout/detail-header";
+@import "../layout/detail-footer";
+@import "../layout/form";
+@import "../layout/tab-list";
+
+
+// 空购物车
+.empty-cart {
+    width: 1198px;
+    border: $form-border;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.empty-content {
+    width: 200px;
+    margin: 100px auto 0;
+    text-align: center;
+
+    img {
+        width: 200px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $gray-7;
+    }
+
+    .btn-square-pink {
+        background-color: #fff;
+        color: $link-a1;
+        margin-top: 23px;
+    }
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.titlegray {
+    height: 42px;
+    border: $form-border;
+    background: $gray-3;
+    font-size: 13px;
+    color: #666;
+    line-height: 42px;
+}
+
+.tab-list-nav {
+    margin-bottom: 15px;
+
+    li {
+        float: left;
+        position: relative;
+
+        text-align: center;
+        cursor: pointer;
+
+        a {
+            color: #666;
+            text-decoration: none;
+        }
+
+    }
+
+    li:nth-child(1) {
+        width: 110px;
+    }
+
+    li:nth-child(2) {
+        width: 390px;
+    }
+
+    li:nth-child(3) {
+        width: 180px;
+    }
+
+    li:nth-child(4) {
+        width: 220px;
+    }
+
+    li:nth-child(5) {
+        width: 120px;
+    }
+
+    li:nth-child(6) {
+        width: 100px;
+    }
+}
+
+
+.order-detail {
+    border: $form-border;
+    padding: 20px;
+    margin: 10px 0;
+
+    &.discount {
+        background: #fffbf0;
+    }
+    .redtips{
+        color:$link-a1;
+        border:1px solid $border-btn1;
+        padding:2px;
+        font-size:12px;
+        border-radius: 2px;
+        margin-left: 10px;
+    }
+}
+
+.discount-detail {
+    height: 46px;
+    border-bottom: $form-border;
+    margin-bottom: 10px;
+    line-height: 46px;
+
+    button {
+        margin-top: 10px;
+        margin: 10px;
+    }
+    
+}
+
+.order {
+    td:nth-child(1) {
+        width: 50px;
+    }
+
+    td:nth-child(2) {
+        width: 120px;
+    }
+
+    td:nth-child(3) {
+        width: 335px;
+        font-size:13px;
+    }
+
+    td:nth-child(4) {
+        width: 180px;
+    }
+
+    td:nth-child(5) {
+        width: 220px;
+    }
+
+    td:nth-child(6) {
+        width: 150px;
+
+    }
+
+    td:nth-child(7) {
+        .linl-b {
+            display: block;
+        }
+
+    }
+
+}
+
+.product-detail{
+    color: $font-c2;
+    font-size:12px;
+    margin-top:5px;
+    display: block;
+    
+}

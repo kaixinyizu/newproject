@@ -48,11 +48,11 @@
                 cursor: pointer;
             }
             .selected{
-                border-top: 4px solid red;
+                border-top: 4px solid $border-btn1;
                 border-bottom: 4px solid #fff;
                 line-height: 32px;
                 background-color: #fff;
-                color: red;
+                color: $bg;
                 z-index: 9;
             }
         }
