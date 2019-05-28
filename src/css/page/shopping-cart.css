@@ -137,6 +137,19 @@ body {
   background: #f5f5f5;
 }
 
+/* line 69, ../../sass/reset/_reset.scss */
+select {
+  /*将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* line 75, ../../sass/reset/_reset.scss */
+select::-ms-expand {
+  display: none;
+}
+
 /* line 1, ../../sass/reset/_common.scss */
 .fll {
   float: left;
@@ -1381,6 +1394,37 @@ body {
 }
 
 /* line 50, ../../sass/layout/_form.scss */
+.normal-select {
+  position: relative;
+  min-width: 120px;
+  line-height: 26px;
+}
+/* line 55, ../../sass/layout/_form.scss */
+.normal-select select {
+  min-width: 100px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 5px;
+  border: solid 1px #dddddd;
+}
+/* line 62, ../../sass/layout/_form.scss */
+.normal-select i {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+
+/* line 70, ../../sass/layout/_form.scss */
+.normal-input {
+  min-width: 180px;
+  height: 28px;
+  border: solid 1px #dddddd;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+/* line 80, ../../sass/layout/_form.scss */
 .btn {
   font-size: 12px;
   color: #fff;
@@ -1393,12 +1437,12 @@ body {
   margin: 10px;
 }
 
-/* line 63, ../../sass/layout/_form.scss */
+/* line 93, ../../sass/layout/_form.scss */
 .btn-normal {
   background: #f5222d;
 }
 
-/* line 67, ../../sass/layout/_form.scss */
+/* line 97, ../../sass/layout/_form.scss */
 .btn-register {
   width: 100%;
   height: 54px;
@@ -1411,7 +1455,7 @@ body {
   cursor: pointer;
 }
 
-/* line 80, ../../sass/layout/_form.scss */
+/* line 110, ../../sass/layout/_form.scss */
 .btn-text-group {
   display: inline-block;
   width: 260px;
@@ -1424,7 +1468,7 @@ body {
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 92, ../../sass/layout/_form.scss */
+/* line 122, ../../sass/layout/_form.scss */
 .btn-text-group input {
   width: 100%;
   height: 100%;
@@ -1435,7 +1479,7 @@ body {
   padding: 0 5px;
   color: #666;
 }
-/* line 103, ../../sass/layout/_form.scss */
+/* line 133, ../../sass/layout/_form.scss */
 .btn-text-group .group-btn {
   width: 58px;
   position: absolute;
@@ -1444,7 +1488,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 113, ../../sass/layout/_form.scss */
+/* line 143, ../../sass/layout/_form.scss */
 .btn-square-red {
   display: inline-block;
   height: 32px;
@@ -1457,7 +1501,7 @@ body {
   cursor: pointer;
 }
 
-/* line 128, ../../sass/layout/_form.scss */
+/* line 158, ../../sass/layout/_form.scss */
 .btn-square-gray {
   border: none;
   display: inline-block;
@@ -1470,19 +1514,19 @@ body {
   cursor: pointer;
 }
 
-/* line 143, ../../sass/layout/_form.scss */
+/* line 173, ../../sass/layout/_form.scss */
 .btn-square-pink {
   display: inline-block;
-  width: 100px;
   height: 30px;
   line-height: 30px;
+  padding: 0 15px;
   text-align: center;
   background-color: #f9d7d7;
   border: 1px solid #f5222d;
   color: #f5222d;
 }
 
-/* line 155, ../../sass/layout/_form.scss */
+/* line 185, ../../sass/layout/_form.scss */
 .btn-square-graybg {
   height: 30px;
   border: 1px solid #cccccc;
@@ -1494,7 +1538,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 166, ../../sass/layout/_form.scss */
+/* line 196, ../../sass/layout/_form.scss */
 .minbtn-red {
   height: 24px;
   background: #f5222d;
@@ -1504,7 +1548,7 @@ body {
   padding: 0 5px;
 }
 
-/* line 175, ../../sass/layout/_form.scss */
+/* line 205, ../../sass/layout/_form.scss */
 .minbtn-white {
   height: 24px;
   background-color: #fff;
@@ -1693,7 +1737,7 @@ body {
 .order-detail.discount {
   background: #fffbf0;
 }
-/* line 106, ../../sass/page/shopping-cart.scss */
+/* line 107, ../../sass/page/shopping-cart.scss */
 .order-detail .redtips {
   color: #f5222d;
   border: 1px solid #f5222d;
@@ -1703,82 +1747,163 @@ body {
   margin-left: 10px;
 }
 
-/* line 116, ../../sass/page/shopping-cart.scss */
+/* line 117, ../../sass/page/shopping-cart.scss */
 .discount-detail {
   height: 46px;
   border-bottom: solid 1px #dddddd;
   margin-bottom: 10px;
   line-height: 46px;
 }
-/* line 122, ../../sass/page/shopping-cart.scss */
+/* line 123, ../../sass/page/shopping-cart.scss */
 .discount-detail button {
   margin-top: 10px;
   margin: 10px;
 }
 
-/* line 130, ../../sass/page/shopping-cart.scss */
+/* line 131, ../../sass/page/shopping-cart.scss */
 .order td:nth-child(1) {
   width: 50px;
 }
-/* line 134, ../../sass/page/shopping-cart.scss */
+/* line 135, ../../sass/page/shopping-cart.scss */
 .order td:nth-child(2) {
   width: 120px;
 }
-/* line 138, ../../sass/page/shopping-cart.scss */
+/* line 139, ../../sass/page/shopping-cart.scss */
 .order td:nth-child(3) {
   width: 335px;
   font-size: 13px;
 }
-/* line 143, ../../sass/page/shopping-cart.scss */
+/* line 144, ../../sass/page/shopping-cart.scss */
 .order td:nth-child(4) {
   width: 180px;
 }
-/* line 147, ../../sass/page/shopping-cart.scss */
+/* line 148, ../../sass/page/shopping-cart.scss */
 .order td:nth-child(5) {
   width: 220px;
 }
-/* line 151, ../../sass/page/shopping-cart.scss */
+/* line 152, ../../sass/page/shopping-cart.scss */
 .order td:nth-child(6) {
   width: 150px;
 }
-/* line 157, ../../sass/page/shopping-cart.scss */
+/* line 158, ../../sass/page/shopping-cart.scss */
 .order td:nth-child(7) .linl-b {
   display: block;
 }
 
-/* line 165, ../../sass/page/shopping-cart.scss */
-.product-detail {
-  color: #8c8c8c;
-  font-size: 12px;
-  margin-top: 5px;
-  display: block;
-}
-
-/* line 172, ../../sass/page/shopping-cart.scss */
+/* line 167, ../../sass/page/shopping-cart.scss */
 .product-dropdown {
   width: 400px;
   height: auto;
   background: #fff;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  display: none;
+}
+/* line 176, ../../sass/page/shopping-cart.scss */
+.product-dropdown .dropdown-detail {
   position: relative;
   border: 1px solid #cccccc;
   padding: 10px 20px;
   margin-top: 10px;
 }
-/* line 180, ../../sass/page/shopping-cart.scss */
+/* line 183, ../../sass/page/shopping-cart.scss */
 .product-dropdown .triangle {
   top: -16px;
   left: 10px;
 }
+/* line 187, ../../sass/page/shopping-cart.scss */
+.product-dropdown button {
+  margin-left: 0;
+}
 
-/* line 186, ../../sass/page/shopping-cart.scss */
+/* line 192, ../../sass/page/shopping-cart.scss */
+.product-detail {
+  color: #8c8c8c;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  position: relative;
+}
+/* line 198, ../../sass/page/shopping-cart.scss */
 .product-detail p {
   height: 24px;
   line-height: 24px;
   margin: 5px 0;
 }
 
-/* line 193, ../../sass/page/shopping-cart.scss */
+/* line 206, ../../sass/page/shopping-cart.scss */
 .iconforbr span {
   margin-bottom: 5px;
   margin-right: 10px;
+}
+
+/* line 211, ../../sass/page/shopping-cart.scss */
+.product-detail:hover .product-dropdown {
+  display: inline-block;
+}
+
+/* line 216, ../../sass/page/shopping-cart.scss */
+.footer-tab {
+  height: 75px;
+  line-height: 75px;
+}
+/* line 219, ../../sass/page/shopping-cart.scss */
+.footer-tab li:nth-child(2) {
+  text-align: left;
+}
+/* line 221, ../../sass/page/shopping-cart.scss */
+.footer-tab li:nth-child(2) a {
+  margin-right: 10px;
+}
+/* line 225, ../../sass/page/shopping-cart.scss */
+.footer-tab li:nth-child(3) {
+  width: 698px;
+}
+
+/* line 230, ../../sass/page/shopping-cart.scss */
+.total {
+  width: 280px;
+  text-align: right;
+  line-height: 24px;
+  margin-top: 12px;
+  color: #8c8c8c;
+}
+
+/* line 237, ../../sass/page/shopping-cart.scss */
+.total-sum {
+  width: 240px;
+  line-height: 24px;
+  text-align: left;
+  border-left: solid 1px #dddddd;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+/* line 244, ../../sass/page/shopping-cart.scss */
+.total-sum div a {
+  font-size: 15px;
+}
+/* line 247, ../../sass/page/shopping-cart.scss */
+.total-sum span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f5222d;
+}
+/* line 252, ../../sass/page/shopping-cart.scss */
+.total-sum > a {
+  color: #f5222d !important;
+}
+
+/* line 256, ../../sass/page/shopping-cart.scss */
+.go-order {
+  width: 150px;
+  height: 75px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 75px;
+}
+
+/* line 263, ../../sass/page/shopping-cart.scss */
+.checked .iconfont {
+  color: #f5222d;
 }

@@ -80,12 +80,12 @@
     select::-ms-expand{display:none;}
     .selectdiv{
         position: relative;
-        width: 120px;
+        min-width: 120px;
         line-height:26px;
         margin-top:25px;
         i{
             position: absolute;
-            right:24px;
+            right:10px;
             top:0px;
         }
     }
