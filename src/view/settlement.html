@@ -108,7 +108,7 @@
             <div class="titlegray">收货信息</div>
             <div class="information clearfix address">
                 <div class="fll">
-                    <div><i class="iconfont icon-dingwei"></i>默认地址<button class="btn-square-pink">修改</button></div>
+                    <div><i class="iconfont icon-dingwei"></i>默认地址<button class="btn-square-pink min">修改</button></div>
                     <div><label>收货人：</label><span>小薇</span></div>
                     <div><label>联系方式：</label><span>13400000000</span></div>
                     <div><label>收货地址：</label><span>上海市闵行区江川路2564号</span></div>
@@ -120,23 +120,20 @@
             </div>
         </div>
 
-        <div class="fill-detail grip-list">
+        <div class=" grip-list">
             <div class="titlegray">支付方式</div>
-            <div class="information clearfix address">
-                <div class="fll">
-                    <div><i class="iconfont icon-dingwei"></i>默认地址<button class="btn-square-pink">修改</button></div>
-                    <div><label>收货人：</label><span>小薇</span></div>
-                    <div><label>联系方式：</label><span>13400000000</span></div>
-                    <div><label>收货地址：</label><span>上海市闵行区江川路2564号</span></div>
-                </div>
-                <div class="flr eefault-address">
-                    <a href="#" class="link-a">地址切换</a>
-                    <button class="btn-square-graybg">新建地址</button>
-                </div>
+            <div class="information clearfix payment">
+                <ul>
+                    <li><input type="radio" class="checked" /><img src="../images/settlement/img1.jpg" /></li>
+                    <li><input type="radio" /><img src="../images/settlement/img2.jpg" /></li>
+                    <li><input type="radio" /><img src="../images/settlement/img3.jpg" /></li>
+                    <li><input type="radio" /><img src="../images/settlement/img4.jpg" /></li>
+                    <li><input type="radio" /><img src="../images/settlement/img5.jpg" /></li>
+                </ul>
             </div>
         </div>
 
-        <div class="fill-detail grip-list">
+        <div class="grip-list">
             <div class="titlegray">配送方式</div>
             <div class="information clearfix address">
                 <div class="iconforbr">
@@ -146,24 +143,220 @@
             </div>
         </div>
 
-        <div class="fill-detail grip-list">
+        <div class="grip-list">
             <div class="titlegray">发票信息</div>
-            <div class="information clearfix address">
-                <div>电子普通发票<button class="btn-square-pink">修改</button></div>
+            <div class="information clearfix address invoice">
+                <div>电子普通发票<button class="btn-square-pink min">修改</button></div>
                 <div><span>懂微信息技术（上海）有限公司</span><span>商品类别</span></div>
             </div>
         </div>
 
-        <div class="fill-detail grip-list">
-                <div class="titlegray">发票信息</div>
-                <div class="information clearfix address">
-                    <div>电子普通发票<button class="btn-square-pink">修改</button></div>
-                    <div><span>懂微信息技术（上海）有限公司</span><span>商品类别</span></div>
+        <div class="grip-list">
+            <div class="titlegray pink">包裹1</div>
+            <div class="tab-list-nav titlegray clearfix">
+                <ul>
+                    <li><a href="#">商品信息</a></li>
+                    <li><a href="#">单价</a></li>
+                    <li><a href="#">数量</a></li>
+                    <li><a href="#">小计</a></li>
+                    <li><a href="#">实付</a></li>
+                </ul>
+            </div>
+            <div class="order-list clearfix">
+                <div class="order-detail">
+                    <div class="order clearfix">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../images/order/img1.png" />
+                                    </td>
+
+                                    <td>
+                                        <p>韩国 烧酒360度 360ml*6瓶</p>
+                                        <a class="product-detail">原味360毫升*6瓶</a>
+                                        <div class="no-change-tips">不支持30天无忧退换货<i
+                                                class="iconfont icon-warning-circle"></i></div>
+                                    </td>
+                                    <td>
+                                        <div><span class="now-price">￥299</span><span class="original-price">￥399</span>
+                                        </div>
+                                        <span class="special-Offer">特价</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        ￥299
+                                    </td>
+                                    <td>
+                                        ￥299
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="coupon clearfix">
+                    <div class="coupon-list">
+                        <p>使用优惠券<span>（0张）</span><i class="iconfont icon-question-circle-fill"></i></p>
+                        <a href="#" class="line-a">兑换优惠券 <i class="iconfont icon-xiaosanjiaoup"></i></a>
+                        <div>
+                            <input type="text" placeholder="请输入优惠码" class="normal-input fll" />
+                            <button class="btn-square-graybg fll">兑换</button>
+                        </div>
+                    </div>
+                    <div class="coupon-list">
+                        <p>使用回馈金</p>
+                        <div>
+                            <span class="normal-check">
+                                <input type="checkbox">
+                                <i class="iconfont icon-Group-"></i>
+                                <div class="sim-checkbox"></div>
+                            </span>可用金额 ￥0.00
+                        </div>
+                        <div>
+                            <a href="#" class="link-b">回馈抵扣规则？</a>
+                        </div>
+                    </div>
+                    <div class="coupon-list">
+                        <p>使用礼品卡<span>（0张）</span><i class="iconfont icon-question-circle-fill"></i></p>
+                        <div>
+                            <span class="normal-check">
+                                <input type="checkbox">
+                                <i class="iconfont icon-Group-"></i>
+                                <div class="sim-checkbox"></div>
+                            </span>添加礼品卡
+                        </div>
+                        <a href="#" class="line-a">兑换优惠券 <i class="iconfont icon-xiaosanjiaoup"></i></a>
+                    </div>
+                </div>
+                <div class="settlement clearfix">
+                    <div class="fll">
+                        <p>发票信息：<i class="iconfont icon-question-circle-fill"></i></p>
+
+                        <div>
+                            <span class="normal-check">
+                                <input type="checkbox">
+                                <i class="iconfont icon-Group-"></i>
+                                <div class="sim-checkbox"></div>
+                            </span>我要开票
+                        </div>
+                    </div>
+                    <div class="flr">
+                        <div class="settlement-top clearfix">
+                            <div><label>商品合计：</label><span>￥299.00</span></div>
+                            <div><label>运费：</label><span>￥0.00</span></div>
+                            <div><label>活动优惠：</label><span>￥0.00</span></div>
+                        </div>
+                        <div class="settlement-bottom clearfix">
+                            <div><label>应付金额</label><span>￥299.00</span></div>
+                            <div><label>预计可返回馈金：</label><span>￥0.03</span></div>
+                            <div><button class="btn-square-red">去付款</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="agree">
+                    <span class="normal-check checked">
+                        <input type="checkbox">
+                        <i class="iconfont icon-Group-"></i>
+                        <div class="sim-checkbox"></div>
+                    </span><a href="#" class="link-a">同意《网易严选服务协议》</a>
                 </div>
             </div>
+        </div>
+
     </div>
 
+    <!-- 弹框内容 -->
+    <div class="mask" style="display: none">
+        <div class="elastic-frame" >
+            <!-- 收货地址弹框内容 -->
+            <div class="frame-content" style="display: none">
+                <div class="title">收货地址</div>
+                <i class="iconfont icon-cuowu1"></i>
+                <div class="frame-detail address-detail">
+                    <div class="address">
+                        <div>收货人:<span>小微</span></div>
+                        <div>联系方式:<span>1300000000</span></div>
+                        <div>收货地址:<span>上海市闵行区江川路555号</span></div>
+                        <a href="#" class="current-address">默认地址</a>
+                        <i class="iconfont icon-youxiajiaogouxuan"></i>
+                    </div>
+                    <div class="btnbox">
+                        <button class="btn-square-red">确定</button>
+                        <button class="btn-square-graybg">取消</button>
+                    </div>
+                </div>
 
+            </div>
+
+            <!-- 发票抬头弹框 -->
+            <div class="frame-content">
+                <div class="title">发票信息</div>
+                <i class="iconfont icon-cuowu1"></i>
+                <div class="frame-detail invoice">
+                    <div class="iconforbr">
+                        <span class="current">电子普通发票<i class="iconfont icon-youxiajiaogouxuan"></i></span>
+                        <span class="nocurrent">增值税发票</span>
+                    </div>
+                    <div class="yellow-tips">
+                        电子普通发票和纸质发票具有同等法律效益，可支持报销入账，订单完成24小时内开具,电子普通发票和纸质发票具有同等法律效益，可支持报销入账，订单完成24小时内开具
+                        电子普通发票和纸质发票具有同等法律效益，<a href="#"
+                        class="line-a">电子普通发票相关问题>></a>可支持报销入账，订单完成24小时内开具<a href="#" class="line-a">电子普通发票相关信息>></a>
+                    </div>
+                    <form>
+                        <div class="clearfix">
+                            <label>发票抬头</label>
+                            <div class="form-right">
+                                <div class="iconforbr invoice-rise">
+                                    <span>个人</span>
+                                    <span class="current">懂微信息技术（上海）有限公司
+                                        <i class="iconfont icon-youxiajiaogouxuan"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label>纳税人识别号</label>
+                            <div>
+                                <input type="text" class="normal-input" placeholder="个人" />
+                            </div>
+                        </div>
+                        <div>
+                            <label>发票内容</label>
+                            <div>
+                                <div class="iconforbr">
+
+                                    <span class="current">商品明细
+                                        <i class="iconfont icon-youxiajiaogouxuan"></i>
+                                    </span>
+                                    <span>商品类别</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label><span class="red">*</span>收票人手机</label>
+                            <div>
+                                <input type="text" class="normal-input" />
+                            </div>
+                        </div>
+                        <div>
+                            <label><span class="red">*</span>收票人邮箱</label>
+                            <div>
+                                <input type="text" class="normal-input" />
+                            </div>
+                        </div>
+                        <div class="btnbox">
+                            <button class="btn-square-red ">保存</button>
+                            <button class="btn-square-graybg">取消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

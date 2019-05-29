@@ -475,21 +475,22 @@ select::-ms-expand {
 /* line 307, ../../sass/reset/_common.scss */
 .iconforbr span {
   display: inline-block;
-  height: 22px;
+  height: 26px;
   border: 1px solid #cccccc;
-  line-height: 22px;
+  line-height: 26px;
   padding: 0 5px;
+  cursor: pointer;
 }
-/* line 314, ../../sass/reset/_common.scss */
+/* line 315, ../../sass/reset/_common.scss */
 .iconforbr span.sell-out {
   border: 1px dashed #cccccc;
 }
-/* line 318, ../../sass/reset/_common.scss */
+/* line 319, ../../sass/reset/_common.scss */
 .iconforbr span.current {
   position: relative;
   border: 2px solid #b3a078;
 }
-/* line 321, ../../sass/reset/_common.scss */
+/* line 322, ../../sass/reset/_common.scss */
 .iconforbr span.current i {
   position: absolute;
   right: 0;
@@ -497,6 +498,12 @@ select::-ms-expand {
   font-size: 12px;
   line-height: 12px;
   color: #b3a078;
+}
+/* line 331, ../../sass/reset/_common.scss */
+.iconforbr span.nocurrent {
+  background: #ebebeb;
+  border-color: #ebebeb;
+  color: #cccccc;
 }
 
 /* line 2, ../../sass/layout/_grid.scss */
@@ -570,12 +577,13 @@ select::-ms-expand {
   margin-right: 10px;
   display: inline-block;
   cursor: pointer;
+  background: #fff;
 }
-/* line 13, ../../sass/layout/_form.scss */
+/* line 14, ../../sass/layout/_form.scss */
 .normal-check.checked .icon-Group- {
   display: block;
 }
-/* line 19, ../../sass/layout/_form.scss */
+/* line 20, ../../sass/layout/_form.scss */
 .normal-check .sim-checkbox {
   width: 16px;
   height: 16px;
@@ -585,7 +593,7 @@ select::-ms-expand {
   left: 0;
   top: 0;
 }
-/* line 29, ../../sass/layout/_form.scss */
+/* line 30, ../../sass/layout/_form.scss */
 .normal-check .icon-Group- {
   display: none;
   position: absolute;
@@ -595,7 +603,7 @@ select::-ms-expand {
   color: green;
   line-height: 16px !important;
 }
-/* line 39, ../../sass/layout/_form.scss */
+/* line 40, ../../sass/layout/_form.scss */
 .normal-check input {
   position: absolute;
   left: 0;
@@ -604,13 +612,13 @@ select::-ms-expand {
   outline: none;
 }
 
-/* line 50, ../../sass/layout/_form.scss */
+/* line 51, ../../sass/layout/_form.scss */
 .normal-select {
   position: relative;
   min-width: 120px;
   line-height: 26px;
 }
-/* line 55, ../../sass/layout/_form.scss */
+/* line 56, ../../sass/layout/_form.scss */
 .normal-select select {
   min-width: 100px;
   height: 26px;
@@ -618,14 +626,14 @@ select::-ms-expand {
   padding-left: 5px;
   border: solid 1px #dddddd;
 }
-/* line 62, ../../sass/layout/_form.scss */
+/* line 63, ../../sass/layout/_form.scss */
 .normal-select i {
   position: absolute;
   right: 10px;
   top: 0px;
 }
 
-/* line 70, ../../sass/layout/_form.scss */
+/* line 71, ../../sass/layout/_form.scss */
 .normal-input {
   min-width: 180px;
   height: 28px;
@@ -636,6 +644,42 @@ select::-ms-expand {
 }
 
 /* line 80, ../../sass/layout/_form.scss */
+.other-input {
+  height: 28px;
+  border: solid 1px #dddddd;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+/* line 89, ../../sass/layout/_form.scss */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  margin: 0;
+  position: relative;
+  border: solid 1px #dddddd;
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+}
+
+/* line 100, ../../sass/layout/_form.scss */
+input[type="radio"].checked:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #ba9a5d;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+/* line 114, ../../sass/layout/_form.scss */
 .btn {
   font-size: 12px;
   color: #fff;
@@ -648,12 +692,12 @@ select::-ms-expand {
   margin: 10px;
 }
 
-/* line 93, ../../sass/layout/_form.scss */
+/* line 127, ../../sass/layout/_form.scss */
 .btn-normal {
   background: #f5222d;
 }
 
-/* line 97, ../../sass/layout/_form.scss */
+/* line 131, ../../sass/layout/_form.scss */
 .btn-register {
   width: 100%;
   height: 54px;
@@ -666,7 +710,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-/* line 110, ../../sass/layout/_form.scss */
+/* line 144, ../../sass/layout/_form.scss */
 .btn-text-group {
   display: inline-block;
   width: 260px;
@@ -679,7 +723,7 @@ select::-ms-expand {
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 122, ../../sass/layout/_form.scss */
+/* line 156, ../../sass/layout/_form.scss */
 .btn-text-group input {
   width: 100%;
   height: 100%;
@@ -690,7 +734,7 @@ select::-ms-expand {
   padding: 0 5px;
   color: #666;
 }
-/* line 133, ../../sass/layout/_form.scss */
+/* line 167, ../../sass/layout/_form.scss */
 .btn-text-group .group-btn {
   width: 58px;
   position: absolute;
@@ -699,7 +743,7 @@ select::-ms-expand {
   box-sizing: border-box;
 }
 
-/* line 143, ../../sass/layout/_form.scss */
+/* line 177, ../../sass/layout/_form.scss */
 .btn-square-red {
   display: inline-block;
   height: 32px;
@@ -712,7 +756,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-/* line 158, ../../sass/layout/_form.scss */
+/* line 192, ../../sass/layout/_form.scss */
 .btn-square-gray {
   border: none;
   display: inline-block;
@@ -725,7 +769,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-/* line 173, ../../sass/layout/_form.scss */
+/* line 207, ../../sass/layout/_form.scss */
 .btn-square-pink {
   display: inline-block;
   height: 30px;
@@ -737,7 +781,7 @@ select::-ms-expand {
   color: #f5222d;
 }
 
-/* line 185, ../../sass/layout/_form.scss */
+/* line 219, ../../sass/layout/_form.scss */
 .btn-square-graybg {
   height: 30px;
   border: 1px solid #cccccc;
@@ -745,11 +789,10 @@ select::-ms-expand {
   padding: 0 20px;
   font-size: 12px;
   text-align: center;
-  display: block;
   margin: 0 auto;
 }
 
-/* line 196, ../../sass/layout/_form.scss */
+/* line 229, ../../sass/layout/_form.scss */
 .minbtn-red {
   height: 24px;
   background: #f5222d;
@@ -759,7 +802,7 @@ select::-ms-expand {
   padding: 0 5px;
 }
 
-/* line 205, ../../sass/layout/_form.scss */
+/* line 238, ../../sass/layout/_form.scss */
 .minbtn-white {
   height: 24px;
   background-color: #fff;
@@ -769,6 +812,34 @@ select::-ms-expand {
   padding: 0 10px;
   border: 1px solid #f5222d;
   color: #f5222d;
+}
+
+/* line 251, ../../sass/layout/_form.scss */
+.transformation i {
+  width: 27px;
+  height: 28px;
+  border: solid 1px #dddddd;
+  float: left;
+  background: #fff;
+  line-height: 27px;
+  text-align: center;
+  color: #939393;
+  font-size: 12px;
+}
+/* line 263, ../../sass/layout/_form.scss */
+.transformation i.noclick {
+  color: #ccc;
+}
+/* line 266, ../../sass/layout/_form.scss */
+.transformation .other-input {
+  float: left;
+  width: 50px;
+  border-left: none;
+  border-right: none;
+}
+/* line 273, ../../sass/layout/_form.scss */
+.transformation .other-input.nochange {
+  color: #ccc;
 }
 
 /* line 1, ../../sass/layout/_header.scss */
@@ -959,6 +1030,11 @@ body {
 }
 
 /* line 80, ../../sass/page/settlement.scss */
+.grip-list:last-child {
+  margin-bottom: 50px;
+}
+
+/* line 83, ../../sass/page/settlement.scss */
 .fill-information > p {
   height: 35px;
   line-height: 35px;
@@ -966,103 +1042,468 @@ body {
   margin-top: 20px;
 }
 
-/* line 86, ../../sass/page/settlement.scss */
+/* line 89, ../../sass/page/settlement.scss */
 .titlegray {
   font-size: 13px;
   padding-left: 20px;
 }
 
-/* line 90, ../../sass/page/settlement.scss */
+/* line 93, ../../sass/page/settlement.scss */
 .information {
   border: solid 1px #dddddd;
   border-top: none;
   padding: 30px;
 }
-/* line 94, ../../sass/page/settlement.scss */
+/* line 97, ../../sass/page/settlement.scss */
 .information > .fll {
   width: 700px;
   border-right: solid 1px #dddddd;
 }
-/* line 97, ../../sass/page/settlement.scss */
+/* line 100, ../../sass/page/settlement.scss */
 .information > .fll label {
   width: 80px;
   float: left;
 }
-/* line 101, ../../sass/page/settlement.scss */
+/* line 104, ../../sass/page/settlement.scss */
 .information > .fll > div {
   margin-bottom: 15px;
 }
 
-/* line 108, ../../sass/page/settlement.scss */
+/* line 111, ../../sass/page/settlement.scss */
 form select {
   width: 180px;
   margin-right: 5px;
 }
-/* line 113, ../../sass/page/settlement.scss */
+/* line 116, ../../sass/page/settlement.scss */
 form textarea {
   width: 528px;
   height: 80px;
   border: solid 1px #dddddd;
   padding: 10px;
 }
-/* line 119, ../../sass/page/settlement.scss */
+/* line 122, ../../sass/page/settlement.scss */
 form .consignee > div {
   width: 315px;
 }
-/* line 121, ../../sass/page/settlement.scss */
+/* line 124, ../../sass/page/settlement.scss */
 form .consignee > div input {
   width: 200px;
 }
-/* line 124, ../../sass/page/settlement.scss */
+/* line 127, ../../sass/page/settlement.scss */
 form .consignee > div:nth-child(1) {
   margin-right: 20px;
 }
 
-/* line 130, ../../sass/page/settlement.scss */
+/* line 133, ../../sass/page/settlement.scss */
 .eefault-address {
   width: 300px;
   padding: 60px 60px 0;
 }
-/* line 133, ../../sass/page/settlement.scss */
+/* line 136, ../../sass/page/settlement.scss */
 .eefault-address > div {
   height: 35px;
   line-height: 35px;
   margin-bottom: 5px;
 }
-/* line 138, ../../sass/page/settlement.scss */
+/* line 141, ../../sass/page/settlement.scss */
 .eefault-address .btn-square-pink {
   width: 116px;
 }
 
-/* line 144, ../../sass/page/settlement.scss */
+/* line 147, ../../sass/page/settlement.scss */
 .address label, .address .iconfont {
   color: #b8a884;
 }
-/* line 147, ../../sass/page/settlement.scss */
+/* line 150, ../../sass/page/settlement.scss */
 .address .iconfont {
   color: #b8a884;
   font-size: 25px;
 }
-/* line 151, ../../sass/page/settlement.scss */
+/* line 154, ../../sass/page/settlement.scss */
 .address .btn-square-pink {
   margin-left: 10px;
 }
-/* line 154, ../../sass/page/settlement.scss */
+/* line 157, ../../sass/page/settlement.scss */
 .address .flr > a {
   text-align: center;
   margin-bottom: 10px;
   display: block;
 }
+/* line 162, ../../sass/page/settlement.scss */
+.address .min {
+  height: 25px;
+  line-height: 25px;
+}
 
-/* line 161, ../../sass/page/settlement.scss */
+/* line 168, ../../sass/page/settlement.scss */
 .iconforbr span {
   padding: 0 20px;
 }
-/* line 164, ../../sass/page/settlement.scss */
+/* line 171, ../../sass/page/settlement.scss */
 .iconforbr span.current {
   border-color: #f5222d !important;
 }
-/* line 166, ../../sass/page/settlement.scss */
+/* line 173, ../../sass/page/settlement.scss */
 .iconforbr span.current i {
   color: #f5222d !important;
+}
+
+/* line 180, ../../sass/page/settlement.scss */
+.payment li {
+  float: left;
+  margin-right: 35px;
+}
+/* line 184, ../../sass/page/settlement.scss */
+.payment input {
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 190, ../../sass/page/settlement.scss */
+.invoice {
+  line-height: 35px;
+}
+
+/* line 194, ../../sass/page/settlement.scss */
+.tab-list-nav li {
+  float: left;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 201, ../../sass/page/settlement.scss */
+.tab-list-nav li a {
+  color: #666;
+  text-decoration: none;
+}
+/* line 209, ../../sass/page/settlement.scss */
+.tab-list-nav li:nth-child(1) {
+  width: 450px;
+}
+/* line 213, ../../sass/page/settlement.scss */
+.tab-list-nav li:nth-child(2) {
+  width: 180px;
+}
+/* line 217, ../../sass/page/settlement.scss */
+.tab-list-nav li:nth-child(3) {
+  width: 170px;
+}
+/* line 221, ../../sass/page/settlement.scss */
+.tab-list-nav li:nth-child(4) {
+  width: 160px;
+}
+/* line 225, ../../sass/page/settlement.scss */
+.tab-list-nav li:nth-child(5) {
+  width: 100px;
+}
+
+/* line 229, ../../sass/page/settlement.scss */
+.titlegray.pink {
+  background: #fff1f0;
+  border-bottom: none;
+}
+
+/* line 233, ../../sass/page/settlement.scss */
+.order-detail {
+  border: solid 1px #dddddd;
+  border-top: none;
+  padding: 20px;
+}
+/* line 238, ../../sass/page/settlement.scss */
+.order-detail.discount {
+  background: #fffbf0;
+}
+/* line 242, ../../sass/page/settlement.scss */
+.order-detail .redtips {
+  color: #f5222d;
+  border: 1px solid #f5222d;
+  padding: 2px;
+  font-size: 12px;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+/* line 253, ../../sass/page/settlement.scss */
+.order td:nth-child(1) {
+  width: 120px;
+}
+/* line 257, ../../sass/page/settlement.scss */
+.order td:nth-child(2) {
+  width: 400px;
+  font-size: 13px;
+}
+/* line 262, ../../sass/page/settlement.scss */
+.order td:nth-child(3) {
+  width: 180px;
+}
+/* line 266, ../../sass/page/settlement.scss */
+.order td:nth-child(4) {
+  width: 160px;
+}
+/* line 270, ../../sass/page/settlement.scss */
+.order td:nth-child(5) {
+  width: 150px;
+}
+/* line 276, ../../sass/page/settlement.scss */
+.order td:nth-child(6) .linl-b {
+  display: block;
+}
+/* line 281, ../../sass/page/settlement.scss */
+.order .product-detail {
+  margin: 3px 0;
+  display: inline-block;
+}
+/* line 285, ../../sass/page/settlement.scss */
+.order .no-change-tips {
+  font-size: 14px;
+  color: #f5222d;
+}
+/* line 289, ../../sass/page/settlement.scss */
+.order .original-price {
+  text-decoration: line-through;
+  margin-left: 5px;
+  color: #ccc;
+}
+/* line 294, ../../sass/page/settlement.scss */
+.order .special-Offer {
+  margin-left: 20px;
+  font-size: 12px;
+  color: #f5222d;
+  border: 1px solid #f5222d;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* line 304, ../../sass/page/settlement.scss */
+.coupon {
+  background: #f5f5f5;
+  border: solid 1px #dddddd;
+  padding: 20px;
+  border-top: none;
+}
+
+/* line 310, ../../sass/page/settlement.scss */
+.coupon-list {
+  width: 365px;
+  float: left;
+  border-right: solid 1px #dddddd;
+  margin-right: 20px;
+}
+/* line 315, ../../sass/page/settlement.scss */
+.coupon-list p {
+  line-height: 30px;
+}
+/* line 318, ../../sass/page/settlement.scss */
+.coupon-list > div {
+  margin: 10px 0;
+}
+/* line 321, ../../sass/page/settlement.scss */
+.coupon-list .btn-square-graybg {
+  background: #fff;
+  border-left: none;
+}
+
+/* line 326, ../../sass/page/settlement.scss */
+.coupon-list:last-child {
+  border: none;
+  margin: none;
+}
+
+/* line 330, ../../sass/page/settlement.scss */
+.settlement {
+  background: #f5f5f5;
+  border: solid 1px #dddddd;
+  padding: 20px;
+  border-top: none;
+  line-height: 30px;
+}
+/* line 337, ../../sass/page/settlement.scss */
+.settlement .fll p {
+  margin-bottom: 10px;
+}
+/* line 341, ../../sass/page/settlement.scss */
+.settlement .flr {
+  width: 280px;
+}
+
+/* line 345, ../../sass/page/settlement.scss */
+.settlement-top {
+  border-bottom: solid 1px #dddddd;
+}
+/* line 347, ../../sass/page/settlement.scss */
+.settlement-top > div {
+  height: 30px;
+}
+/* line 350, ../../sass/page/settlement.scss */
+.settlement-top label {
+  width: 120px;
+  float: left;
+  text-align: right;
+}
+/* line 355, ../../sass/page/settlement.scss */
+.settlement-top span {
+  float: right;
+}
+
+/* line 360, ../../sass/page/settlement.scss */
+.settlement-bottom > div {
+  height: 30px;
+}
+/* line 363, ../../sass/page/settlement.scss */
+.settlement-bottom label {
+  width: 140px;
+  float: left;
+  text-align: right;
+}
+/* line 368, ../../sass/page/settlement.scss */
+.settlement-bottom span {
+  float: right;
+}
+/* line 371, ../../sass/page/settlement.scss */
+.settlement-bottom button {
+  float: right;
+  margin-top: 10px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 50px;
+}
+
+/* line 379, ../../sass/page/settlement.scss */
+.agree {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+}
+/* line 383, ../../sass/page/settlement.scss */
+.agree .iconfont {
+  color: #f5222d;
+}
+
+/* line 389, ../../sass/page/settlement.scss */
+.mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(89, 89, 89, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+/* line 398, ../../sass/page/settlement.scss */
+.elastic-frame {
+  width: 660px;
+  height: 610px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  margin-left: -330px;
+  top: 50px;
+}
+/* line 406, ../../sass/page/settlement.scss */
+.elastic-frame .frame-content {
+  position: relative;
+  height: 100%;
+  padding: 0 40px;
+}
+/* line 411, ../../sass/page/settlement.scss */
+.elastic-frame .title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding-top: 20px;
+}
+/* line 417, ../../sass/page/settlement.scss */
+.elastic-frame .icon-cuowu1 {
+  position: absolute;
+  right: 18px;
+  top: 25px;
+  font-size: 30px;
+  color: #ccc;
+}
+
+/* line 427, ../../sass/page/settlement.scss */
+.address-detail .address {
+  width: 478px;
+  border: 2px solid #f5222d;
+  padding: 15px 20px;
+  font-size: 12px;
+  position: relative;
+}
+/* line 433, ../../sass/page/settlement.scss */
+.address-detail .address i {
+  color: #f5222d;
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+/* line 439, ../../sass/page/settlement.scss */
+.address-detail .address .current-address {
+  position: absolute;
+  color: #f5222d;
+  right: 20px;
+  bottom: 10px;
+}
+/* line 446, ../../sass/page/settlement.scss */
+.address-detail .btnbox {
+  position: absolute;
+  width: 303px;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 20px;
+  line-height: 42px;
+}
+/* line 453, ../../sass/page/settlement.scss */
+.address-detail .btnbox .btn-square-red {
+  width: 148px;
+  margin-right: 4px;
+  text-align: center;
+  height: 42px;
+}
+/* line 459, ../../sass/page/settlement.scss */
+.address-detail .btnbox .btn-square-graybg {
+  width: 146px;
+  text-align: center;
+  height: 42px;
+  border: solid 1px #dddddd;
+  color: #3e3e3e;
+  font-size: 14px;
+}
+
+/* line 471, ../../sass/page/settlement.scss */
+.yellow-tips {
+  background: #fffaec;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+/* line 478, ../../sass/page/settlement.scss */
+.invoice form label {
+  float: left;
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+/* line 484, ../../sass/page/settlement.scss */
+.invoice form .form-right {
+  float: left;
+  width: 300px;
+}
+/* line 488, ../../sass/page/settlement.scss */
+.invoice form .invoice-rise span {
+  display: inline-block;
+  width: 280px;
+}
+/* line 492, ../../sass/page/settlement.scss */
+.invoice form .btnbox {
+  width: 437px;
+  text-align: center;
+  margin-top: 10px;
+}
+/* line 497, ../../sass/page/settlement.scss */
+.invoice form .btn-square-graybg {
+  height: 32px;
+  padding: 0 30px;
 }

@@ -263,3 +263,29 @@
 .checked .iconfont{
     color:$link-a1;
 }
+
+.transformation{
+    i{
+        width:27px;
+        height:28px;
+        border: $form-border;
+        float: left;
+        background: #fff;
+        line-height:27px;
+        text-align: center;
+        color:#939393;
+        font-size:12px;
+    }
+    i.noclick{
+        color:#ccc;
+    }
+    .other-input{
+        float:left;
+        width:50px;
+        border-left:none;
+        border-right:none;
+    }
+    .other-input.nochange{
+        color:#ccc;
+    }
+}

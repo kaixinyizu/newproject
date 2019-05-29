@@ -8,6 +8,7 @@
     margin-right: 10px;
     display: inline-block;
     cursor: pointer;
+    background:#fff;
 
     &.checked {
         .icon-Group- {
@@ -74,6 +75,39 @@
     display: inline-block;
     font-size: 12px;
     padding-left: 10px;
+}
+//无限制宽度input
+.other-input {
+    height: 28px;
+    border: $form-border;
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+//radio默认样式
+input[type = "radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    margin: 0;
+    position: relative;
+    border: $form-border;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+}
+input[type = "radio"].checked:after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    display: block;
+    width: 9px;
+    height: 9px;
+    background: #ba9a5d;
+    border-radius: 10px;
+    z-index: 99;
 }
 
 //button
@@ -189,7 +223,6 @@
     padding: 0 20px;
     font-size: 12px;
     text-align: center;
-    display: block;
     margin: 0 auto;
 }
 //迷你btn-红底白字
@@ -211,4 +244,33 @@
     padding:0 10px;
     border: 1px solid $border-btn1;
     color: $link-a1;
+}
+
+//左右加减数量
+.transformation{
+    i{
+        width:27px;
+        height:28px;
+        border: $form-border;
+        float: left;
+        background: #fff;
+        line-height:27px;
+        text-align: center;
+        color:#939393;
+        font-size:12px;
+    }
+    //加减不可点击状态
+    i.noclick{
+        color:#ccc;
+    }
+    .other-input{
+        float:left;
+        width:50px;
+        border-left:none;
+        border-right:none;
+    }
+    //数量不可变状态
+    .other-input.nochange{
+        color:#ccc;
+    }
 }

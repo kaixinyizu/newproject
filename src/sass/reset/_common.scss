@@ -306,10 +306,11 @@
 .iconforbr {
     span {
         display: inline-block;
-        height: 22px;
+        height: 26px;
         border: 1px solid $border-btn2;
-        line-height: 22px;
+        line-height: 26px;
         padding: 0 5px;
+        cursor: pointer;
     }
     span.sell-out {
         border: 1px dashed $border-btn2;
@@ -326,5 +327,10 @@
             line-height: 12px;
             color: #b3a078;
         }
+    }
+    span.nocurrent{
+        background:#ebebeb;
+        border-color:#ebebeb;
+        color:#cccccc;
     }
 }

@@ -692,21 +692,22 @@ select::-ms-expand {
 /* line 307, ../../sass/reset/_common.scss */
 .iconforbr span {
   display: inline-block;
-  height: 22px;
+  height: 26px;
   border: 1px solid #cccccc;
-  line-height: 22px;
+  line-height: 26px;
   padding: 0 5px;
+  cursor: pointer;
 }
-/* line 314, ../../sass/reset/_common.scss */
+/* line 315, ../../sass/reset/_common.scss */
 .iconforbr span.sell-out {
   border: 1px dashed #cccccc;
 }
-/* line 318, ../../sass/reset/_common.scss */
+/* line 319, ../../sass/reset/_common.scss */
 .iconforbr span.current {
   position: relative;
   border: 2px solid #b3a078;
 }
-/* line 321, ../../sass/reset/_common.scss */
+/* line 322, ../../sass/reset/_common.scss */
 .iconforbr span.current i {
   position: absolute;
   right: 0;
@@ -714,6 +715,12 @@ select::-ms-expand {
   font-size: 12px;
   line-height: 12px;
   color: #b3a078;
+}
+/* line 331, ../../sass/reset/_common.scss */
+.iconforbr span.nocurrent {
+  background: #ebebeb;
+  border-color: #ebebeb;
+  color: #cccccc;
 }
 
 /*表单系列样式*/
@@ -725,12 +732,13 @@ select::-ms-expand {
   margin-right: 10px;
   display: inline-block;
   cursor: pointer;
+  background: #fff;
 }
-/* line 13, ../../sass/layout/_form.scss */
+/* line 14, ../../sass/layout/_form.scss */
 .normal-check.checked .icon-Group- {
   display: block;
 }
-/* line 19, ../../sass/layout/_form.scss */
+/* line 20, ../../sass/layout/_form.scss */
 .normal-check .sim-checkbox {
   width: 16px;
   height: 16px;
@@ -740,7 +748,7 @@ select::-ms-expand {
   left: 0;
   top: 0;
 }
-/* line 29, ../../sass/layout/_form.scss */
+/* line 30, ../../sass/layout/_form.scss */
 .normal-check .icon-Group- {
   display: none;
   position: absolute;
@@ -750,7 +758,7 @@ select::-ms-expand {
   color: green;
   line-height: 16px !important;
 }
-/* line 39, ../../sass/layout/_form.scss */
+/* line 40, ../../sass/layout/_form.scss */
 .normal-check input {
   position: absolute;
   left: 0;
@@ -759,13 +767,13 @@ select::-ms-expand {
   outline: none;
 }
 
-/* line 50, ../../sass/layout/_form.scss */
+/* line 51, ../../sass/layout/_form.scss */
 .normal-select {
   position: relative;
   min-width: 120px;
   line-height: 26px;
 }
-/* line 55, ../../sass/layout/_form.scss */
+/* line 56, ../../sass/layout/_form.scss */
 .normal-select select {
   min-width: 100px;
   height: 26px;
@@ -773,14 +781,14 @@ select::-ms-expand {
   padding-left: 5px;
   border: solid 1px #dddddd;
 }
-/* line 62, ../../sass/layout/_form.scss */
+/* line 63, ../../sass/layout/_form.scss */
 .normal-select i {
   position: absolute;
   right: 10px;
   top: 0px;
 }
 
-/* line 70, ../../sass/layout/_form.scss */
+/* line 71, ../../sass/layout/_form.scss */
 .normal-input {
   min-width: 180px;
   height: 28px;
@@ -791,6 +799,42 @@ select::-ms-expand {
 }
 
 /* line 80, ../../sass/layout/_form.scss */
+.other-input {
+  height: 28px;
+  border: solid 1px #dddddd;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+/* line 89, ../../sass/layout/_form.scss */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  margin: 0;
+  position: relative;
+  border: solid 1px #dddddd;
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+}
+
+/* line 100, ../../sass/layout/_form.scss */
+input[type="radio"].checked:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #ba9a5d;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+/* line 114, ../../sass/layout/_form.scss */
 .btn {
   font-size: 12px;
   color: #fff;
@@ -803,12 +847,12 @@ select::-ms-expand {
   margin: 10px;
 }
 
-/* line 93, ../../sass/layout/_form.scss */
+/* line 127, ../../sass/layout/_form.scss */
 .btn-normal {
   background: #f5222d;
 }
 
-/* line 97, ../../sass/layout/_form.scss */
+/* line 131, ../../sass/layout/_form.scss */
 .btn-register {
   width: 100%;
   height: 54px;
@@ -821,7 +865,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-/* line 110, ../../sass/layout/_form.scss */
+/* line 144, ../../sass/layout/_form.scss */
 .btn-text-group {
   display: inline-block;
   width: 260px;
@@ -834,7 +878,7 @@ select::-ms-expand {
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 122, ../../sass/layout/_form.scss */
+/* line 156, ../../sass/layout/_form.scss */
 .btn-text-group input {
   width: 100%;
   height: 100%;
@@ -845,7 +889,7 @@ select::-ms-expand {
   padding: 0 5px;
   color: #666;
 }
-/* line 133, ../../sass/layout/_form.scss */
+/* line 167, ../../sass/layout/_form.scss */
 .btn-text-group .group-btn {
   width: 58px;
   position: absolute;
@@ -854,7 +898,7 @@ select::-ms-expand {
   box-sizing: border-box;
 }
 
-/* line 143, ../../sass/layout/_form.scss */
+/* line 177, ../../sass/layout/_form.scss */
 .btn-square-red {
   display: inline-block;
   height: 32px;
@@ -867,7 +911,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-/* line 158, ../../sass/layout/_form.scss */
+/* line 192, ../../sass/layout/_form.scss */
 .btn-square-gray {
   border: none;
   display: inline-block;
@@ -880,7 +924,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-/* line 173, ../../sass/layout/_form.scss */
+/* line 207, ../../sass/layout/_form.scss */
 .btn-square-pink {
   display: inline-block;
   height: 30px;
@@ -892,7 +936,7 @@ select::-ms-expand {
   color: #f5222d;
 }
 
-/* line 185, ../../sass/layout/_form.scss */
+/* line 219, ../../sass/layout/_form.scss */
 .btn-square-graybg {
   height: 30px;
   border: 1px solid #cccccc;
@@ -900,11 +944,10 @@ select::-ms-expand {
   padding: 0 20px;
   font-size: 12px;
   text-align: center;
-  display: block;
   margin: 0 auto;
 }
 
-/* line 196, ../../sass/layout/_form.scss */
+/* line 229, ../../sass/layout/_form.scss */
 .minbtn-red {
   height: 24px;
   background: #f5222d;
@@ -914,7 +957,7 @@ select::-ms-expand {
   padding: 0 5px;
 }
 
-/* line 205, ../../sass/layout/_form.scss */
+/* line 238, ../../sass/layout/_form.scss */
 .minbtn-white {
   height: 24px;
   background-color: #fff;
@@ -924,6 +967,34 @@ select::-ms-expand {
   padding: 0 10px;
   border: 1px solid #f5222d;
   color: #f5222d;
+}
+
+/* line 251, ../../sass/layout/_form.scss */
+.transformation i {
+  width: 27px;
+  height: 28px;
+  border: solid 1px #dddddd;
+  float: left;
+  background: #fff;
+  line-height: 27px;
+  text-align: center;
+  color: #939393;
+  font-size: 12px;
+}
+/* line 263, ../../sass/layout/_form.scss */
+.transformation i.noclick {
+  color: #ccc;
+}
+/* line 266, ../../sass/layout/_form.scss */
+.transformation .other-input {
+  float: left;
+  width: 50px;
+  border-left: none;
+  border-right: none;
+}
+/* line 273, ../../sass/layout/_form.scss */
+.transformation .other-input.nochange {
+  color: #ccc;
 }
 
 /* line 1, ../../sass/layout/_tab-list.scss */

@@ -692,21 +692,22 @@ select::-ms-expand {
 /* line 307, ../../sass/reset/_common.scss */
 .iconforbr span {
   display: inline-block;
-  height: 22px;
+  height: 26px;
   border: 1px solid #cccccc;
-  line-height: 22px;
+  line-height: 26px;
   padding: 0 5px;
+  cursor: pointer;
 }
-/* line 314, ../../sass/reset/_common.scss */
+/* line 315, ../../sass/reset/_common.scss */
 .iconforbr span.sell-out {
   border: 1px dashed #cccccc;
 }
-/* line 318, ../../sass/reset/_common.scss */
+/* line 319, ../../sass/reset/_common.scss */
 .iconforbr span.current {
   position: relative;
   border: 2px solid #b3a078;
 }
-/* line 321, ../../sass/reset/_common.scss */
+/* line 322, ../../sass/reset/_common.scss */
 .iconforbr span.current i {
   position: absolute;
   right: 0;
@@ -714,6 +715,12 @@ select::-ms-expand {
   font-size: 12px;
   line-height: 12px;
   color: #b3a078;
+}
+/* line 331, ../../sass/reset/_common.scss */
+.iconforbr span.nocurrent {
+  background: #ebebeb;
+  border-color: #ebebeb;
+  color: #cccccc;
 }
 
 /* line 2, ../../sass/layout/_grid.scss */
