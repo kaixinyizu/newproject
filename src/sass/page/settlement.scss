@@ -157,6 +157,17 @@ form{
         display: block;
     }
 }
+.iconforbr{
+    span{
+        padding:0 20px;
+    }
+    span.current {
+        border-color:$border-btn1!important;
+        i {
+            color:$link-a1!important;
+        }
+    }
+}
 
 
 

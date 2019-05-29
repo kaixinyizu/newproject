@@ -469,7 +469,7 @@ select::-ms-expand {
 
 /*
 <div class="iconforbr">
-<span class="current">iphone7/8</span>
+<span class="current">iphone7/8<i class="iconfont icon-youxiajiaogouxuan"></i></span>
 <span>iphone7/8</span>
 </div>*/
 /* line 307, ../../sass/reset/_common.scss */
@@ -1052,4 +1052,17 @@ form .consignee > div:nth-child(1) {
   text-align: center;
   margin-bottom: 10px;
   display: block;
+}
+
+/* line 161, ../../sass/page/settlement.scss */
+.iconforbr span {
+  padding: 0 20px;
+}
+/* line 164, ../../sass/page/settlement.scss */
+.iconforbr span.current {
+  border-color: #f5222d !important;
+}
+/* line 166, ../../sass/page/settlement.scss */
+.iconforbr span.current i {
+  color: #f5222d !important;
 }
