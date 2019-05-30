@@ -1,0 +1,910 @@
+@charset "UTF-8";
+/* line 1, ../../sass/reset/_reset.scss */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* line 2, ../../sass/reset/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+/* line 3, ../../sass/reset/_reset.scss */
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+/* line 4, ../../sass/reset/_reset.scss */
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+
+/* line 6, ../../sass/reset/_reset.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 7, ../../sass/reset/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 8, ../../sass/reset/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 9, ../../sass/reset/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 10, ../../sass/reset/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 11, ../../sass/reset/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* line 12, ../../sass/reset/_reset.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 13, ../../sass/reset/_reset.scss */
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+/* line 14, ../../sass/reset/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 16, ../../sass/reset/_reset.scss */
+input[type="hidden" i], input[type="image" i], input[type="file" i] {
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+
+/* line 24, ../../sass/reset/_reset.scss */
+input[type="hidden" i] {
+  display: none;
+}
+
+/* line 27, ../../sass/reset/_reset.scss */
+.form input[type=password] {
+  font-family: Tahoma,Helvetica,Arial;
+}
+
+/* line 31, ../../sass/reset/_reset.scss */
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+/* line 44, ../../sass/reset/_reset.scss */
+.btn-img, .button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 52, ../../sass/reset/_reset.scss */
+.fll {
+  float: left;
+}
+
+/* line 55, ../../sass/reset/_reset.scss */
+.flr {
+  float: right;
+}
+
+/* line 58, ../../sass/reset/_reset.scss */
+.link-a {
+  color: #07a9c7;
+  cursor: pointer;
+  margin: 0 3px;
+}
+/* line 62, ../../sass/reset/_reset.scss */
+.link-a:hover {
+  text-decoration: underline;
+}
+
+/* line 66, ../../sass/reset/_reset.scss */
+body {
+  background: #f5f5f5;
+}
+
+/* line 69, ../../sass/reset/_reset.scss */
+select {
+  /*将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* line 75, ../../sass/reset/_reset.scss */
+select::-ms-expand {
+  display: none;
+}
+
+/* line 1, ../../sass/reset/_common.scss */
+.fll {
+  float: left;
+}
+
+/* line 5, ../../sass/reset/_common.scss */
+.flr {
+  float: right;
+}
+
+/* line 9, ../../sass/reset/_common.scss */
+.bold {
+  font-weight: bold;
+}
+
+/*版心*/
+/* line 14, ../../sass/reset/_common.scss */
+.page-auto {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+
+/*其他版心定义 以w开头*/
+/* line 22, ../../sass/reset/_common.scss */
+.w99 {
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+
+/*清除浮动*/
+/* line 30, ../../sass/reset/_common.scss */
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 38, ../../sass/reset/_common.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/*多余字符串省略号代替*/
+/* line 43, ../../sass/reset/_common.scss */
+.box-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*文字链接样式*/
+/* line 50, ../../sass/reset/_common.scss */
+.link-a {
+  color: #4184e8;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+/* line 56, ../../sass/reset/_common.scss */
+.link-a:hover {
+  text-decoration: underline;
+}
+
+/*灰色连接*/
+/* line 61, ../../sass/reset/_common.scss */
+.link-b {
+  color: #656565;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+/* line 67, ../../sass/reset/_common.scss */
+.link-b:hover {
+  text-decoration: underline;
+}
+
+/*文字字号*/
+/* line 72, ../../sass/reset/_common.scss */
+.f18 {
+  font-size: 18px;
+}
+
+/* line 76, ../../sass/reset/_common.scss */
+.f22 {
+  font-size: 22px;
+}
+
+/* line 80, ../../sass/reset/_common.scss */
+.f26 {
+  font-size: 26px;
+}
+
+/*文字常用颜色 以fc起头*/
+/* line 85, ../../sass/reset/_common.scss */
+.fc01 {
+  color: red;
+}
+
+/*气泡提示消息样式*/
+/* line 90, ../../sass/reset/_common.scss */
+.bubble-news {
+  font-size: 12px;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  padding: 0 4px;
+  border-radius: 50% 40% 40% 0;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500 !important;
+}
+
+/* line 103, ../../sass/reset/_common.scss */
+.bubble-tips {
+  font-size: 12px;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  padding: 1px 5px;
+  border-radius: 35%;
+  background-color: #c94a4a;
+  color: #fff;
+  font-weight: 500 !important;
+}
+
+/* line 116, ../../sass/reset/_common.scss */
+.bubble-tips2 {
+  font-size: 12px;
+  display: inline-block;
+  height: 12px;
+  line-height: 12px;
+  padding: 1px 2px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #c94a4a;
+  font-weight: 500 !important;
+  border: 1px solid #c94a4a;
+}
+
+/* line 130, ../../sass/reset/_common.scss */
+.tips {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background: #f5222d;
+  display: inline-block;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 144, ../../sass/reset/_common.scss */
+.coupon-label {
+  width: 282px;
+  height: 121px;
+}
+/* line 148, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top {
+  width: 100%;
+  height: 89px;
+  padding-top: 24px;
+  background: url(../../images/public/coupon-up.png);
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+}
+/* line 157, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top .coupon-val {
+  float: left;
+  width: 108px;
+  text-align: center;
+}
+/* line 162, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top .coupon-val span:nth-child(1) {
+  font-size: 38px;
+}
+/* line 166, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top .coupon-val span:nth-child(2) {
+  font-size: 22px;
+}
+/* line 171, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top .coupon-effective-time {
+  line-height: 20px;
+  font-size: 12px;
+}
+/* line 175, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top .coupon-effective-time p:nth-child(1) {
+  font-weight: bold;
+}
+/* line 179, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top .coupon-effective-time > span {
+  display: inline-block;
+  padding: 0 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #a95147;
+}
+/* line 188, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-top .coupon-type {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background-color: #ce5649;
+  color: #fff;
+}
+/* line 200, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-bottom {
+  width: 100%;
+  height: 32px;
+  line-height: 30px;
+  background: url(../../images/public/coupon-down.png);
+  color: #dd7781;
+}
+/* line 207, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-bottom p {
+  padding-left: 18px;
+  padding-right: 40px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 215, ../../sass/reset/_common.scss */
+.coupon-label .coupon-label-bottom p .iconfont {
+  position: absolute;
+  top: 1px;
+  right: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* line 227, ../../sass/reset/_common.scss */
+.triangle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 233, ../../sass/reset/_common.scss */
+.triangle:before,
+.triangle .before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #f5222d transparent;
+}
+
+/* line 250, ../../sass/reset/_common.scss */
+.triangle:after,
+.triangle .after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 7px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  left: 1px;
+  top: 2px;
+}
+
+/* line 268, ../../sass/reset/_common.scss */
+.triangle.white:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* line 283, ../../sass/reset/_common.scss */
+.triangle.gray:before,
+.triangle.gray .before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  border: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #cccccc transparent;
+}
+
+/*
+<div class="iconforbr">
+<span class="current">iphone7/8<i class="iconfont icon-youxiajiaogouxuan"></i></span>
+<span>iphone7/8</span>
+</div>*/
+/* line 307, ../../sass/reset/_common.scss */
+.iconforbr span {
+  display: inline-block;
+  height: 26px;
+  border: 1px solid #cccccc;
+  line-height: 26px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+/* line 315, ../../sass/reset/_common.scss */
+.iconforbr span.sell-out {
+  border: 1px dashed #cccccc;
+}
+/* line 319, ../../sass/reset/_common.scss */
+.iconforbr span.current {
+  position: relative;
+  border: 2px solid #b3a078;
+}
+/* line 322, ../../sass/reset/_common.scss */
+.iconforbr span.current i {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #b3a078;
+}
+/* line 331, ../../sass/reset/_common.scss */
+.iconforbr span.nocurrent {
+  background: #ebebeb;
+  border-color: #ebebeb;
+  color: #cccccc;
+}
+
+/* line 2, ../../sass/layout/_grid.scss */
+.bare-grid {
+  border: 1px solid #ccc;
+}
+/* line 4, ../../sass/layout/_grid.scss */
+.bare-grid .bare-grid-title {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  background-color: #dddddd;
+  font-size: 14px;
+  color: #999999;
+}
+/* line 12, ../../sass/layout/_grid.scss */
+.bare-grid > ul {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+/* line 15, ../../sass/layout/_grid.scss */
+.bare-grid > ul > li {
+  float: left;
+  width: 10%;
+  text-align: center;
+  color: #666;
+}
+
+/* line 23, ../../sass/layout/_grid.scss */
+.simple-grid {
+  font-size: 12px;
+}
+/* line 25, ../../sass/layout/_grid.scss */
+.simple-grid .simple-grid-title {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #999999;
+}
+/* line 31, ../../sass/layout/_grid.scss */
+.simple-grid > ul {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+/* line 34, ../../sass/layout/_grid.scss */
+.simple-grid > ul > li {
+  float: left;
+  width: 10%;
+  text-align: center;
+  color: #666;
+}
+
+/* line 43, ../../sass/layout/_grid.scss */
+.titlegray {
+  height: 42px;
+  border: solid 1px #dddddd;
+  background: #f5f5f5;
+  font-size: 13px;
+  color: #666;
+  line-height: 42px;
+}
+
+/*表单系列样式*/
+/* line 4, ../../sass/layout/_form.scss */
+.normal-check {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background: #fff;
+}
+/* line 14, ../../sass/layout/_form.scss */
+.normal-check.checked .icon-Group- {
+  display: block;
+}
+/* line 20, ../../sass/layout/_form.scss */
+.normal-check .sim-checkbox {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border: solid 1px #dddddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 30, ../../sass/layout/_form.scss */
+.normal-check .icon-Group- {
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  font-weight: bold;
+  color: green;
+  line-height: 16px !important;
+}
+/* line 40, ../../sass/layout/_form.scss */
+.normal-check input {
+  position: absolute;
+  left: 0;
+  display: none;
+  outline: none;
+  outline: none;
+}
+
+/* line 51, ../../sass/layout/_form.scss */
+.normal-select {
+  position: relative;
+  min-width: 120px;
+  line-height: 26px;
+}
+/* line 56, ../../sass/layout/_form.scss */
+.normal-select select {
+  min-width: 100px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 5px;
+  border: solid 1px #dddddd;
+}
+/* line 63, ../../sass/layout/_form.scss */
+.normal-select i {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+
+/* line 71, ../../sass/layout/_form.scss */
+.normal-input {
+  min-width: 180px;
+  height: 28px;
+  border: solid 1px #dddddd;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+/* line 80, ../../sass/layout/_form.scss */
+.other-input {
+  height: 28px;
+  border: solid 1px #dddddd;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+/* line 89, ../../sass/layout/_form.scss */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  margin: 0;
+  position: relative;
+  border: solid 1px #dddddd;
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+}
+
+/* line 100, ../../sass/layout/_form.scss */
+input[type="radio"].checked:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #ba9a5d;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+/* line 114, ../../sass/layout/_form.scss */
+.btn {
+  font-size: 12px;
+  color: #fff;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 30px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* line 127, ../../sass/layout/_form.scss */
+.btn-normal {
+  background: #f5222d;
+}
+
+/* line 131, ../../sass/layout/_form.scss */
+.btn-register {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  color: #fff;
+  background: #f5222d;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 144, ../../sass/layout/_form.scss */
+.btn-text-group {
+  display: inline-block;
+  width: 260px;
+  height: 34px;
+  line-height: 34px;
+  padding-right: 58px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+/* line 156, ../../sass/layout/_form.scss */
+.btn-text-group input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0 none;
+  outline: none;
+  float: left;
+  padding: 0 5px;
+  color: #666;
+}
+/* line 167, ../../sass/layout/_form.scss */
+.btn-text-group .group-btn {
+  width: 58px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+/* line 177, ../../sass/layout/_form.scss */
+.btn-square-red {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 30px;
+  background-color: #f5222d;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 192, ../../sass/layout/_form.scss */
+.btn-square-gray {
+  border: none;
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+  background-color: #cccccc;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 207, ../../sass/layout/_form.scss */
+.btn-square-pink {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  text-align: center;
+  background-color: #f9d7d7;
+  border: 1px solid #f5222d;
+  color: #f5222d;
+}
+
+/* line 219, ../../sass/layout/_form.scss */
+.btn-square-graybg {
+  height: 30px;
+  border: 1px solid #cccccc;
+  background: #f5f5f5;
+  padding: 0 20px;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 229, ../../sass/layout/_form.scss */
+.minbtn-red {
+  height: 24px;
+  background: #f5222d;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+/* line 238, ../../sass/layout/_form.scss */
+.minbtn-white {
+  height: 24px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  width: auto;
+  padding: 0 10px;
+  border: 1px solid #f5222d;
+  color: #f5222d;
+}
+
+/* line 251, ../../sass/layout/_form.scss */
+.transformation i {
+  width: 27px;
+  height: 28px;
+  border: solid 1px #dddddd;
+  float: left;
+  background: #fff;
+  line-height: 27px;
+  text-align: center;
+  color: #939393;
+  font-size: 12px;
+}
+/* line 263, ../../sass/layout/_form.scss */
+.transformation i.noclick {
+  color: #ccc;
+}
+/* line 266, ../../sass/layout/_form.scss */
+.transformation .other-input {
+  float: left;
+  width: 50px;
+  border-left: none;
+  border-right: none;
+}
+/* line 273, ../../sass/layout/_form.scss */
+.transformation .other-input.nochange {
+  color: #ccc;
+}
+
+/* line 3, ../../sass/layout/_header3.scss */
+body {
+  background: #fff;
+}
+
+/* line 6, ../../sass/layout/_header3.scss */
+.page-auto {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+  height: 80px;
+}
+
+/* line 14, ../../sass/layout/_header3.scss */
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #b4b4b4;
+}
+/* line 19, ../../sass/layout/_header3.scss */
+.header .logoleft {
+  float: left;
+}
+/* line 21, ../../sass/layout/_header3.scss */
+.header .logoleft .logo {
+  float: left;
+  margin-top: 18px;
+}
+/* line 26, ../../sass/layout/_header3.scss */
+.header .header-nav {
+  position: absolute;
+  height: 80px;
+  line-height: 100px;
+  font-size: 16px;
+  right: 0;
+  top: 0;
+  color: #fff;
+}
+/* line 34, ../../sass/layout/_header3.scss */
+.header .header-nav > li {
+  float: left;
+  height: 78px;
+  padding: 0 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+/* line 42, ../../sass/layout/_header3.scss */
+.header .header-nav > li a {
+  color: #3e3e3e;
+}
+/* line 46, ../../sass/layout/_header3.scss */
+.header .header-nav > li:hover {
+  font-weight: bold;
+  color: #f5222d;
+  font-weight: bold;
+}
+/* line 51, ../../sass/layout/_header3.scss */
+.header .header-nav > .selected {
+  color: #f5222d;
+  font-weight: bold;
+  border-bottom: 2px solid #f5222d;
+}
