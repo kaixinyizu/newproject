@@ -909,115 +909,117 @@ body {
   border-bottom: 2px solid #f5222d;
 }
 
-/* line 11, ../../sass/page/entry-process.scss */
-.process {
-  height: 445px;
-}
-
-/* line 15, ../../sass/page/entry-process.scss */
+/* line 10, ../../sass/page/qualification-fee.scss */
 .content {
-  margin: 60px auto;
-  padding-bottom: 50px;
+  margin-top: 30px;
+  color: #7f7f7f;
+  font-size: 14px;
+}
+/* line 14, ../../sass/page/qualification-fee.scss */
+.content > div {
+  margin-bottom: 20px;
+}
+/* line 17, ../../sass/page/qualification-fee.scss */
+.content label {
+  margin-right: 5px;
+}
+/* line 20, ../../sass/page/qualification-fee.scss */
+.content input {
+  margin: 0 5px;
+}
+/* line 23, ../../sass/page/qualification-fee.scss */
+.content input.checked {
+  border-color: #2db7f5;
+}
+/* line 26, ../../sass/page/qualification-fee.scss */
+.content input[type="radio"].checked:after {
+  background: #2db7f5;
 }
 
-/* line 21, ../../sass/page/entry-process.scss */
-.process-header {
-  height: 60px;
-  width: 100%;
-}
-/* line 25, ../../sass/page/entry-process.scss */
-.process-header i {
-  width: 60px;
-  height: 60px;
-  background: #f5222d;
-  border-radius: 30px;
-  text-align: center;
-  line-height: 60px;
-  display: inline-block;
-  color: #fff;
-  font-size: 30px;
-}
-/* line 36, ../../sass/page/entry-process.scss */
-.process-header .trianglebtn {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent #f5222d transparent transparent;
-  transform: rotate(180deg);
-}
-/* line 45, ../../sass/page/entry-process.scss */
-.process-header .process-title {
-  font-size: 24px;
-  color: #7d7d7d;
-  line-height: 60px;
+/* line 31, ../../sass/page/qualification-fee.scss */
+.btn-square-pink {
+  background: #fff;
+  padding: 0 40px;
 }
 
-/* line 51, ../../sass/page/entry-process.scss */
-.process-content {
-  border-left: 4px solid #f5222d;
-  margin-left: 30px;
-  padding-left: 60px;
-  height: 385px;
-}
-/* line 56, ../../sass/page/entry-process.scss */
-.process-content li {
+/* line 36, ../../sass/page/qualification-fee.scss */
+.titlegray.first li {
+  width: 25%;
   float: left;
-  width: 223px;
-  border: 2px solid #999;
-  border-radius: 10px;
-  margin-right: 25px;
-  margin-top: 35px;
-  position: relative;
-  color: #999;
-  height: 300px;
-  padding: 0 15px 15px;
+  text-align: center;
 }
-/* line 67, ../../sass/page/entry-process.scss */
-.process-content li p {
+
+/* line 42, ../../sass/page/qualification-fee.scss */
+.radiodiv {
+  line-height: 24px;
+}
+
+/* line 45, ../../sass/page/qualification-fee.scss */
+.explain {
   font-size: 12px;
 }
-/* line 71, ../../sass/page/entry-process.scss */
-.process-content li:last-child {
-  margin-right: 0;
+
+/* line 48, ../../sass/page/qualification-fee.scss */
+.investment-information {
+  border: solid 1px #dddddd;
+  margin-top: 8px;
+  padding: 40px;
 }
-/* line 74, ../../sass/page/entry-process.scss */
-.process-content .num {
-  width: 110px;
-  background: #fff;
-  font-size: 30px;
-  display: inline-block;
-  position: absolute;
-  left: 72px;
-  top: -22px;
+/* line 52, ../../sass/page/qualification-fee.scss */
+.investment-information .title {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+/* line 56, ../../sass/page/qualification-fee.scss */
+.investment-information .title a {
+  font-size: 12px;
+}
+/* line 59, ../../sass/page/qualification-fee.scss */
+.investment-information table {
+  width: 100%;
+  border: solid 1px #dddddd;
   text-align: center;
-}
-/* line 84, ../../sass/page/entry-process.scss */
-.process-content .content-title {
-  height: 110px;
-  border-bottom: solid 1px #dddddd;
+  font-size: 12px;
   margin-bottom: 20px;
+}
+/* line 66, ../../sass/page/qualification-fee.scss */
+.investment-information th {
+  height: 30px;
+  background: #f5f7f9;
+  border-bottom: solid 1px #dddddd;
+  line-height: 40px;
+  padding: 5px 10px;
+  font-weight: normal;
+  width: 50%;
+}
+/* line 75, ../../sass/page/qualification-fee.scss */
+.investment-information td {
+  height: 38px;
+  line-height: 48px;
+  border-right: solid 1px #dddddd;
+  padding: 5px 10px;
+}
+/* line 81, ../../sass/page/qualification-fee.scss */
+.investment-information tr {
+  border-bottom: solid 1px #dddddd;
+}
+
+/* line 86, ../../sass/page/qualification-fee.scss */
+.icon-question-circle {
+  color: #2db7f5;
+  margin-left: 10px;
+}
+
+/* line 90, ../../sass/page/qualification-fee.scss */
+table .icon-question-circle {
+  margin-left: 5px;
+}
+
+/* line 93, ../../sass/page/qualification-fee.scss */
+.footerbtn {
+  height: 60px;
+  border-top: solid 1px #dddddd;
   text-align: center;
-  vertical-align: middle;
-  position: relative;
-}
-/* line 91, ../../sass/page/entry-process.scss */
-.process-content .content-title i {
-  color: #bdbdbd;
-  font-size: 35px;
-  position: absolute;
-  left: 40px;
-  top: 35px;
-}
-/* line 98, ../../sass/page/entry-process.scss */
-.process-content .content-title a {
-  color: #f5222d;
-  display: block;
-  width: 115px;
-  float: left;
-  position: absolute;
-  left: 80px;
-  top: 40px;
-  text-align: left;
+  line-height: 60px;
+  background: #f8f8f8;
 }

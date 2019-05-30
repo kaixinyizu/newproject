@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../reset/common";
+@import "../layout/grid";
+@import "../layout/form";
+@import "../layout/header3";
+@import "../layout/form";
+
+.content{
+    margin-top:30px;
+    color:#7f7f7f;
+    font-size:14px;
+    &>div{
+        margin-bottom:20px;
+    }
+    label{
+        margin-right:5px;
+    }
+    input{
+        margin:0 5px;
+    }
+    input.checked{
+        border-color:#2db7f5;
+    }
+    input[type="radio"].checked:after{
+       
+        background:#2db7f5;
+    }
+}
+.btn-square-pink{
+    background:#fff;
+    padding:0 40px;
+}
+.titlegray.first{
+    li{
+        width:25%;
+        float:left;
+        text-align: center;
+    }
+}
+.radiodiv{
+    line-height:24px;
+}
+.explain{
+    font-size:12px;
+}
+.investment-information{
+    border:$form-border;
+    margin-top:8px;
+    padding:40px;
+    .title{
+        font-size:18px;
+        margin-bottom:24px;
+    }
+    .title a{
+        font-size:12px;
+    }
+    table{
+        width:100%;
+        border:$form-border;
+        text-align: center;
+        font-size:12px;
+        margin-bottom:20px;
+    }
+    th{
+        height:30px;
+        background:#f5f7f9;
+        border-bottom:$form-border;
+        line-height:40px;
+        padding:5px 10px;
+        font-weight: normal;
+        width:50%;
+    }
+    td{
+        height:38px;
+        line-height:48px;
+        border-right:$form-border;
+        padding:5px 10px;
+    }
+    tr{
+        border-bottom:$form-border;
+    }
+}
+
+.icon-question-circle{
+    color:#2db7f5;
+    margin-left:10px;
+}
+table .icon-question-circle{
+    margin-left:5px;
+}
+.footerbtn{
+    height:60px;
+    border-top:$form-border;
+    text-align: center;
+    line-height: 60px;
+    background:#f8f8f8;
+}

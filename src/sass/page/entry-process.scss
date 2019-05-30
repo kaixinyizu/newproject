@@ -6,3 +6,104 @@
 @import "../layout/form";
 @import "../layout/header3";
 @import "../layout/form";
+
+
+.process {
+    height: 445px;
+}
+
+.content{
+    margin:60px auto;
+    padding-bottom:50px;
+    
+}
+
+.process-header {
+    height: 60px;
+    width: 100%;
+
+    i {
+        width: 60px;
+        height: 60px;
+        background: $bg;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 60px;
+        display: inline-block;
+        color: #fff;
+        font-size: 30px;
+    }
+    .trianglebtn {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent $bg transparent transparent;
+        transform: rotate(180deg);
+    }
+    .process-title{
+        font-size:24px;
+        color:#7d7d7d;
+        line-height:60px;
+    }
+}
+.process-content{
+    border-left:4px solid $border-btn1;
+    margin-left:30px;
+    padding-left:60px;
+    height:385px;
+    li{
+        float:left;
+        width:223px;
+        border:2px solid #999;
+        border-radius: 10px;
+        margin-right:25px;
+        margin-top:35px;
+        position: relative;
+        color:#999;
+        height:300px;
+        padding:0 15px 15px;
+        p{
+            font-size:12px;
+        }
+    }
+    li:last-child{
+        margin-right:0;
+    }
+    .num{
+        width:110px;
+        background:#fff;
+        font-size:30px;
+        display: inline-block;
+        position: absolute;
+        left:72px;
+        top:-22px;
+        text-align: center;
+    }
+    .content-title{
+        height:110px;
+        border-bottom:$form-border;
+        margin-bottom:20px;
+        text-align: center;
+        vertical-align:middle;
+        position: relative;
+        i{
+            color:#bdbdbd;
+            font-size:35px;
+            position: absolute;
+            left:40px;
+            top:35px;
+        }
+        a{
+            color:$link-a1;
+            display: block;
+            width:115px;
+            float:left;
+            position: absolute;
+            left:80px;
+            top:40px;
+            text-align: left;
+        }
+    }
+}
