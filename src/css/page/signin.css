@@ -491,7 +491,7 @@ select::-ms-expand {
   border: 2px solid #b3a078;
 }
 /* line 322, ../../sass/reset/_common.scss */
-.iconforbr span.current i {
+.iconforbr span.current i.icon-youxiajiaogouxuan {
   position: absolute;
   right: 0;
   bottom: -1px;

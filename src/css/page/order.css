@@ -258,7 +258,7 @@ select::-ms-expand {
   display: none;
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 99%;
   width: 100%;
   z-index: 9;
   background-color: #fd7171;
@@ -708,7 +708,7 @@ select::-ms-expand {
   border: 2px solid #b3a078;
 }
 /* line 322, ../../sass/reset/_common.scss */
-.iconforbr span.current i {
+.iconforbr span.current i.icon-youxiajiaogouxuan {
   position: absolute;
   right: 0;
   bottom: -1px;
@@ -1353,7 +1353,7 @@ td:last-child {
 /* line 214, ../../sass/page/order.scss */
 .order li {
   height: 100px;
-  border-bottom: 1px dashed #f5222d;
+  border-bottom: 1px dashed #ccc;
   padding: 10px 0;
 }
 /* line 218, ../../sass/page/order.scss */
@@ -1420,7 +1420,7 @@ td:last-child {
 /* line 268, ../../sass/page/order.scss */
 .evaluate button {
   height: 24px;
-  border: 1px solid #f5222d;
+  border: 1px solid #ccc;
   background: #f5f5f5;
   padding: 0 20px;
   font-size: 12px;

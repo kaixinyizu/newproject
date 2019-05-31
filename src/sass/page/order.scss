@@ -213,7 +213,7 @@ td:last-child{
 
 .order li {
     height:100px;
-    border-bottom:1px dashed $border-btn1;
+    border-bottom:1px dashed #ccc;
     padding:10px 0;
     img {
         width: 100px;
@@ -267,7 +267,7 @@ td:last-child{
     padding-top:30px;
     button{
         height:24px;
-        border:1px solid $border-btn1;
+        border:1px solid #ccc;
         background:#f5f5f5;
         padding:0 20px;
         font-size:12px;

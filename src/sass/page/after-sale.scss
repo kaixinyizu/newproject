@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import "../variables/variables";
+@import "../reset/reset";
+@import "../layout/header2";
+@import "../layout/left-nav";
+@import "../reset/common";
+@import "../layout/grid";
+@import "../layout/form";
+@import "../layout/tab-list";
+
+.container {
+    padding-top: 20px;
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-content {
+    float: right;
+    width: 980px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 10px 20px 50px;
+    box-sizing: border-box;
+    font-size: 12px;
+    position: relative;
+
+    .tab-title {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+}
+
+table {
+    width: 100%;
+    border: $form-border;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+    th {
+        height: 30px;
+        background: #f5f7f9;
+        border-bottom: $form-border;
+        line-height: 30px;
+        padding: 5px 10px;
+        font-weight: normal;
+    }
+
+    th:nth-child(1) {
+        width: 40%
+    }
+
+    th:nth-child(2) {
+        width: 30%
+    }
+
+    th:nth-child(3) {
+        width: 15%
+    }
+
+    th:nth-child(4) {
+        width: 15%
+    }
+
+    td {
+        height: 38px;
+        border-right: $form-border;
+        padding: 10px;
+    }
+
+    tr {
+        border-bottom: $form-border;
+    }
+
+    .detail {
+        margin-bottom: 10px;
+
+        img {
+            width: 50px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        p {
+            float: left;
+        }
+
+    }
+}
+
+.redspan {
+    color: $link-a1;
+}
+
+.after-sale {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid $border-btn1;
+    margin-top: 50px;
+}
+
+.iconforbr {
+    span {
+        padding: 0 20px;
+    }
+
+    i {
+        color: $link-a1;
+    }
+    .icon-question-circle{
+        margin-left:5px;
+    }
+    span.current {
+        border-color: $border-btn1;
+
+        i.icon-youxiajiaogouxuan {
+            color: $link-a1;
+        }
+
+    }
+}
+
+.after-detail {
+    padding: 20px;
+    border-bottom: $form-border;
+    line-height: 30px;
+
+    label {
+        width: 100px;
+        text-align: right;
+        float: left;
+        margin-right: 10px;
+    }
+
+    &>div {
+        margin-bottom: 10px;
+        min-height: 30px;
+    }
+
+    .form-right {
+        float: left;
+        width: 600px;
+    }
+
+    .gray-tips {
+        color: #999;
+        display: block;
+    }
+
+    .normal-select {
+        float: left;
+
+        i {
+            right: 20px;
+        }
+    }
+
+    textarea {
+        width: 300px;
+        height: 100px;
+    }
+    .selectbox{
+        margin-bottom:10px;
+    }
+}
+.sale-bottom{
+    height:70px;
+    padding:20px;
+    button{
+        margin-top:30px;
+    }
+}
