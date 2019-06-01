@@ -1712,297 +1712,124 @@ input[type="radio"].checked:after {
   border-top: 0 none;
 }
 
-/* line 14, ../../sass/page/shopping-cart.scss */
-.empty-cart {
-  width: 1198px;
-  border: solid 1px #dddddd;
-  height: 500px;
-  margin-top: 20px;
-}
-
-/* line 21, ../../sass/page/shopping-cart.scss */
-.empty-content {
-  width: 200px;
-  margin: 100px auto 0;
-  text-align: center;
-}
-/* line 26, ../../sass/page/shopping-cart.scss */
-.empty-content img {
-  width: 200px;
-}
-/* line 30, ../../sass/page/shopping-cart.scss */
-.empty-content p {
-  font-size: 16px;
-  color: #8c8c8c;
-}
-/* line 35, ../../sass/page/shopping-cart.scss */
-.empty-content .btn-square-pink {
-  background-color: #fff;
-  color: #f5222d;
-  margin-top: 23px;
-}
-
-/* line 42, ../../sass/page/shopping-cart.scss */
-.content {
-  margin-top: 20px;
-}
-
-/* line 46, ../../sass/page/shopping-cart.scss */
-.titlegray {
-  height: 42px;
-  border: solid 1px #dddddd;
+/* line 12, ../../sass/page/shop-page.scss */
+body {
   background: #f5f5f5;
-  font-size: 13px;
-  color: #666;
-  line-height: 42px;
 }
 
-/* line 55, ../../sass/page/shopping-cart.scss */
-.tab-list-nav {
-  margin-bottom: 15px;
+/* line 15, ../../sass/page/shop-page.scss */
+.shop-header {
+  height: 110px;
 }
-/* line 58, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li {
-  float: left;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
+/* line 18, ../../sass/page/shop-page.scss */
+.shop-header .flr {
+  width: 450px;
+  height: 24px;
+  margin-top: 80px;
 }
-/* line 65, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li a {
-  color: #666;
-  text-decoration: none;
+/* line 22, ../../sass/page/shop-page.scss */
+.shop-header .flr button {
+  margin: 0 5px;
 }
-/* line 72, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li:nth-child(1) {
-  width: 110px;
+/* line 25, ../../sass/page/shop-page.scss */
+.shop-header .flr a {
+  margin-right: 5px;
 }
-/* line 76, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li:nth-child(2) {
-  width: 390px;
-}
-/* line 80, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li:nth-child(3) {
-  width: 180px;
-}
-/* line 84, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li:nth-child(4) {
-  width: 220px;
-}
-/* line 88, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li:nth-child(5) {
-  width: 120px;
-}
-/* line 92, ../../sass/page/shopping-cart.scss */
-.tab-list-nav li:nth-child(6) {
-  width: 100px;
-}
-
-/* line 98, ../../sass/page/shopping-cart.scss */
-.order-detail {
-  border: solid 1px #dddddd;
-  padding: 20px;
-  margin: 10px 0;
-}
-/* line 103, ../../sass/page/shopping-cart.scss */
-.order-detail.discount {
-  background: #fffbf0;
-}
-/* line 107, ../../sass/page/shopping-cart.scss */
-.order-detail .redtips {
+/* line 28, ../../sass/page/shop-page.scss */
+.shop-header .flr .iconfont {
   color: #f5222d;
-  border: 1px solid #f5222d;
-  padding: 2px;
-  font-size: 12px;
-  border-radius: 2px;
-  margin-left: 10px;
+  margin-right: 3px;
+}
+/* line 32, ../../sass/page/shop-page.scss */
+.shop-header .flr .icon-kefu {
+  color: blue;
 }
 
-/* line 117, ../../sass/page/shopping-cart.scss */
-.discount-detail {
-  height: 46px;
-  border-bottom: solid 1px #dddddd;
-  margin-bottom: 10px;
-  line-height: 46px;
+/* line 37, ../../sass/page/shop-page.scss */
+.shop-page-nav {
+  background: #000;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
 }
-/* line 123, ../../sass/page/shopping-cart.scss */
-.discount-detail button {
-  margin-top: 10px;
-  margin: 10px;
-}
-
-/* line 131, ../../sass/page/shopping-cart.scss */
-.order td:nth-child(1) {
-  width: 50px;
-}
-/* line 135, ../../sass/page/shopping-cart.scss */
-.order td:nth-child(2) {
-  width: 120px;
-}
-/* line 139, ../../sass/page/shopping-cart.scss */
-.order td:nth-child(3) {
-  width: 335px;
+/* line 42, ../../sass/page/shop-page.scss */
+.shop-page-nav i {
+  color: #fff;
   font-size: 13px;
 }
-/* line 144, ../../sass/page/shopping-cart.scss */
-.order td:nth-child(4) {
-  width: 180px;
+/* line 47, ../../sass/page/shop-page.scss */
+.shop-page-nav a {
+  color: #fff;
 }
-/* line 148, ../../sass/page/shopping-cart.scss */
-.order td:nth-child(5) {
-  width: 220px;
-}
-/* line 152, ../../sass/page/shopping-cart.scss */
-.order td:nth-child(6) {
-  width: 150px;
-}
-/* line 158, ../../sass/page/shopping-cart.scss */
-.order td:nth-child(7) .linl-b {
-  display: block;
-}
-
-/* line 167, ../../sass/page/shopping-cart.scss */
-.product-dropdown {
-  width: 400px;
-  height: auto;
+/* line 51, ../../sass/page/shop-page.scss */
+.shop-page-nav .dropdown {
+  display: none;
   background: #fff;
   position: absolute;
-  top: 15px;
-  left: 10px;
-  display: none;
+  top: 40px;
+  left: 0;
 }
-/* line 176, ../../sass/page/shopping-cart.scss */
-.product-dropdown .dropdown-detail {
+/* line 58, ../../sass/page/shop-page.scss */
+.shop-page-nav .dropdown ul {
+  width: 90%;
+  padding: 0 5%;
+}
+/* line 63, ../../sass/page/shop-page.scss */
+.shop-page-nav .dropdown li {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: solid 1px #dddddd;
+}
+/* line 69, ../../sass/page/shop-page.scss */
+.shop-page-nav .dropdown li:last-child {
+  border: none;
+}
+/* line 73, ../../sass/page/shop-page.scss */
+.shop-page-nav .dropdown a {
+  color: #3e3e3e;
+}
+/* line 78, ../../sass/page/shop-page.scss */
+.shop-page-nav li {
+  float: left;
+  padding: 0 20px;
   position: relative;
-  border: 1px solid #cccccc;
-  padding: 10px 20px;
-  margin-top: 10px;
 }
-/* line 183, ../../sass/page/shopping-cart.scss */
-.product-dropdown .triangle {
-  top: -16px;
-  left: 10px;
-}
-/* line 187, ../../sass/page/shopping-cart.scss */
-.product-dropdown button {
-  margin-left: 0;
-}
-
-/* line 192, ../../sass/page/shopping-cart.scss */
-.product-detail {
-  color: #8c8c8c;
-  font-size: 12px;
-  margin-top: 5px;
+/* line 84, ../../sass/page/shop-page.scss */
+.shop-page-nav li:hover .dropdown {
   display: block;
-  position: relative;
-}
-/* line 198, ../../sass/page/shopping-cart.scss */
-.product-detail p {
-  height: 24px;
-  line-height: 24px;
-  margin: 5px 0;
 }
 
-/* line 206, ../../sass/page/shopping-cart.scss */
-.iconforbr span {
-  margin-bottom: 5px;
-  margin-right: 10px;
+/* line 88, ../../sass/page/shop-page.scss */
+.banner {
+  margin-bottom: 75px;
+}
+/* line 90, ../../sass/page/shop-page.scss */
+.banner img {
+  width: 100%;
 }
 
-/* line 211, ../../sass/page/shopping-cart.scss */
-.product-detail:hover .product-dropdown {
-  display: inline-block;
-}
-
-/* line 216, ../../sass/page/shopping-cart.scss */
-.footer-tab {
-  height: 75px;
-  line-height: 75px;
-}
-/* line 219, ../../sass/page/shopping-cart.scss */
-.footer-tab li:nth-child(2) {
-  text-align: left;
-}
-/* line 221, ../../sass/page/shopping-cart.scss */
-.footer-tab li:nth-child(2) a {
-  margin-right: 10px;
-}
-/* line 225, ../../sass/page/shopping-cart.scss */
-.footer-tab li:nth-child(3) {
-  width: 698px;
-}
-
-/* line 230, ../../sass/page/shopping-cart.scss */
-.total {
-  width: 280px;
-  text-align: right;
-  line-height: 24px;
-  margin-top: 12px;
-  color: #8c8c8c;
-}
-
-/* line 237, ../../sass/page/shopping-cart.scss */
-.total-sum {
-  width: 240px;
-  line-height: 24px;
-  text-align: left;
-  border-left: solid 1px #dddddd;
-  margin-top: 10px;
-  padding-left: 15px;
-}
-/* line 244, ../../sass/page/shopping-cart.scss */
-.total-sum div a {
-  font-size: 15px;
-}
-/* line 247, ../../sass/page/shopping-cart.scss */
-.total-sum span {
-  font-size: 20px;
-  font-weight: bold;
-  color: #f5222d;
-}
-/* line 252, ../../sass/page/shopping-cart.scss */
-.total-sum > a {
-  color: #f5222d !important;
-}
-
-/* line 256, ../../sass/page/shopping-cart.scss */
-.go-order {
-  width: 150px;
-  height: 75px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 75px;
-}
-
-/* line 263, ../../sass/page/shopping-cart.scss */
-.checked .iconfont {
-  color: #f5222d;
-}
-
-/* line 268, ../../sass/page/shopping-cart.scss */
-.transformation i {
-  width: 27px;
-  height: 28px;
-  border: solid 1px #dddddd;
-  float: left;
+/* line 94, ../../sass/page/shop-page.scss */
+.plate1 {
+  margin-bottom: 75px;
+  height: 188px;
   background: #fff;
-  line-height: 27px;
-  text-align: center;
-  color: #939393;
-  font-size: 12px;
 }
-/* line 279, ../../sass/page/shopping-cart.scss */
-.transformation i.noclick {
-  color: #ccc;
-}
-/* line 282, ../../sass/page/shopping-cart.scss */
-.transformation .other-input {
+/* line 98, ../../sass/page/shop-page.scss */
+.plate1 li {
+  width: 200px;
   float: left;
-  width: 50px;
-  border-left: none;
-  border-right: none;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #3f3f3f;
 }
-/* line 288, ../../sass/page/shopping-cart.scss */
-.transformation .other-input.nochange {
-  color: #ccc;
+/* line 105, ../../sass/page/shop-page.scss */
+.plate1 li p {
+  margin-top: 25px;
+}
+
+/* line 111, ../../sass/page/shop-page.scss */
+.plate2 img {
+  width: 1200px;
 }
