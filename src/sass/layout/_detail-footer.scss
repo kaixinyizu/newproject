@@ -1,3 +1,4 @@
+@charset "utf-8";
 .detail.footer{
     .wrap{
         margin: 0 auto;
@@ -108,5 +109,13 @@
         display: inline-block;
         background: red;
         color:#fff;
+    }
+    .prove-imgs{
+        text-align: center;
+        padding-top: 20px;
+        img{
+            margin: 0 4px;
+            vertical-align: middle;
+        }
     }
 }
